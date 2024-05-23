@@ -7,8 +7,6 @@ Este es un proyecto en php para front y para back, conexion a bd MySQL
 ## Authors
 
 - [@CaroVeero](https://github.com/CaroVeero)
-- [@DanielaDroguett](https://github.com/DanielaDroguett)
-- [@naty-cdcl](https://github.com/naty-cdcl)
 - [@patriciomelor](https://github.com/patriciomelor)
 
 
