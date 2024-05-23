@@ -1,4 +1,4 @@
-# Eva2-w-Linces
+# Eva3-w-Linces
 # Proyecto Frontend & Backend Sec71-2024T1
 
 Este es un proyecto en php para front y para back, conexion a bd MySQL
@@ -14,14 +14,14 @@ Este es un proyecto en php para front y para back, conexion a bd MySQL
 
 ## Documentation
 
-[Requerimientos](https://eva.ciisa.cl/mod/assign/view.php?id=191664#:~:text=Evaluaci%C3%B3n%20U2_VCM_B.pdf)
+[Requerimientos](Pronto)
 
 
 ## Frontend
 
-- [Parte Front](https://github.com/patriciomelor/Eva2-w-Linces/tree/main/Front)
+- [Parte Front](Pronto)
   
 ## BackEnd
-- [Documento Back] (https://github.com/patriciomelor/Eva2-w-Linces/blob/main/Backend/DOC/InformeApis-IF201IINF-EquipoLinces.pdf)
-- [Parte Back](https://github.com/patriciomelor/Eva2-w-Linces/tree/main/Back](https://github.com/patriciomelor/Eva2-w-Linces/tree/main/Backend)
+- [Documento Back] (Pronto)
+- [Parte Back](Pronto)
 
