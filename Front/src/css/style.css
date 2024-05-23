@@ -1,0 +1,189 @@
+h1 {
+    color: black;
+    font-size: 75px !important;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    padding-bottom: 30px;
+    padding-top: 50px;
+}
+
+h2 {
+    color: #2d5337;
+    font-size: 35px !important;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+h3{
+    color: #ffffff;
+    font-size: 20px !important;
+    text-align: center;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+p {
+    font-size: 18px !important;
+    color: #2d5337;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.img2 {
+    padding: 10px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.card {
+    padding-left: 1% !important;
+    padding-right: 1% !important;
+}
+#bg-img{
+    background-image: url("src/media/Parcelafrutillar.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white !important;
+    font-weight: 600;
+    font-style: normal;}
+
+.centrar-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%!important;
+    margin-top: 15px!important;
+    border: 0px;
+}
+
+.row .card-img-top{
+    height: 300px!important;
+}
+nav li ul {
+    border: 1px grey;
+    box-shadow: 2px;
+}
+
+.card-img-left {
+    height: 30%;
+    width: 80%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.card-img-right {
+    margin-top: 20px;
+    height: 300px;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+#img1 {
+    width: 100%;
+}
+.container {
+    justify-content: center;
+    margin-top: 5;
+} 
+#card_casa_p {
+    align-items: center;
+    border: #35543ea1 solid 2px!important;
+}
+#cardTitle {
+    text-align: center;
+}
+
+
+.parent {
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+  }
+.child {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+  }
+
+.img3{
+    background-size: cover;
+}
+
+.padNos{
+    padding-right:200px;
+    padding-left:200px;
+    padding-bottom: 40px;
+}
+
+.Fgris{
+    background-color: rgba(70, 70, 70, 0.068);
+}
+
+.Fverde1{
+    background-color: #35543ea1;
+}
+/* .Fverde2{
+    background-color: #86c37c86;
+} */
+
+.accordion-item {
+    border: none!important;
+}
+.accordion-button:focus {
+    box-shadow: none!important;
+    border-color: none!important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color:#35543ea1!important;
+    color: white!important;
+}
+
+.row {
+    .col {
+        padding: 20px;
+    }
+}
+
+#tClaro {
+    color: white;
+}
+
+/* navegador */
+
+  .nav-item:hover {
+    background-color: #35543ea1!important;
+    cursor: pointer;
+    border-radius: 10px;
+    .nav-link {
+        color: white!important;
+    }
+  }
+
+
+/* boton ir arriba */
+
+  .fa-solid {
+	display:none;
+	padding:10px;
+	background:#35543ea1!important;
+    color: white;
+	font-size:25px;
+	cursor:pointer;
+	position:fixed;
+	bottom:20px;
+	right:20px;
+    z-index: 999;
+}
