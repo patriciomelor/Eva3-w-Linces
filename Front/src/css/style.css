@@ -187,3 +187,8 @@ nav li ul {
 	right:20px;
     z-index: 999;
 }
+
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(108%);
+  }
