@@ -1,6 +1,6 @@
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
   <div class="carousel-inner"  style="margin-left:auto; margin-right:auto">
-    <!--Primera imagen del carrousel-->
+    <!--Primera slide-->
     <div class="carousel-item active" >
       <div class="row-cards text-center" style="margin-left:150px; margin-right:150px"  alt="First slide" >
         <div class="card-header" style="margin-bottom:40px; margin-top:100px" >
@@ -12,7 +12,7 @@
         </div>
       </div>
     </div>
-    <!--Segunda imagen del carrousel-->
+    <!--Segunda slide-->
     <div class="carousel-item" >
       <div class="row-cards text-center" style="margin-left:150px; margin-right:150px"  alt="Second slide" >
         <div class="card-header" style="margin-bottom:40px; margin-top:100px" >
@@ -24,7 +24,7 @@
         </div>
       </div>
     </div>
-    <!--Tercera imagen del carrousel-->
+    <!--Tercera slide-->
     <div class="carousel-item" >
       <div class="row-cards text-center" style="margin-left:150px; margin-right:150px"  alt="Third slide" >
         <div class="card-header" style="margin-bottom:40px; margin-top:100px" >
