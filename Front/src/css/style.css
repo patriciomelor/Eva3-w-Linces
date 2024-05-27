@@ -29,6 +29,17 @@ h3{
     font-style: normal;
 }
 
+h4 {
+    color: #2d5337;
+    font-size: 40px !important;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    padding-top: 10px;
+}
+
 p {
     font-size: 17px !important;
     color: #2d5337;
@@ -36,12 +47,30 @@ p {
     margin-right: 20px;
 }
 
+.p2 {
+    font-size: 20px !important;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top:20px;
+    
+}
+
+
+#img1 {
+    width: 100%;
+}
 .img2 {
     padding: 10px;
     border-radius: 20px;
     align-items: center;
 }
+.img3{
+    background-size: cover;
+}
 
+.img4{
+    overflow:hidden;
+}
 .card {
     padding-left: 1% !important;
     padding-right: 1% !important;
@@ -90,9 +119,7 @@ nav li ul {
     border-radius: 20px;
 }
 
-#img1 {
-    width: 100%;
-}
+
 .container {
     justify-content: center;
     margin-top: 5;
@@ -117,9 +144,7 @@ nav li ul {
     vertical-align: middle;
   }
 
-.img3{
-    background-size: cover;
-}
+
 
 .padNos{
     padding-right:200px;
@@ -134,9 +159,6 @@ nav li ul {
 .Fverde1{
     background-color: #35543ea1;
 }
-/* .Fverde2{
-    background-color: #86c37c86;
-} */
 
 .accordion-item {
     border: none!important;
@@ -162,7 +184,6 @@ nav li ul {
 }
 
 /* navegador */
-
   .nav-item:hover {
     background-color: #35543ea1!important;
     cursor: pointer;
@@ -174,7 +195,6 @@ nav li ul {
 
 
 /* boton ir arriba */
-
   .fa-solid {
 	display:none;
 	padding:10px;
@@ -188,7 +208,7 @@ nav li ul {
     z-index: 999;
 }
 
-
+/* Color previous-next carousel */
 .carousel-control-prev-icon, .carousel-control-next-icon {
     filter: invert(108%);
   }

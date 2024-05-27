@@ -3,9 +3,6 @@
         <!-- Título de sección-->
         <h1 id="tClaro" class="text-center">PARCELAS</h1>
         <!-- Introducción a la sección -->
-        <div class="flex-container text-center">
-            <h3 class="padNos" id="tClaro" style="padding-top:40px">Descubre tu espacio ideal: terrenos amplios, naturaleza serena y lejos del bullicio. Aquí, la tranquilidad es tu vecina. ¡Haz realidad tu sueño hoy mismo!</h3>
-        </div>
     </div>
     <!-- Tarjetas de parcelas -->
     <div class="row justify-content-center card-group">  

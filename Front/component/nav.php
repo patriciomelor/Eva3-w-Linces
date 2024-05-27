@@ -13,13 +13,13 @@
           <a class="nav-link" href="#nosotros">Nosotros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#soloterreno">Terrenos</a>
+          <a class="nav-link" href="#parcelas">Parcelas</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#casa_en_parcela">Casa en Parcela</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#parcelas">Parcelas</a>
+          <a class="nav-link" href="#soloterreno">Terrenos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#preguntas_frecuentes">Q&A</a>

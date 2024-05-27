@@ -1,11 +1,7 @@
 <div class="flex-container">
-    <br><br>
-    <div class="row justify-content-center Fverde1" style="padding-bottom:50px">
+    <div class="row justify-content-center Fverde1" style="padding-bottom:50px; padding-top:40px">
         <div class="text-center">
             <h1 id="tClaro">TERRENOS</h1>
-        </div>
-        <div class="flex-container text-center">
-            <h3 class="padNos" id="tClaro" style="padding-top:40px">Explora parcelas ideales: espacio perfecto, entorno natural y cerca de comodidades. Tu rincón de paz está aquí. ¡Construye tu hogar en este paraíso hoy!</h3>
         </div>
         <!-- Primera tarjeta - Hacienda Pellín -->
         <div class="card m-3" style="max-width: 540px;" flex-wrap="wrap">

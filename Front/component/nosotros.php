@@ -25,13 +25,13 @@
             <!-- Imagen Misión-->
             <div class="img4" style="max-width: 540px; margin-bottom: 60px" flex-wrap="wrap" display="flex">
                 <div class="row g-0">
-                    <img src=src\media\casa_en_parcela\parc-casa-4.jpg class="" alt="...">
+                    <img src=src\media\nosotros\imagen1.jpg class="" alt="...">
                 </div>
             </div>        
             <!-- Imagen Visión-->
             <div class="img4" style="max-width: 540px; margin-right: 40px;" flex-wrap="wrap" display="flex">
                 <div class="row g-0">
-                    <img src=src\media\casa_en_parcela\parc-casa-3.jpg class="" alt="...">
+                    <img src=src\media\nosotros\imagen1.webp class="" alt="...">
                 </div>
             </div>
             <!-- Texto Visión -->        
