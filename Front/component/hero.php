@@ -16,7 +16,7 @@
     <div class="carousel-item" >
       <div class="row-cards text-center" style="margin-left:150px; margin-right:150px"  alt="Second slide" >
         <div class="card-header" style="margin-bottom:40px; margin-top:100px" >
-          <img src="src/media/carrousel/Rostro1.jpg" alt="...">
+          <img src="src/media/carrousel/Rostro2.jpg" alt="...">
         </div>
         <div class="card-body">
           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quaerat nisi fugit fuga veritatis officiis. Expedita, dicta! Odit dolore earum commodi iure sunt blanditiis debitis nostrum, libero, mollitia voluptatibus deserunt!</p>
@@ -28,7 +28,7 @@
     <div class="carousel-item" >
       <div class="row-cards text-center" style="margin-left:150px; margin-right:150px"  alt="Third slide" >
         <div class="card-header" style="margin-bottom:40px; margin-top:100px" >
-          <img src="src/media/carrousel/Rostro1.jpg" alt="...">
+          <img src="src/media/carrousel/Rostro3.jpg" alt="...">
         </div>
         <div class="card-body">
           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quaerat nisi fugit fuga veritatis officiis. Expedita, dicta! Odit dolore earum commodi iure sunt blanditiis debitis nostrum, libero, mollitia voluptatibus deserunt!</p>
