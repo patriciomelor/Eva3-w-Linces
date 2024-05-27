@@ -13,9 +13,6 @@
           <a class="nav-link" href="#nosotros">Nosotros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#Mision">Misión y Visión</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="#soloterreno">Terrenos</a>
         </li>
         <li class="nav-item">

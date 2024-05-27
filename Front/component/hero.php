@@ -1,5 +1,5 @@
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
-  <div class="carousel-inner"  style="margin-left:auto; margin-right:auto">
+  <div class="carousel-inner"  style="margin-left:auto; margin-right:auto; margin-bottom: 30px;">
     <!--Primera slide-->
     <div class="carousel-item active" >
       <div class="row-cards text-center" style="margin-left:150px; margin-right:150px"  alt="First slide" >

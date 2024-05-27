@@ -1,4 +1,4 @@
-<div class="flex" >
+<!-- <div class="flex" >
     <br><br>
     <div class="row">
         <h1 class="text-center">MISIÓN Y VISIÓN</h1>
@@ -18,4 +18,4 @@
         <hr>
     </div>
 </div>    
-</section>
+</section> -->
