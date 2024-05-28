@@ -212,3 +212,22 @@ nav li ul {
 .carousel-control-prev-icon, .carousel-control-next-icon {
     filter: invert(108%);
   }
+
+
+/* .Altura de Misión*/
+.altMision{
+    height: 376.5px;
+}
+
+/* .Altura de Visión*/
+.altVision{
+    height: 376.5px;
+}
+
+/* Botón Contáctanos en Cards Servicios */
+.cardFoot {
+    padding:;!important;
+    color: var(--bs-card-cap-color);
+    background-color: var(--bs-card-cap-bg);
+    border-top: var(--bs-card-border-width) solid var(--bs-card-border-color);
+}

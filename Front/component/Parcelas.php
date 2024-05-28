@@ -16,7 +16,7 @@
                 <div class="card-body">
                     <p>Se destaca por su privilegiada ubicación, equilibrio perfecto entre la tranquilidad del campo y la conveniencia de estar a pasos de la ciudad.</p>
                 </div>    
-                <div class="card-footer d-grid gap-2 col-6 mx-auto">
+                <div class="card-Foot d-grid gap-2 col-6 mx-auto mb-4">
                     <a class="btn btn-secondary" href="#contacto" role="button">Contáctanos</a>
                 </div>            
             </div>
@@ -31,7 +31,7 @@
                 <div class="card-body">
                     <p>Idílica ubicación, calidad de vida. Aquí encontrarás parcelas con un tamaño promedio de 5000 metros cuadrados, el espacio ideal para construir la casa que esperaste.</p>
                 </div>    
-                <div class="card-footer d-grid gap-2 col-6 mx-auto">
+                <div class="card-Foot d-grid gap-2 col-6 mx-auto mb-4">
                     <a class="btn btn-secondary" href="#contacto" role="button">Contáctanos</a>
                 </div>            
             </div>
@@ -46,7 +46,7 @@
                 <div class="card-body">
                     <p>Un lugar único acogedor cercano a lugares donde puedes realizar actividades comunitarias y eventos. Una cultura distinta que hace de este un lugar único para vivir.</p>
                 </div>    
-                <div class="card-footer d-grid gap-2 col-6 mx-auto">
+                <div class="card-Foot d-grid gap-2 col-6 mx-auto mb-4">
                     <a class="btn btn-secondary" href="#contacto" role="button">Contáctanos</a>
                 </div>            
             </div>

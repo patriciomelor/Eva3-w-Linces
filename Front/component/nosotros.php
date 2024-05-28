@@ -14,30 +14,30 @@
         </div>
         <div class="row justify-content-center" style="margin-bottom:40px;">        
             <!-- Texto Misión -->        
-            <div class="" style="max-width: 540px; margin-right: 40px" flex-wrap="wrap" display="flex">
-                <div class="row Fgris">
-                    <div class="p-4">
+            <div class="" style="max-width: 520px; margin: 20px" flex-wrap="wrap" display="flex">
+                <div class="row Fgris altMision">
+                    <div class="p-4 " >
                         <h4>Misión</h4>
                         <p class="p2">Nuestra misión en Terrasol Parcelas es ofrecer a nuestros clientes oportunidades únicas para invertir en la naturaleza y la tranquilidad. Estamos muy comprometidos con un enfoque innovador y centrado en el cliente. Ofrecemos un estilo de vida totalmente rodeado de naturaleza y con las comodidades necesarias para vivir en armonía. </p>
                     </div>                
                 </div>
             </div>
             <!-- Imagen Misión-->
-            <div class="img4" style="max-width: 540px; margin-bottom: 60px" flex-wrap="wrap" display="flex">
+            <div class="img4" style="max-width: 530px;; margin: 20px" flex-wrap="wrap" display="flex">
                 <div class="row g-0">
                     <img src=src\media\nosotros\imagenMisión.webp class="" alt="...">
                 </div>
             </div>        
             <!-- Imagen Visión-->
-            <div class="img4" style="max-width: 540px; margin-right: 40px;" flex-wrap="wrap" display="flex">
+            <div class="img4" style="max-width: 540px; margin: 20px;" flex-wrap="wrap" display="flex">
                 <div class="row g-0">
                     <img src=src\media\nosotros\imagenVisión.webp class="" alt="...">
                 </div>
             </div>
             <!-- Texto Visión -->        
-            <div class="" style="max-width: 540px;" flex-wrap="wrap" display="flex";>
-                <div class="row Fgris">
-                    <div class="p-4">
+            <div class="" style="max-width: 520px; margin: 20px" flex-wrap="wrap" display="flex";>
+                <div class="row Fgris altVision">
+                    <div class="p-4 "  >
                         <h4>Visión</h4>
                         <p class="p2">Nuestra visión es ser reconocidos como líderes en el mercado inmobiliario, destacándonos por nuestro compromiso con la accesibilidad financiera y la transparencia hacia cada uno de nuestros clientes. Nos interesa ser confiables y transparentes al entregar oportunidades realistas.</p>
                     </div>                
