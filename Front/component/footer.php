@@ -12,10 +12,10 @@
     </div>
 
     <div class="col mb-3">
-      <h5>Direccion:</h5>
+      <h5>Dirección:</h5>
       <ul class="nav flex-column">
         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
-            Entre Talca y La Region de los Lagos
+            Entre Talca y La Región de los Lagos
         </a></li>
       
       </ul>
@@ -25,7 +25,7 @@
       <h5>Contacto:</h5>
       <ul class="nav flex-column">
         <li class="nav-item mb-2"><a href="tel:950186583" class="nav-link p-0 text-muted"><i class="bi bi-telephone"></i> +56 9 5018 6583</a></li>
-        <li class="nav-item mb-2"><a href="wa.link/950186583" class="btn btn-success"><i class="bi bi-whatsapp"></i> Contactanos Al WhatsApp</a></li>
+        <li class="nav-item mb-2"><a href="wa.link/950186583" class="btn btn-success"><i class="bi bi-whatsapp"></i> Contáctanos Al WhatsApp</a></li>
       </ul>
     </div>
 

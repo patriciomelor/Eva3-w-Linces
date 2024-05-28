@@ -10,7 +10,7 @@
         <div class="col-md-3 m-3 mb-3"  >
             <div class="card h-100">
                 <div class="card-header">
-                    <img class="card-img text-center mt-3 mb-3" src="src/media/Parcelas/Parcelafrutillar.jpg" >
+                    <img class="card-img text-center mt-3 mb-3" src="src/media/Parcelas/Parcelafrutillar.webp" >
                     <h2 class="card-title mt-2">Parcela Frutillar</h2>
                 </div>
                 <div class="card-body">
@@ -25,7 +25,7 @@
         <div class="col-md-3 m-3 mb-3"  >
             <div class="card h-100">
                 <div class="card-header">
-                    <img class="card-img text-center mt-3 mb-3" src="src/media/Parcelas/Parcelapurranque.jpg" >
+                    <img class="card-img text-center mt-3 mb-3" src="src/media/Parcelas/Parcelapurranque.webp" >
                     <h2 class="card-title mt-2">Parcela Purranque</h2>
                 </div>
                 <div class="card-body">
@@ -40,7 +40,7 @@
         <div class="col-md-3 m-3 mb-3"  >
             <div class="card h-100">
                 <div class="card-header">
-                    <img class="card-img text-center mt-3 mb-3" src="src/media/Parcelas/Parcelaosorno.jpg" >
+                    <img class="card-img text-center mt-3 mb-3" src="src/media/Parcelas/Parcelaosorno.webp" >
                     <h2 class="card-title mt-2">Parcela Osorno</h2>
                 </div>
                 <div class="card-body">
@@ -55,7 +55,7 @@
         <!-- <div class="col-md-3 m-3 mb-3"  >
             <div class="card h-100">
                 <div class="card-header">
-                    <img class="card-img text-center mt-3 mb-3" src="src/media/Parcelas/Parcelasanjavier.jpg" >
+                    <img class="card-img text-center mt-3 mb-3" src="src/media/Parcelas/Parcelasanjavier.webp" >
                     <h2 class="card-title mt-2">Parcela San Javier</h2>
                 </div>
                 <div class="card-body">

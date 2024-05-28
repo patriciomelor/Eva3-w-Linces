@@ -10,7 +10,7 @@
   <!-- card1 -->
       <div class="col">
         <div class="card h-100" id="card_casa_p">
-            <img src=src\media\casa_en_parcela\parc-casa-1.jpg class="card-img-left mt-4" alt="Quilmo">
+            <img src=src\media\casa_en_parcela\parc-casa-1.webp class="card-img-left mt-4" alt="Quilmo">
          <div class="card-body">
             <div id="cardTitle"><h2 class="card-title">Parcela en Quilmo</h2>
             <p class="card-text"><small>Región de Ñuble</small></p></div>
@@ -31,7 +31,7 @@
       <!-- card2 -->
       <div class="col">
         <div class="card h-100" id="card_casa_p">
-        <img src=src\media\casa_en_parcela\parc-casa-2.jpg class="card-img-left mt-4" alt="Olmue">
+        <img src=src\media\casa_en_parcela\parc-casa-2.webp class="card-img-left mt-4" alt="Olmue">
          <div class="card-body">
             <div id="cardTitle"><h2 class="card-title">Parcela en Olmue</h2>
             <p class="card-text"><small>Región de Valparaiso</small></p></div>
@@ -52,7 +52,7 @@
       <!-- card3 -->
       <div class="col">
         <div class="card h-100" id="card_casa_p">
-            <img src=src\media\casa_en_parcela\parc-casa-3.jpg class="card-img-left mt-4" alt="Pto Varas">
+            <img src=src\media\casa_en_parcela\parc-casa-3.webp class="card-img-left mt-4" alt="Pto Varas">
          <div class="card-body">
             <div id="cardTitle"><h2 class="card-title">Parcela en Puerto Varas</h2>
             <p class="card-text"><small>Región de los Lagos</small></p></div>
@@ -73,7 +73,7 @@
       <!-- card4 -->
       <div class="col">
         <div class="card h-100" id="card_casa_p">
-            <img src=src\media\casa_en_parcela\parc-casa-4.jpg class="card-img-left mt-4" alt="Chiloe">
+            <img src=src\media\casa_en_parcela\parc-casa-4.webp class="card-img-left mt-4" alt="Chiloe">
          <div class="card-body">
             <div id="cardTitle"><h2 class="card-title">Parcela en Chiloé</h2>
             <p class="card-text"><small>Región de los Lagos</small></p></div>

@@ -2,7 +2,7 @@
     <div class="row justify-content-center" style="padding-bottom:20px; padding-top:40px">
         <!-- Imagen inicial -->
         <div class="img3">
-            <img src=src/media/nosotros/nosotros.jpg   width="100%" id="img_nosotros">
+            <img src=src/media/nosotros/nosotros.webp   width="100%" id="img_nosotros">
         </div>
         <!-- Títutlo -->
         <div class="row" >
@@ -25,13 +25,13 @@
             <!-- Imagen Misión-->
             <div class="img4" style="max-width: 540px; margin-bottom: 60px" flex-wrap="wrap" display="flex">
                 <div class="row g-0">
-                    <img src=src\media\nosotros\imagen1.jpg class="" alt="...">
+                    <img src=src\media\nosotros\imagenMisión.webp class="" alt="...">
                 </div>
             </div>        
             <!-- Imagen Visión-->
             <div class="img4" style="max-width: 540px; margin-right: 40px;" flex-wrap="wrap" display="flex">
                 <div class="row g-0">
-                    <img src=src\media\nosotros\imagen1.webp class="" alt="...">
+                    <img src=src\media\nosotros\imagenVisión.webp class="" alt="...">
                 </div>
             </div>
             <!-- Texto Visión -->        
