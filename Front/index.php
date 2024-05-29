@@ -16,19 +16,19 @@
     <!--Fin Hero-->
     <main>
         <section id="nosotros">
-          <?php include 'component/nosotros.php'; ?><!--Caro-->  
+          <?php include 'component/nosotros.php'; ?>
         </section>
         <section id="parcelas">
-        <?php include 'component/Parcelas.php'; ?><!--Dany-->
+        <?php include 'component/Parcelas.php'; ?>
         </section>
         <section id="casa_en_parcela">
-        <?php include 'component/casa_en_parcela.php'; ?><!--Nathy-->
+        <?php include 'component/casa_en_parcela.php'; ?>
         </section>
         <section id="soloterreno">
-          <?php include 'component/soloTerrenos.php'; ?><!--Caro-->  
+          <?php include 'component/soloTerrenos.php'; ?>
         </section>
         <section id="preguntas_frecuentes">
-        <?php include 'component/FAQs.php'; ?><!--Nathy-->
+        <?php include 'component/FAQs.php'; ?>
         </section>
         <!--Contacto-->
         <section id="contacto">
