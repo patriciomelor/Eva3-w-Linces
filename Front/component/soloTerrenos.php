@@ -1,99 +1,102 @@
-<div class="flex-container">
-    <div class="row justify-content-center Fverde1" style="padding-bottom:50px; padding-top:40px">
-        <div class="text-center">
-            <h1 id="tClaro">TERRENOS</h1>
+<div class="flex-container" style="padding-bottom:50px">
+    <div class="row justify-content-center">
+    <!-- Imagen y texto inicial -->
+        <div class="containerTxtImg">
+            <img class="imageTxtImg" src=src/media/imgTitulos/it4.webp alt="Image">       
+            <!-- <img class="imageTxtImg" src=src/media/nosotros/nosotros.webp   width="100%" id="img_nosotros">        -->
+            <h1 class="textTxtImg">TERRENOS</h1>
         </div>
-        <!-- Primera tarjeta - Hacienda Pellín -->
-        <div class="card m-3" style="max-width: 540px;" flex-wrap="wrap">
-            <div class="row g-0">
-                <div class=" terrenos col-md-4">
-                <img src= src/media/soloTerrenos/HaciendaPellin.webp class="terrenos img-fluid border-radius mt-4 img2" alt="...">
+    <!-- Tarjetas de parcelas -->
+    <div class="row justify-content-center card-group">  
+        <!-- Terreno Pellín-->
+        <div class="col-md-3 m-3 mb-3"  >
+            <div class="card h-100">
+                <div class="card-header">
+                    <img class="card-img text-center mt-3 mb-3" src="src/media/soloTerrenos/BoldosDeDuao.webp" >
+                    <h2 class="card-title mt-2">Hacienda Pellín</h2>
                 </div>
-                <div class="card-body col-md-8 p-4">
-                    <h2 class="card-title ">Hacienda Pellín</h2>
-                    <p class="card-text"><small class="text-body-secondary">Región del Maule</small></p>
-                    <p class="card-text">En el corazón del Maule, rodeada de árboles y cordillera encuentras el aire fresco de la naturaleza.</p>
-                    <p class="card-text"><small class="text-body-secondary">5.000m2</small></p>
-                    <p class="card-text"><small class="text-body-secondary">3.500 UF</small></p>
-                </div>                
+                <div class="card-body">
+                    <p>En el corazón del Maule, rodeada de árboles y cordillera encuentras el aire fresco de la naturaleza.</p>
+                </div>    
+                <div class="card-Foot d-grid gap-2 col-6 mx-auto mb-4">
+                    <a class="btn btn-secondary" href="#contacto" role="button">Contáctanos</a>
+                </div>            
             </div>
         </div>
-        <!-- Segunda tarjeta - Vista Coronel-->
-        <div class="card m-3" style="max-width: 540px;" flex-wrap="wrap">
-            <div class="row g-0">
-                <div class="col-md-4">
-                <img src=src/media/soloTerrenos/VistaCoronel.webp class="img-fluid border-radius mt-4 img2" alt="...">
+        <!-- Terreno Coronel-->           
+        <div class="col-md-3 m-3 mb-3"  >
+            <div class="card h-100">
+                <div class="card-header">
+                    <img class="card-img text-center mt-3 mb-3" src="src/media/soloTerrenos/AltoCancura.webp" >
+                    <h2 class="card-title mt-2">Vista Coronel</h2>
                 </div>
-                <div class="card-body col-md-8 p-4">
-                    <h2 class="card-title">Vista Coronel</h2>
-                    <p class="card-text"><small class="text-body-secondary">Región del Biobío</small></p>
-                    <p class="card-text">Disfruta la vitalidad de la naturaleza enfatizada por la brisa marina del Pacífico sur.</p>
-                    <p class="card-text"><small class="text-body-secondary">5.000m2</small></p>
-                    <p class="card-text"><small class="text-body-secondary">5.500 UF</small></p>
-                </div>
+                <div class="card-body">
+                    <p>Disfruta la vitalidad de la naturaleza enfatizada por la brisa marina del Pacífico sur.</p>
+                </div>    
+                <div class="card-Foot d-grid gap-2 col-6 mx-auto mb-4">
+                    <a class="btn btn-secondary" href="#contacto" role="button">Contáctanos</a>
+                </div>            
             </div>
         </div>
-        <!-- Tercera tarjeta - Boldos de Duao-->
-        <div class="card m-3" style="max-width: 540px;" flex-wrap="wrap">
-            <div class="row g-0">
-                <div class="col-md-4">
-                <img src=src/media/soloTerrenos/BoldosDeDuao.webp class="img-fluid border-radius mt-4 img2" alt="...">
+        <!-- Terreno Boldos de Duao-->           
+        <div class="col-md-3 m-3 mb-3"  >
+            <div class="card h-100">
+                <div class="card-header">
+                    <img class="card-img text-center mt-3 mb-3" src="src/media/soloTerrenos/HaciendaPellin.webp" >
+                    <h2 class="card-title mt-2">Boldos de Duao</h2>
                 </div>
-                <div class="card-body col-md-8 p-4">
-                    <h2 class="card-title">Boldos de Duao</h2>
-                    <p class="card-text"><small class="text-body-secondary">Región del Biobío</small></p>
-                    <p class="card-text">El aroma la naturaleza enriquece los paisajes de ensueño que podrás disfrutar en Duao.</p>
-                    <p class="card-text"><small class="text-body-secondary">5.000m2</small></p>
-                    <p class="card-text"><small class="text-body-secondary">3.500 UF</small></p>
-                </div>
+                <div class="card-body">
+                    <p>El aroma la naturaleza enriquece los paisajes de ensueño que podrás disfrutar en Duao.</p>
+                </div>    
+                <div class="card-Foot d-grid gap-2 col-6 mx-auto mb-4">
+                    <a class="btn btn-secondary" href="#contacto" role="button">Contáctanos</a>
+                </div>            
             </div>
         </div>
-        <!-- Cuarta tarjeta - Valle Curacautín -->
-        <div class="card m-3" style="max-width: 540px;" flex-wrap="wrap">
-            <div class="row g-0">
-                <div class="col-md-4">
-                <img src=src/media/soloTerrenos/ValleCuracautin.webp class="img-fluid border-radius mt-4 img2" alt="...">
+        <!--Terreno Curacautín-->           
+        <div class="col-md-3 m-3 mb-3"  >
+            <div class="card h-100">
+                <div class="card-header">
+                    <img class="card-img text-center mt-3 mb-3" src="src/media/soloTerrenos/ValleCuracautin.webp" >
+                    <h2 class="card-title mt-2">Valle Curacautín</h2>
                 </div>
-                <div class="card-body col-md-8 p-4">
-                    <h2 class="card-title">Valle Curacautín</h2>
-                    <p class="card-text"><small class="text-body-secondary">Región de la Araucanía</small></p>
-                    <p class="card-text">Un vasto terreno ondulado, cubierto de hierba verde y árboles majestuosos, con arroyos serpenteantes.</p>
-                    <p class="card-text"><small class="text-body-secondary">5.000m2</small></p>
-                    <p class="card-text"><small class="text-body-secondary">5.700 UF</small></p>
-                </div>
+                <div class="card-body">
+                    <p>Un vasto terreno ondulado, cubierto de hierba verde y árboles majestuosos, con arroyos serpenteantes.</p>
+                </div>    
+                <div class="card-Foot d-grid gap-2 col-6 mx-auto mb-4">
+                    <a class="btn btn-secondary" href="#contacto" role="button">Contáctanos</a>
+                </div>              
             </div>
         </div>
-        <!-- Quinta tarjeta - Vive Neltume-->
-        <div class="card m-3" style="max-width: 540px;" flex-wrap="wrap">
-            <div class="row g-0">
-                <div class="col-md-4">
-                <img src=src/media/soloTerrenos/ViveNeltume.webp class="img-fluid border-radius mt-4 img2" alt="...">
+        <!--Terreno Neltume-->           
+        <div class="col-md-3 m-3 mb-3"  >
+            <div class="card h-100">
+                <div class="card-header">
+                    <img class="card-img text-center mt-3 mb-3" src="src/media/soloTerrenos/VistaCoronel.webp" >
+                    <h2 class="card-title mt-2">Vive Neltume</h2>
                 </div>
-                <div class="card-body col-md-8 p-4">
-                    <h2 class="card-title">Vive Neltume</h2>
-                    <p class="card-text"><small class="text-body-secondary">Región de los Ríos</small></p>
-                    <p class="card-text">Con montañas azules en la distancia, ofrece un refugio de belleza natural y serenidad.</p>
-                    <p class="card-text"><small class="text-body-secondary">5.000m2</small></p>
-                    <p class="card-text"><small class="text-body-secondary">3.500 UF</small></p>
-                </div>
+                <div class="card-body">
+                    <p>Con montañas azules en la distancia, ofrece un refugio de belleza natural y serenidad.</p>
+                </div>    
+                <div class="card-Foot d-grid gap-2 col-6 mx-auto mb-4">
+                    <a class="btn btn-secondary" href="#contacto" role="button">Contáctanos</a>
+                </div>           
             </div>
         </div>
-        <!-- Sexta tarjeta - Alto Cancura-->
-        <div class="card m-3" style="max-width: 540px;" flex-wrap="wrap">
-            <div class="row g-0">
-                <div class="col-md-4">
-                <img src=src/media/soloTerrenos/AltoCancura.webp class="img-fluid border-radius mt-4 img2" alt="...">
+        <!--Terreno Alto Cancura-->           
+        <div class="col-md-3 m-3 mb-3"  >
+            <div class="card h-100">
+                <div class="card-header">
+                    <img class="card-img text-center mt-3 mb-3" src="src/media/soloTerrenos/ViveNeltume.webp" >
+                    <h2 class="card-title mt-2">Alto Cancura</h2>
                 </div>
-                <div class="card-body col-md-8 p-4">
-                    <h2 class="card-title">Alto Cancura</h2>
-                    <p class="card-text"><small class="text-body-secondary">Región de los Lagos</small></p>
-                    <p class="card-text">Un terreno tranquilo, adornado con árboles frondosos que se mecen suavemente con la brisa fresca de la montaña.</p>
-                    <p class="card-text"><small class=" text-muted">5000m2</small></p>
-                    <p class="card-text"><small class="text-body-secondary">4.000 UF</small></p>
-
-                </div>
+                <div class="card-body">
+                    <p>Un terreno tranquilo, adornado con árboles frondosos que se mecen suavemente con la brisa fresca de la montaña.</p>
+                </div>    
+                <div class="card-Foot d-grid gap-2 col-6 mx-auto mb-4">
+                    <a class="btn btn-secondary" href="#contacto" role="button">Contáctanos</a>
+                </div>              
             </div>
-        </div>             
-    </div>
-    
-</div>
+        </div>
+    </div>        
+</div>       
