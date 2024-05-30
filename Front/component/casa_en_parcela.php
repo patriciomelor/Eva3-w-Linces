@@ -1,98 +1,115 @@
-<a href="#" class=".fa-solid">
-    <i class="fa-solid fa-angle-up" aria-hidden="true"></i>
-</a>
-
-<section class="container justify-content-center mb-5" >
-<div class="row">
-    <h1 class="text-center">CASA EN PARCELA</h1>
-</div>
-<div class="row row-cols-1 row-cols-md-2" id="">
-  <!-- card1 -->
-      <div class="col">
-        <div class="card h-100" id="card_casa_p">
-            <img src=src\media\casa_en_parcela\parc-casa-1.webp class="card-img-left mt-4" alt="Quilmo">
-         <div class="card-body">
-            <div id="cardTitle"><h2 class="card-title">Parcela en Quilmo</h2>
-            <p class="card-text"><small>Región de Ñuble</small></p></div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item" id="">
-                <small class="text-muted"><span id=""> Dormitorios 4 <br> Baños 3 <br> Superficie habitable aprox. 195 m² <br> Superficie construida aprox. 195 m² <br> Terreno aprox. 6,5 ha</span><br></small>
-                </li>
-              <li class="list-group-item">
-                <span><br>Parcela de 65.000m2 que permite la subdivisión mínima a 2.000 m2, con casa sólida, árboles frutales, jardines, cierre perimetral, terrazas, acciones de regadío, sistema de distribución de riego. Alcantarillado, agua potable y electricidad. Terreno de 159mts. de frente x 390mts. de fondo.</span>
-              </li>
-              <li class="list-group-item" id="">
-                <span class="text-muted" id="texto1"><br>Valor 46.000 UF</span>
-              </li>
-            </ul>
-          </div>
+<div class="flex-container" style="padding-bottom:50px">
+    <div class="row justify-content-center">
+        <!-- Título de sección-->
+        <h1  class="text-center">CASAS EN PARCELAS</h1>
+        <!-- Introducción a la sección -->
+    </div>
+    <!-- Tarjetas de parcelas -->
+    <div class="row justify-content-center card-group">  
+        <!-- 1 Parcela en Quilmo-->
+        <div class="col-md-3 m-3 mb-3"  >
+            <div class="card h-100">
+                <div class="card-header">
+                    <img class="card-img text-center mt-3 mb-3" src="src/media/casa_en_parcela/parc-casa-1.webp" >
+                    <h2 class="card-title mt-2">Parcela en Quilmo</h2>
+                </div>
+                <div class="card-body">
+                    <p>Terreno amplio de 80.000m2 con posibilidad de subdivisión desde 2.500m2. Incluye casa de campo, huerto frutal, áreas verdes, vallado perimetral, sistema de riego, alcantarillado, y servicios básicos. Dimensiones: 180m x 445m.</p>
+                    <p class="p3">Dormitorios 4 <br> Baños 3 <br> Superficie habitable aprox. 195 m² <br> Superficie construida aprox. 195 m² <br> Terreno aprox. 6,5 ha<br></>
+                </div>    
+                <div class="card-Foot d-grid gap-2 col-6 mx-auto mb-4">
+                    <a class="btn btn-secondary" href="#contacto" role="button">Contáctanos</a>
+                </div>            
+            </div>
         </div>
-      </div>
-      <!-- card2 -->
-      <div class="col">
-        <div class="card h-100" id="card_casa_p">
-        <img src=src\media\casa_en_parcela\parc-casa-2.webp class="card-img-left mt-4" alt="Olmue">
-         <div class="card-body">
-            <div id="cardTitle"><h2 class="card-title">Parcela en Olmue</h2>
-            <p class="card-text"><small>Región de Valparaiso</small></p></div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item" id="">
-                <small class="text-muted"><span id=""> Dormitorios 4 <br> Baños 3 <br> Superficie habitable aprox. 195 m² <br> Superficie construida aprox. 195 m² <br> Terreno aprox. 6,5 ha</span><br></small>
-                </li>
-              <li class="list-group-item">
-                <span><br>Parcela de 65.000m2 que permite la subdivisión mínima a 2.000 m2, con casa sólida, árboles frutales, jardines, cierre perimetral, terrazas, acciones de regadío, sistema de distribución de riego. Alcantarillado, agua potable y electricidad. Terreno de 159mts. de frente x 390mts. de fondo.</span>
-              </li>
-              <li class="list-group-item" id="">
-                <span class="text-muted" id="texto1"><br>Valor 46.000 UF</span>
-              </li>
-            </ul>
-          </div>
+        <!-- 2 Parcela en Olmue-->           
+        <div class="col-md-3 m-3 mb-3"  >
+            <div class="card h-100">
+                <div class="card-header">
+                    <img class="card-img text-center mt-3 mb-3" src="src/media/casa_en_parcela/parc-casa-2.webp" >
+                    <h2 class="card-title mt-2">Parcela en Olmue</h2>
+                </div>
+                <div class="card-body">
+                    <p>Parcela de 65.000m2 que permite la subdivisión mínima a 2.000 m2, con casa sólida, árboles frutales, jardines, cierre perimetral, terrazas, acciones de regadío, sistema de distribución de riego. Alcantarillado, agua potable y electricidad. Terreno de 159mts. de frente x 390mts. de fondo.</p>
+                    <p class="p3"> Dormitorios 4 <br> Baños 3 <br> Superficie habitable aprox. 195 m² <br> Superficie construida aprox. 195 m² <br> Terreno aprox. 6,5 ha<br></p>
+
+                </div>    
+                <div class="card-Foot d-grid gap-2 col-6 mx-auto mb-4">
+                    <a class="btn btn-secondary" href="#contacto" role="button">Contáctanos</a>
+                </div>            
+            </div>
         </div>
-      </div>
-      <!-- card3 -->
-      <div class="col">
-        <div class="card h-100" id="card_casa_p">
-            <img src=src\media\casa_en_parcela\parc-casa-3.webp class="card-img-left mt-4" alt="Pto Varas">
-         <div class="card-body">
-            <div id="cardTitle"><h2 class="card-title">Parcela en Puerto Varas</h2>
-            <p class="card-text"><small>Región de los Lagos</small></p></div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item" id="">
-                <small class="text-muted"><span id=""> Dormitorios 4 <br> Baños 3 <br> Superficie habitable aprox. 195 m² <br> Superficie construida aprox. 195 m² <br> Terreno aprox. 6,5 ha</span><br></small>
-                </li>
-              <li class="list-group-item">
-                <span><br>Parcela de 65.000m2 que permite la subdivisión mínima a 2.000 m2, con casa sólida, árboles frutales, jardines, cierre perimetral, terrazas, acciones de regadío, sistema de distribución de riego. Alcantarillado, agua potable y electricidad. Terreno de 159mts. de frente x 390mts. de fondo.</span>
-              </li>
-              <li class="list-group-item" id="">
-                <span class="text-muted" id="texto1"><br>Valor 46.000 UF</span>
-              </li>
-            </ul>
-          </div>
+        <!-- 3 Parcela en Cascadas-->           
+        <div class="col-md-3 m-3 mb-3"  >
+            <div class="card h-100">
+                <div class="card-header">
+                    <img class="card-img text-center mt-3 mb-3" src="src/media/casa_en_parcela/parc-casa-3.webp" >
+                    <h2 class="card-title mt-2">Parcela en Cascadas</h2>
+                </div>
+                <div class="card-body">
+                    <p>Parcela de 65.000m2 que permite la subdivisión mínima a 2.000 m2, con casa sólida, árboles frutales, jardines, cierre perimetral, terrazas, acciones de regadío, sistema de distribución de riego. Alcantarillado, agua potable y electricidad. Terreno de 159mts. de frente x 390mts. de fondo.</p>
+                    <p class="p3"> Dormitorios 4 <br> Baños 3 <br> Superficie habitable aprox. 195 m² <br> Superficie construida aprox. 195 m² <br> Terreno aprox. 6,5 ha<br></p>
+                </div>    
+                <div class="card-Foot d-grid gap-2 col-6 mx-auto mb-4">
+                    <a class="btn btn-secondary" href="#contacto" role="button">Contáctanos</a>
+                </div>            
+            </div>
         </div>
-      </div>
-      <!-- card4 -->
-      <div class="col">
-        <div class="card h-100" id="card_casa_p">
-            <img src=src\media\casa_en_parcela\parc-casa-4.webp class="card-img-left mt-4" alt="Chiloe">
-         <div class="card-body">
-            <div id="cardTitle"><h2 class="card-title">Parcela en Chiloé</h2>
-            <p class="card-text"><small>Región de los Lagos</small></p></div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item" id="">
-                <small class="text-muted"><span id=""> Dormitorios 4 <br> Baños 3 <br> Superficie habitable aprox. 195 m² <br> Superficie construida aprox. 195 m² <br> Terreno aprox. 6,5 ha</span><br></small>
-                </li>
-              <li class="list-group-item">
-                <span><br>Parcela de 65.000m2 que permite la subdivisión mínima a 2.000 m2, con casa sólida, árboles frutales, jardines, cierre perimetral, terrazas, acciones de regadío, sistema de distribución de riego. Alcantarillado, agua potable y electricidad. Terreno de 159mts. de frente x 390mts. de fondo.</span>
-              </li>
-              <li class="list-group-item" id="">
-                <span class="text-muted" id="texto1"><br>Valor 46.000 UF</span>
-              </li>
-            </ul>
-          </div>
+        <!-- 4 Parcela en Chiloé-->           
+        <div class="col-md-3 m-3 mb-3"  >
+            <div class="card h-100">
+                <div class="card-header">
+                    <img class="card-img text-center mt-3 mb-3" src="src/media/casa_en_parcela/parc-casa-5.webp" >
+                    <h2 class="card-title mt-2">Parcela en Chiloé</h2>
+                </div>
+                <div class="card-body">
+                    <p>Parcela de 65.000m2 que permite la subdivisión mínima a 2.000 m2, con casa sólida, árboles frutales, jardines, cierre perimetral, terrazas, acciones de regadío, sistema de distribución de riego. Alcantarillado, agua potable y electricidad. Terreno de 159mts. de frente x 390mts. de fondo.</p>
+                    <p class="p3"> Dormitorios 4 <br> Baños 3 <br> Superficie habitable aprox. 195 m² <br> Superficie construida aprox. 195 m² <br> Terreno aprox. 6,5 ha<br></p>                </div>    
+                    <div class="card-Foot d-grid gap-2 col-6 mx-auto mb-4">
+                    <a class="btn btn-secondary" href="#contacto" role="button">Contáctanos</a>
+                </div>              
+            </div>
         </div>
-      </div>
+        <!-- 5 Parcela Buin-->           
+        <div class="col-md-3 m-3 mb-3"  >
+            <div class="card h-100">
+                <div class="card-header">
+                    <img class="card-img text-center mt-3 mb-3" src="src/media/casa_en_parcela/parc-casa-4.webp" >
+                    <h2 class="card-title mt-2">Parcela Buin</h2>
+                </div>
+                <div class="card-body">
+                    <p>Parcela de 50.000m2 subdivisible en lotes mínimos de 3.000m2. Cuenta con casa rural, arboleda frutal, zonas ajardinadas, cerramiento completo, infraestructura de riego, alcantarillado, agua potable y electricidad. Medidas: 120m x 415m.</p>
+                    <p class="p3"> Dormitorios 4 <br> Baños 3 <br> Superficie habitable aprox. 195 m² <br> Superficie construida aprox. 195 m² <br> Terreno aprox. 6,5 ha<br></p>
+                </div>    
+                <div class="card-Foot d-grid gap-2 col-6 mx-auto mb-4">
+                    <a class="btn btn-secondary" href="#contacto" role="button">Contáctanos</a>
+                </div>              
+            </div>
+        </div>
+        <!-- 6 Parcela Fresia-->           
+        <div class="col-md-3 m-3 mb-3"  >
+            <div class="card h-100">
+                <div class="card-header">
+                    <img class="card-img text-center mt-3 mb-3" src="src/media/casa_en_parcela/parc-casa-6.webp" >
+                    <h2 class="card-title mt-2">Parcela Fresia</h2>
+                </div>
+                <div class="card-body">
+                    <p>Amplio terreno de 70.000m2 con división posible a partir de 2.500m2. Incluye vivienda campestre, plantación de frutales, áreas ajardinadas, cerramiento perimetral, sistema de riego, alcantarillado, suministro de agua y electricidad. Dimensiones: 150m x 465m.</p>
+                    <p class="p3"> Dormitorios 4 <br> Baños 3 <br> Superficie habitable aprox. 195 m² <br> Superficie construida aprox. 195 m² <br> Terreno aprox. 6,5 ha<br></p>
+                </div>    
+                <div class="card-Foot d-grid gap-2 col-6 mx-auto mb-4">
+                    <a class="btn btn-secondary" href="#contacto" role="button">Contáctanos</a>
+                </div>              
+            </div>
+        </div>
+    </div>        
+</div>       
+  
+      
 
 
 
 
-     
+
+
+

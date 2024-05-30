@@ -55,6 +55,13 @@ p {
     
 }
 
+.p3 {
+    font-size: 13px !important;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top:20px;
+    
+}
 
 #img1 {
     width: 100%;
