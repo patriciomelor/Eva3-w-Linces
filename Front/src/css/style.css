@@ -1,6 +1,6 @@
 h1 {
     color: black;
-    font-size: 75px !important;
+    font-size: 90px !important;
     text-align: center;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
@@ -238,4 +238,26 @@ nav li ul {
     color: var(--bs-card-cap-color);
     background-color: var(--bs-card-cap-bg);
     border-top: var(--bs-card-border-width) solid var(--bs-card-border-color);
+}
+
+/* Texto sobre imágenes */
+.containerTxtImg {
+    position: relative;
+    width: 100%;
+}
+
+.imageTxtImg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.textTxtImg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
 }

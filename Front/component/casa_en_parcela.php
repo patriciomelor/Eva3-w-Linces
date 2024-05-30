@@ -1,9 +1,11 @@
 <div class="flex-container" style="padding-bottom:50px">
     <div class="row justify-content-center">
-        <!-- Título de sección-->
-        <h1  class="text-center">CASAS EN PARCELAS</h1>
-        <!-- Introducción a la sección -->
-    </div>
+    <!-- Imagen y texto inicial -->
+        <div class="containerTxtImg">
+            <img class="imageTxtImg" src=src/media/imgTitulos/it3.webp alt="Image">       
+            <!-- <img class="imageTxtImg" src=src/media/nosotros/nosotros.webp   width="100%" id="img_nosotros">        -->
+            <h1 class="textTxtImg">CASAS EN PARCELA</h1>
+        </div>
     <!-- Tarjetas de parcelas -->
     <div class="row justify-content-center card-group">  
         <!-- 1 Parcela en Quilmo-->

@@ -1,9 +1,11 @@
-<div class="flex-container Fverde1" style="padding-bottom:50px">
+<div class="flex-container" style="padding-bottom:50px">
     <div class="row justify-content-center">
-        <!-- Título de sección-->
-        <h1 id="tClaro" class="text-center">TERRENO</h1>
-        <!-- Introducción a la sección -->
-    </div>
+    <!-- Imagen y texto inicial -->
+        <div class="containerTxtImg">
+            <img class="imageTxtImg" src=src/media/imgTitulos/it4.webp alt="Image">       
+            <!-- <img class="imageTxtImg" src=src/media/nosotros/nosotros.webp   width="100%" id="img_nosotros">        -->
+            <h1 class="textTxtImg">TERRENOS</h1>
+        </div>
     <!-- Tarjetas de parcelas -->
     <div class="row justify-content-center card-group">  
         <!-- Terreno Pellín-->
