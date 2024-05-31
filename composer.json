@@ -2,7 +2,7 @@
     "name": "eva3-w-linces/proyecto",
     "description": "Proyecto de PHP para IPSS",
     "require": {
-      "php": "^8.0",
+      "php": "^7.4 || ^8.0",
       "monolog/monolog": "^2.0"
     },
     "require-dev": {
@@ -15,9 +15,6 @@
       "psr-4": {
         "App\\": "src/"
       }
-
-    },
-    "license": "proprietary"
+    }
   }
-  
   
