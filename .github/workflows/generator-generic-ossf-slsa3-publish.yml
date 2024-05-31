@@ -38,7 +38,7 @@ jobs:
     - name: SLSA Generator
       uses: slsa-framework/slsa-github-generator/.github/actions/generate-builder@v1.4.0
       with:
-        private-repository: true
+        allow-private-repository: true
 
     - name: Secure Checkout
       uses: slsa-framework/slsa-github-generator/.github/actions/secure-builder-checkout@main
