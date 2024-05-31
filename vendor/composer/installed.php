@@ -3,7 +3,11 @@
         'name' => 'eva3-w-linces/proyecto',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
+<<<<<<< HEAD
         'reference' => '4d70a031f7d8e8cfd61786285b512a6effc9bffe',
+=======
+        'reference' => '7346e6969ff8b5d2f9fead9f03d22084ce42446a',
+>>>>>>> 7f5fb2c (Cambios en yml)
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -22,7 +26,11 @@
         'eva3-w-linces/proyecto' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
+<<<<<<< HEAD
             'reference' => '4d70a031f7d8e8cfd61786285b512a6effc9bffe',
+=======
+            'reference' => '7346e6969ff8b5d2f9fead9f03d22084ce42446a',
+>>>>>>> 7f5fb2c (Cambios en yml)
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
