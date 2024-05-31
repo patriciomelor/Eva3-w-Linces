@@ -1,0 +1,15 @@
+{
+    "name": "privacy-check-action",
+    "version": "1.0.0",
+    "description": "A GitHub Action to check repository privacy",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+      "@actions/core": "^1.2.6"
+    },
+    "author": "",
+    "license": "ISC"
+  }
+  
