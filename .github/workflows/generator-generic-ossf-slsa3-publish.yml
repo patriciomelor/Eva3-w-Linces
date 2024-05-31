@@ -19,23 +19,29 @@ on:
 # The provenance file can be verified using https://github.com/slsa-framework/slsa-verifier.
 # For more information about SLSA and how it improves the supply-chain, visit slsa.dev.
 
-name: SLSA generic generator
+name: SLSA Generator Workflow
+
 on:
-  workflow_dispatch:
-  release:
-    types: [created]
->>>>>>> c92fcf2 (Create generator-generic-ossf-slsa3-publish.yml)
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-<<<<<<< HEAD
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+
+    - name: SLSA Generator
+      uses: slsa-framework/slsa-github-generator/.github/actions/generate-builder@v1.4.0
       with:
-        fetch-depth: 0  # Asegúrate de que se realiza un checkout completo
+        private-repository: true
+
+    - name: Secure Checkout
+      uses: slsa-framework/slsa-github-generator/.github/actions/secure-builder-checkout@main
 
     - name: Validate composer.json and composer.lock
       run: composer validate --strict
@@ -52,84 +58,5 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
 
-    - name: Privacy Check
-      uses: ./.github/actions/privacy-check
-      with:
-        repository: ${{ github.repository }}
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-    - name: Generate Builder
-      uses: ./.github/actions/generate-builder
-      with:
-        repository: ${{ github.repository }}
-
-    - name: Secure Checkout
-      uses: /.github/actions/secure-builder-checkout@main
-=======
-    - name: SLSA Generator
-      uses: slsa-framework/slsa-github-generator/.github/actions/generate-builder@v1.4.0
-=======
-    - name: Generate Builder
-      uses: ./.github/actions/generate-builder
->>>>>>> 033c2a8 (Cambios YML)
-      with:
-        repository: ${{ github.repository }}
-
-    - name: Secure Checkout
-<<<<<<< HEAD
-      uses: slsa-framework/slsa-github-generator/.github/actions/secure-builder-checkout@main
->>>>>>> ac8e2f0 (Añadir acción de privacidad y configuración en el workflow)
-=======
-      uses: /.github/actions/secure-builder-checkout@main
->>>>>>> 033c2a8 (Cambios YML)
-
     - name: Run tests
       run: composer run-script test
-=======
-    outputs:
-      digests: ${{ steps.hash.outputs.digests }}
-
-    steps:
-      - uses: actions/checkout@v4
-
-      # ========================================================
-      #
-      # Step 1: Build your artifacts.
-      #
-      # ========================================================
-      - name: Build artifacts
-        run: |
-            # These are some amazing artifacts.
-            echo "artifact1" > artifact1
-            echo "artifact2" > artifact2
-
-      # ========================================================
-      #
-      # Step 2: Add a step to generate the provenance subjects
-      #         as shown below. Update the sha256 sum arguments
-      #         to include all binaries that you generate
-      #         provenance for.
-      #
-      # ========================================================
-      - name: Generate subject for provenance
-        id: hash
-        run: |
-          set -euo pipefail
-
-          # List the artifacts the provenance will refer to.
-          files=$(ls artifact*)
-          # Generate the subjects (base64 encoded).
-          echo "hashes=$(sha256sum $files | base64 -w0)" >> "${GITHUB_OUTPUT}"
-
-  provenance:
-    needs: [build]
-    permissions:
-      actions: read   # To read the workflow path.
-      id-token: write # To sign the provenance.
-      contents: write # To add assets to a release.
-    uses: slsa-framework/slsa-github-generator/.github/workflows/generator_generic_slsa3.yml@v1.4.0
-    with:
-      base64-subjects: "${{ needs.build.outputs.digests }}"
-      upload-assets: true # Optional: Upload to a new release
->>>>>>> c92fcf2 (Create generator-generic-ossf-slsa3-publish.yml)
