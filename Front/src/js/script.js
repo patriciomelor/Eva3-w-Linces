@@ -80,3 +80,4 @@ $(window).scroll(function(){
     },700);
     return false;
   });
+
