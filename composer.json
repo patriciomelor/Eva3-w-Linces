@@ -15,6 +15,7 @@
       "psr-4": {
         "App\\": "src/"
       }
-    }
+    },
+    "license": "proprietary"
   }
   
