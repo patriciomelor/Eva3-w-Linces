@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "ec9afe3a6298bf14dd183eb8f195708d",
+=======
+    "content-hash": "9cded36247c79712230bb4586cb78675",
+>>>>>>> 648ff96 (Cambios en yml)
     "packages": [
         {
             "name": "monolog/monolog",
@@ -157,6 +161,7 @@
                 "source": "https://github.com/php-fig/log/tree/3.0.0"
             },
             "time": "2021-07-14T16:46:02+00:00"
+<<<<<<< HEAD
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -519,6 +524,8 @@
                 "source": "https://github.com/zircote/swagger-php/tree/4.9.2"
             },
             "time": "2024-05-02T21:36:00+00:00"
+=======
+>>>>>>> 648ff96 (Cambios en yml)
         }
     ],
     "packages-dev": [
@@ -2269,7 +2276,11 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
+<<<<<<< HEAD
         "php": "^8.0"
+=======
+        "php": "^7.4 || ^8.0"
+>>>>>>> 648ff96 (Cambios en yml)
     },
     "platform-dev": [],
     "plugin-api-version": "2.6.0"

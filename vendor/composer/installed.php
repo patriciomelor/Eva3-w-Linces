@@ -3,7 +3,11 @@
         'name' => 'eva3-w-linces/proyecto',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
+<<<<<<< HEAD
         'reference' => '52badf084a74a4ac4aa84f69619852bf9efcc889',
+=======
+        'reference' => '7346e6969ff8b5d2f9fead9f03d22084ce42446a',
+>>>>>>> 648ff96 (Cambios en yml)
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -22,7 +26,11 @@
         'eva3-w-linces/proyecto' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
+<<<<<<< HEAD
             'reference' => '52badf084a74a4ac4aa84f69619852bf9efcc889',
+=======
+            'reference' => '7346e6969ff8b5d2f9fead9f03d22084ce42446a',
+>>>>>>> 648ff96 (Cambios en yml)
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -286,6 +294,7 @@
             'aliases' => array(),
             'dev_requirement' => true,
         ),
+<<<<<<< HEAD
         'symfony/deprecation-contracts' => array(
             'pretty_version' => 'v3.5.0',
             'version' => '3.5.0.0',
@@ -322,6 +331,8 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+=======
+>>>>>>> 648ff96 (Cambios en yml)
         'theseer/tokenizer' => array(
             'pretty_version' => '1.2.3',
             'version' => '1.2.3.0',
@@ -331,6 +342,7 @@
             'aliases' => array(),
             'dev_requirement' => true,
         ),
+<<<<<<< HEAD
         'zircote/swagger-php' => array(
             'pretty_version' => '4.9.2',
             'version' => '4.9.2.0',
@@ -340,5 +352,7 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+=======
+>>>>>>> 648ff96 (Cambios en yml)
     ),
 );
