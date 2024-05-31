@@ -1,15 +1,3 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
-# This workflow lets you generate SLSA provenance file for your project.
-# The generation satisfies level 3 for the provenance requirements - see https://slsa.dev/spec/v0.1/requirements
-# The project is an initiative of the OpenSSF (openssf.org) and is developed at
-# https://github.com/slsa-framework/slsa-github-generator.
-# The provenance file can be verified using https://github.com/slsa-framework/slsa-verifier.
-# For more information about SLSA and how it improves the supply-chain, visit slsa.dev.
-
 name: SLSA Generator Workflow
 
 on:
@@ -25,14 +13,8 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-
-    - name: SLSA Generator
-      uses: slsa-framework/slsa-github-generator/.github/actions/generate-builder@v1.4.0
       with:
-        allow-private-repository: true
-
-    - name: Secure Checkout
-      uses: slsa-framework/slsa-github-generator/.github/actions/secure-builder-checkout@main
+        fetch-depth: 0  # Asegúrate de que se realiza un checkout completo
 
     - name: Validate composer.json and composer.lock
       run: composer validate --strict
@@ -48,6 +30,19 @@ jobs:
 
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
+
+    - name: Privacy Check
+      uses: ./.github/actions/privacy-check
+      with:
+        repository: ${{ github.repository }}
+
+    - name: SLSA Generator
+      uses: slsa-framework/slsa-github-generator/.github/actions/generate-builder@v1.4.0
+      with:
+        allow-private-repository: true
+
+    - name: Secure Checkout
+      uses: slsa-framework/slsa-github-generator/.github/actions/secure-builder-checkout@main
 
     - name: Run tests
       run: composer run-script test
