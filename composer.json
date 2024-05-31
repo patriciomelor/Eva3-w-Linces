@@ -2,11 +2,12 @@
     "name": "eva3-w-linces/proyecto",
     "description": "Proyecto de PHP para IPSS",
     "require": {
-      "php": "^7.4 || ^8.0",
+      "php": "^8.0",
       "monolog/monolog": "^2.0"
     },
     "require-dev": {
-      "phpunit/phpunit": "^9.0"
+      "phpunit/phpunit": "^9.0",
+      "doctrine/instantiator": "^1.4"
     },
     "scripts": {
       "test": "vendor/bin/phpunit"
