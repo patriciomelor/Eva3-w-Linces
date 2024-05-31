@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 name: SLSA Generator Workflow
 
 on:
@@ -19,6 +20,8 @@ on:
 # The provenance file can be verified using https://github.com/slsa-framework/slsa-verifier.
 # For more information about SLSA and how it improves the supply-chain, visit slsa.dev.
 
+=======
+>>>>>>> ac8e2f0 (Añadir acción de privacidad y configuración en el workflow)
 name: SLSA Generator Workflow
 
 on:
@@ -34,14 +37,8 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-
-    - name: SLSA Generator
-      uses: slsa-framework/slsa-github-generator/.github/actions/generate-builder@v1.4.0
       with:
-        allow-private-repository: true
-
-    - name: Secure Checkout
-      uses: slsa-framework/slsa-github-generator/.github/actions/secure-builder-checkout@main
+        fetch-depth: 0  # Asegúrate de que se realiza un checkout completo
 
     - name: Validate composer.json and composer.lock
       run: composer validate --strict
@@ -57,6 +54,19 @@ jobs:
 
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
+
+    - name: Privacy Check
+      uses: ./.github/actions/privacy-check
+      with:
+        repository: ${{ github.repository }}
+
+    - name: SLSA Generator
+      uses: slsa-framework/slsa-github-generator/.github/actions/generate-builder@v1.4.0
+      with:
+        allow-private-repository: true
+
+    - name: Secure Checkout
+      uses: slsa-framework/slsa-github-generator/.github/actions/secure-builder-checkout@main
 
     - name: Run tests
       run: composer run-script test
