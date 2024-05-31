@@ -269,9 +269,12 @@ nav li ul {
     justify-content: space-around;
 }
 .mgf{
-    margin-right: 0px!important;
-    margin-left: 0px!important;
-    color: #fff!important;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
 }
 
 /* Texto sobre imágenes */
@@ -295,3 +298,8 @@ nav li ul {
     font-size: 24px;
     text-align: center;
 }
+.navbar-nav {
+    justify-content: space-evenly!important;
+    width: 100%!important;
+  }
+  
