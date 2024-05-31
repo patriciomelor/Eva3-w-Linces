@@ -4,14 +4,10 @@
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
 <<<<<<< HEAD
-<<<<<<< HEAD
-        'reference' => '52badf084a74a4ac4aa84f69619852bf9efcc889',
-=======
         'reference' => '4d70a031f7d8e8cfd61786285b512a6effc9bffe',
->>>>>>> origin/Caro
 =======
-        'reference' => '4d70a031f7d8e8cfd61786285b512a6effc9bffe',
->>>>>>> origin/Caro
+        'reference' => '7346e6969ff8b5d2f9fead9f03d22084ce42446a',
+>>>>>>> 7f5fb2c (Cambios en yml)
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -31,14 +27,10 @@
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
 <<<<<<< HEAD
-<<<<<<< HEAD
-            'reference' => '52badf084a74a4ac4aa84f69619852bf9efcc889',
-=======
             'reference' => '4d70a031f7d8e8cfd61786285b512a6effc9bffe',
->>>>>>> origin/Caro
 =======
-            'reference' => '4d70a031f7d8e8cfd61786285b512a6effc9bffe',
->>>>>>> origin/Caro
+            'reference' => '7346e6969ff8b5d2f9fead9f03d22084ce42446a',
+>>>>>>> 7f5fb2c (Cambios en yml)
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -302,48 +294,6 @@
             'aliases' => array(),
             'dev_requirement' => true,
         ),
-<<<<<<< HEAD
-<<<<<<< HEAD
-        'symfony/deprecation-contracts' => array(
-            'pretty_version' => 'v3.5.0',
-            'version' => '3.5.0.0',
-            'reference' => '0e0d29ce1f20deffb4ab1b016a7257c4f1e789a1',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../symfony/deprecation-contracts',
-            'aliases' => array(),
-            'dev_requirement' => false,
-        ),
-        'symfony/finder' => array(
-            'pretty_version' => 'v7.1.0',
-            'version' => '7.1.0.0',
-            'reference' => 'fb6c2d65c3dbf7ad83201a4168d4510c8dddaac7',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../symfony/finder',
-            'aliases' => array(),
-            'dev_requirement' => false,
-        ),
-        'symfony/polyfill-ctype' => array(
-            'pretty_version' => 'v1.29.0',
-            'version' => '1.29.0.0',
-            'reference' => 'ef4d7e442ca910c4764bce785146269b30cb5fc4',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../symfony/polyfill-ctype',
-            'aliases' => array(),
-            'dev_requirement' => false,
-        ),
-        'symfony/yaml' => array(
-            'pretty_version' => 'v7.1.0',
-            'version' => '7.1.0.0',
-            'reference' => 'c5f718c94e3c37dd77b77484e6cf0b524b2d405e',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../symfony/yaml',
-            'aliases' => array(),
-            'dev_requirement' => false,
-        ),
-=======
->>>>>>> origin/Caro
-=======
->>>>>>> origin/Caro
         'theseer/tokenizer' => array(
             'pretty_version' => '1.2.3',
             'version' => '1.2.3.0',
@@ -353,20 +303,5 @@
             'aliases' => array(),
             'dev_requirement' => true,
         ),
-<<<<<<< HEAD
-<<<<<<< HEAD
-        'zircote/swagger-php' => array(
-            'pretty_version' => '4.9.2',
-            'version' => '4.9.2.0',
-            'reference' => '256d42cb07ba1c2206d66bc7516ee3d3e3e9f0b2',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../zircote/swagger-php',
-            'aliases' => array(),
-            'dev_requirement' => false,
-        ),
-=======
->>>>>>> origin/Caro
-=======
->>>>>>> origin/Caro
     ),
 );
