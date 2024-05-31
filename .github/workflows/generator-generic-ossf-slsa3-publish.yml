@@ -36,6 +36,7 @@ jobs:
       with:
         repository: ${{ github.repository }}
 
+<<<<<<< HEAD
     - name: Generate Builder
       uses: ./.github/actions/generate-builder
       with:
@@ -43,6 +44,15 @@ jobs:
 
     - name: Secure Checkout
       uses: /.github/actions/secure-builder-checkout@main
+=======
+    - name: SLSA Generator
+      uses: slsa-framework/slsa-github-generator/.github/actions/generate-builder@v1.4.0
+      with:
+        allow-private-repository: true
+
+    - name: Secure Checkout
+      uses: slsa-framework/slsa-github-generator/.github/actions/secure-builder-checkout@main
+>>>>>>> ac8e2f0 (Añadir acción de privacidad y configuración en el workflow)
 
     - name: Run tests
       run: composer run-script test
