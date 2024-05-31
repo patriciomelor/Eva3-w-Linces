@@ -3,11 +3,7 @@
         'name' => 'eva3-w-linces/proyecto',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-<<<<<<< HEAD
-        'reference' => '52badf084a74a4ac4aa84f69619852bf9efcc889',
-=======
-        'reference' => '7346e6969ff8b5d2f9fead9f03d22084ce42446a',
->>>>>>> 648ff96 (Cambios en yml)
+        'reference' => '34fd92e9502cb379e9a21af975fa924ddc7c86b0',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -15,9 +11,9 @@
     ),
     'versions' => array(
         'doctrine/instantiator' => array(
-            'pretty_version' => '2.0.0',
-            'version' => '2.0.0.0',
-            'reference' => 'c6222283fa3f4ac679f8b9ced9a4e23f163e80d0',
+            'pretty_version' => '1.5.0',
+            'version' => '1.5.0.0',
+            'reference' => '0a0fa9780f5d4e507415a065172d26a98d02047b',
             'type' => 'library',
             'install_path' => __DIR__ . '/../doctrine/instantiator',
             'aliases' => array(),
@@ -26,11 +22,7 @@
         'eva3-w-linces/proyecto' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-<<<<<<< HEAD
-            'reference' => '52badf084a74a4ac4aa84f69619852bf9efcc889',
-=======
-            'reference' => '7346e6969ff8b5d2f9fead9f03d22084ce42446a',
->>>>>>> 648ff96 (Cambios en yml)
+            'reference' => '34fd92e9502cb379e9a21af975fa924ddc7c86b0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
