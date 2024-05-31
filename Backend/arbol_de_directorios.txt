@@ -1,0 +1,53 @@
+.
+├── .DS_Store
+├── DOC
+│   └── InformeApis-IF201IINF-EquipoLinces.pdf
+├── LEEME!.rtf
+├── api
+│   ├── .DS_Store
+│   └── v1
+│       ├── .DS_Store
+│       ├── categoria_servicio
+│       │   ├── delete.php
+│       │   ├── get.php
+│       │   └── post.php
+│       ├── config
+│       │   └── config.php
+│       ├── historia
+│       │   ├── delete.php
+│       │   ├── get.php
+│       │   └── post.php
+│       ├── includes
+│       │   ├── auth.php
+│       │   ├── controller.php
+│       │   ├── db.php
+│       │   └── funciones.php
+│       ├── info_contacto
+│       │   ├── delete.php
+│       │   ├── get.php
+│       │   └── post.php
+│       ├── mantenedor
+│       │   ├── delete.php
+│       │   ├── get.php
+│       │   ├── index.php
+│       │   ├── patch.php
+│       │   ├── post.php
+│       │   └── put.php
+│       ├── parcela
+│       │   ├── delete.php
+│       │   ├── get.php
+│       │   └── post.php
+│       └── pregunta_frecuente
+│           ├── delete.php
+│           ├── get.php
+│           ├── patch.php
+│           ├── post.php
+│           └── put.php
+├── arbol_de_directorios.txt
+├── crear_directorios.sh
+├── database
+│   └── database.db
+├── index.php
+└── test_connection.php
+
+13 directories, 38 files

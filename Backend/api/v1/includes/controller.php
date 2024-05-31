@@ -1,7 +1,7 @@
 <?php
 // backend/includes/controller.php
 
-require_once __DIR__ . '/../config/config.php';
+require_once '../includes/auth.php';'/../config/config.php';
 
 class Conexion
 {
