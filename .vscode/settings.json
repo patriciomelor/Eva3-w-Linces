@@ -7,5 +7,6 @@
             "database": "${workspaceFolder:Eva3-w-Linces}/Backend/database/database.db"
         }
     ],
-    "sqltools.useNodeRuntime": true
+    "sqltools.useNodeRuntime": true,
+    "editor.wordBasedSuggestions": "matchingDocuments"
 }

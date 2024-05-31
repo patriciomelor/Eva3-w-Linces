@@ -20,7 +20,7 @@ jobs:
     - name: Set up PHP
       uses: shivammathur/setup-php@v2
       with:
-        php-version: '8.0' # Puedes ajustar a la versión que necesites
+        php-version: '8.1' # Actualiza a PHP 8.1
         extensions: mbstring, pdo, sqlite, xdebug
 
     - name: Validate composer.json and composer.lock
@@ -39,4 +39,4 @@ jobs:
       run: composer install --prefer-dist --no-progress
 
     - name: Run tests
-      run: composer run-script test # Asegúrate de tener un script "test" en tu composer.json
+      run: composer run-script test
