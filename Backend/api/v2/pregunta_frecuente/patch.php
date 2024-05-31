@@ -1,8 +1,9 @@
 <?php
 // api/v1/pregunta_frecuente/patch.php
 
-require_once '../../includes/auth.php';
-require_once '../../includes/controller.php';
+require_once '../includes/auth.php';
+require_once '../includes/controller.php';
+
 
 if ($_metodo === 'PATCH') {
     $data = json_decode(file_get_contents("php://input"), true);

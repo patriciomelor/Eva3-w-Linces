@@ -1,7 +1,8 @@
 <?php
 // backend/includes/auth.php
 
-require_once '../includes/auth.php';'/../config/config.php';
+require_once '../includes/auth.php';
+require_once '../config/config.php';
 
 $_metodo = $_SERVER['REQUEST_METHOD']; // GET, POST, PATCH, PUT, DELETE
 $_ubicacion = $_SERVER['HTTP_HOST']; // localhost

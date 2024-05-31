@@ -1,8 +1,8 @@
 <?php
 // api/v1/info_contacto/get.php
 
-require_once '../../includes/auth.php';
-require_once '../../includes/controller.php';
+require_once '../includes/auth.php';
+require_once '../includes/controller.php';
 
 if ($_metodo === 'GET') {
     $controlador = new Controlador();

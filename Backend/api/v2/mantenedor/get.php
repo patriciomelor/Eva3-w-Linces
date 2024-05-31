@@ -1,8 +1,8 @@
 <?php
 // backend/api/v1/mantenedor/get.php
-require '../../../includes/auth.php';
-require '../../../includes/controller.php';
-require '../../../includes/funciones.php';
+require_once '../includes/auth.php';
+require_once '../includes/controller.php';
+require_once '../includes/funciones.php';
 
 $controlador = new Controlador();
 $datos = $controlador->getAll();

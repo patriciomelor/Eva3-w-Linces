@@ -1,8 +1,8 @@
 <?php
 // backend/api/v1/mantenedor/index.php
 
-require_once '../../../includes/auth.php';
-require_once '../../../includes/controller.php';
+require_once '../includes/auth.php';
+require_once '../includes/controller.php';
 
 $control = new Controlador();
 
