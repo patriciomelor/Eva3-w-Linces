@@ -1,4 +1,3 @@
-<?php include 'component/event.php'; ?>
 <!DOCTYPE html><!--Pato-->
 <html lang="Es">
 <head>
@@ -9,35 +8,35 @@
 <body>
     <head>
         <!--Barra de Navegacion-->
-        <?php include 'component/nav.php'; ?>
+        <?php include 'component/nav.php'; ?>    
         <!--Fin nav-->
     </head>
     <!--Hero-->
     <div>
-        <?php include 'component/hero.php'; ?>
+        <?php include 'component/hero.php'; ?>           
     </div>
     <!--Fin Hero-->
     <main>
         <section id="nosotros">
-            <?php include 'component/nosotros.php'; ?>
+          <?php include 'component/nosotros.php'; ?>
         </section>
         <section id="parcelas">
-            <?php include 'component/Parcelas.php'; ?>
+        <?php include 'component/Parcelas.php'; ?>
         </section>
         <section id="casa_en_parcela">
-            <?php include 'component/casa_en_parcela.php'; ?>
+        <?php include 'component/casa_en_parcela.php'; ?>
         </section>
         <section id="soloterreno">
-            <?php include 'component/soloTerrenos.php'; ?>
+          <?php include 'component/soloTerrenos.php'; ?>
         </section>
         <section id="preguntas_frecuentes">
-            <?php include 'component/FAQs.php'; ?>
+        <?php include 'component/FAQs.php'; ?>
         </section>
         <!--Contacto-->
         <section id="contacto">
             <?php include 'component/contact.php'; ?>
         </section> <!--Pato-->
-        <!--END Contacto-->
+        <!--END Contacto--> 
 
     </main>
     <!--footer-->
@@ -46,10 +45,26 @@
 
     <!-- Js -->
     <?php include 'component/Js.php'; ?>
-    
-    <?php include 'component/apiDani.php'; ?>
-    <?php include 'component/apiCaro.php'; ?>
-
+    <script>
+        fetch('http://localhost/Eva3-w-Linces/backend/api/v2/nosotros/get.php', {
+        method: 'GET',
+        headers:{
+        'Authorization': 'Bearer get',
+        'Content-Type': 'application/json'
+        }
+        }) .then(respuesta=>{
+        if (respuesta.status!=200){
+        throw new Error('No tenemos acceso al endpoint');
+        }
+        return respuesta.json();
+        })
+        .then(datos=>{
+        console.log(datos);
+        })
+        .catch(error=>{
+        console.log('Esto es un error',error);
+        });
+    </script>
+            
 </body>
-
 </html>
