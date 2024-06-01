@@ -1,11 +1,15 @@
-<div class="container">
-        <div class="row justify-content-center">
-            <div class="container">
-                <div class="row">
-                    <h1 class="text-center">CONTÁCTANOS</h1>
-                    <hr style="width:50%;padding: auto auto;">
-                </div>
-            </div>
+<div class="flex-container">
+    <div class="row justify-content-center" style="padding-bottom:20px; padding-top:40px">
+        <!-- Imagen y texto inicial -->
+        <div class="containerTxtImg">
+            <img class="imageTxtImg" src=src/media/imgTitulos/it2.webp alt="Image">       
+            <!-- <img class="imageTxtImg" src=src/media/nosotros/nosotros.webp   width="100%" id="img_nosotros">        -->
+            <h1 class="textTxtImg">CONTACTO</h1>
+        </div>
+    </div>
+</div>
+<div class="container">    
+        <div class="row justify-content-center" style="margin-top: 40px">            
             <div class="col-md-6">
                 <form id="contactForm" class="form-control">
                     <div class="mb-3">

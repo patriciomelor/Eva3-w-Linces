@@ -1,9 +1,12 @@
-<div class="flex-container Fverde1" style="padding-bottom:50px">
+<div class="flex-container " style="padding-bottom:50px">
     <div class="row justify-content-center">
-        <!-- Título de sección-->
-        <h1 id="tClaro" class="text-center">PARCELAS</h1>
-        <!-- Introducción a la sección -->
-    </div>
+        <!-- Imagen y texto inicial -->
+        <div class="containerTxtImg">
+            <img class="imageTxtImg" src=src/media/imgTitulos/it2.webp alt="Image">       
+            <!-- <img class="imageTxtImg" src=src/media/nosotros/nosotros.webp   width="100%" id="img_nosotros">        -->
+            <h1 class="textTxtImg">PARCELAS</h1>
+        </div>
+
     <!-- Tarjetas de parcelas -->
     <div class="row justify-content-center card-group">  
         <!-- Parcelas Frutillar-->
@@ -51,20 +54,6 @@
                 </div>            
             </div>
         </div>
-        <!-- Parcelas San Javier-->           
-        <!-- <div class="col-md-3 m-3 mb-3"  >
-            <div class="card h-100">
-                <div class="card-header">
-                    <img class="card-img text-center mt-3 mb-3" src="src/media/Parcelas/Parcelasanjavier.webp" >
-                    <h2 class="card-title mt-2">Parcela San Javier</h2>
-                </div>
-                <div class="card-body">
-                    <p>Un lugar único acogedor cercano a lugares donde puedes realizar actividades comunitarias y eventos. Una cultura distinta que hace de este un lugar único para vivir.Colinas ondulantes, hasta bosques frondosos y campos verdes, cada parcela ofrece un paisaje relajante. Si buscas escapar de la ciudad, este es el lugar indicado.</p>
-                </div>    
-                <div class="card-footer d-grid gap-2 col-6 mx-auto">
-                    <a class="btn btn-secondary" href="#contacto" role="button">Contáctanos</a>
-                </div>            
-            </div>
-        </div> -->
+ 
     </div>        
 </div>

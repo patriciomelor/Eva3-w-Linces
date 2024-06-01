@@ -1,0 +1,12 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "Ev3-Linces",
+            "database": "${workspaceFolder:Eva3-w-Linces}/Backend/database/database.db"
+        }
+    ],
+    "sqltools.useNodeRuntime": true,
+    "editor.wordBasedSuggestions": "matchingDocuments"
+}

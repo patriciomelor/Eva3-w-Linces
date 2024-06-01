@@ -4,7 +4,7 @@
 define('DB_HOST', 'localhost');
 define('DB_USER', 'Usr_linces');
 define('DB_PASS', 'l1nc3s_2024T1');
-define('DB_NAME', 'linces');
+define('DB_NAME', 'Linces');
 
 $dsn = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME;
 $options = [

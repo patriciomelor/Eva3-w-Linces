@@ -1,18 +1,28 @@
 <div class="flex-container">
     <div class="row justify-content-center" style="padding-bottom:20px; padding-top:40px">
-        <!-- Imagen inicial -->
-        <div class="img3">
-            <img src=src/media/nosotros/nosotros.webp   width="100%" id="img_nosotros">
+        <!-- Imagen y texto inicial -->
+        <div class="containerTxtImg">
+            <img class="imageTxtImg" src=src/media/imgTitulos/it1.webp alt="Image">       
+            <!-- <img class="imageTxtImg" src=src/media/nosotros/nosotros.webp   width="100%" id="img_nosotros">        -->
+            <h1 class="textTxtImg">NOSOTROS</h1>
         </div>
-        <!-- Títutlo -->
-        <div class="row" >
-            <h1 class="text-center">¿QUIÉNES SOMOS?</h1>
-        </div>
-        <!-- Breve introducción -->
-        <div class="flex-container text-center">
-            <p class="padNos" style="padding-top:40px">Somos una empresa inmobiliaria comprometida con la satisfacción y las necesidades de nuestros clientes. Desde nuestra fundación, nos hemos dedicado a ofrecer un servicio integral en la compra y venta de casas y parcelas, con un enfoque centrado en la excelencia, la transparencia y la confianza.</p>
-        </div>
-        <div class="row justify-content-center" style="margin-bottom:40px;">        
+        <!-- Quiénes somos / Misión / Visión -->
+        <div class="row justify-content-center" style="margin-bottom:40px;">
+            <!-- Imagen ¿Quiénes somos?-->
+            <div class="img4" style="max-width: 540px; margin: 20px;" flex-wrap="wrap" display="flex">
+                <div class="row g-0">
+                    <img src=src\media\nosotros\imagenQSomos.webp class="" alt="...">
+                </div>
+            </div>
+            <!-- Texto ¿Quiénes somos? -->        
+            <div class="" style="max-width: 520px; margin: 20px" flex-wrap="wrap" display="flex";>
+                <div class="row Fgris altVision">
+                    <div class="p-4 "  >
+                        <h4>¿Quiénes somos?</h4>
+                        <p class="p2">Somos una empresa inmobiliaria comprometida con la satisfacción y las necesidades de nuestros clientes. Desde nuestra fundación, nos hemos dedicado a ofrecer un servicio integral en la compra y venta de casas y parcelas, con un enfoque centrado en la excelencia, la transparencia y la confianza.</p>
+                    </div>                
+                </div>
+            </div>
             <!-- Texto Misión -->        
             <div class="" style="max-width: 520px; margin: 20px" flex-wrap="wrap" display="flex">
                 <div class="row Fgris altMision">

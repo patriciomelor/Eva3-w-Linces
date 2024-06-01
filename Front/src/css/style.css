@@ -1,6 +1,6 @@
-h1 {
+/* h1 {
     color: black;
-    font-size: 75px !important;
+    font-size: 90px !important;
     text-align: center;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
@@ -8,9 +8,31 @@ h1 {
     font-style: normal;
     padding-bottom: 30px;
     padding-top: 50px;
+} */
+h1{
+    color: black;
+    font-size: 75px !important;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    padding-bottom: 30px;
+    padding-top: 50px;
+    text-transform: capitalize;
+}
+h2{
+    color: black;
+    font-size: 30px !important;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: capitalize;
 }
 
-h2 {
+/* h2 {
     color: #2d5337;
     font-size: 30px !important;
     text-align: center;
@@ -27,7 +49,7 @@ h3{
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
-}
+} */
 
 h4 {
     color: #2d5337;
@@ -45,6 +67,7 @@ p {
     color: #2d5337;
     margin-left: 20px;
     margin-right: 20px;
+    text-align: center;
 }
 
 .p2 {
@@ -55,6 +78,13 @@ p {
     
 }
 
+.p3 {
+    font-size: 13px !important;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top:20px;
+    
+}
 
 #img1 {
     width: 100%;
@@ -157,7 +187,8 @@ nav li ul {
 }
 
 .Fverde1{
-    background-color: #35543ea1;
+    /* background-color: #5e8856; */
+    background-color:#385134;
 }
 
 .accordion-item {
@@ -226,8 +257,49 @@ nav li ul {
 
 /* Botón Contáctanos en Cards Servicios */
 .cardFoot {
-    padding:;!important;
+    padding:0.5rem 1rem !important;
     color: var(--bs-card-cap-color);
     background-color: var(--bs-card-cap-bg);
     border-top: var(--bs-card-border-width) solid var(--bs-card-border-color);
 }
+
+/*centrar logo*/
+.c-logo{
+    display: flex;
+    justify-content: space-around;
+}
+.mgf{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Texto sobre imágenes */
+.containerTxtImg {
+    position: relative;
+    width: 100%;
+}
+
+.imageTxtImg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.textTxtImg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+.navbar-nav {
+    justify-content: space-evenly!important;
+    width: 100%!important;
+  }
+  
