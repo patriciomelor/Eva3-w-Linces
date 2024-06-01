@@ -301,5 +301,51 @@ class Controlador
             return false;
         }
     }
+     //Nosotros
+     public function getNosotros()
+     {
+         $conn = $this->conexion->getConnection();
+         $sql = "SELECT * FROM about_us"; // Asegúrate de que esta consulta es correcta
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+         $this->conexion->closeConnection();
+         return $result;
+     }
+     
+     public function eliminarNosotros($id)
+     {
+         $conn = $this->conexion->getConnection();
+         $sql = "DELETE FROM about_us WHERE id = :id";
+         $stmt = $conn->prepare($sql);
+         $stmt->bindParam(':id', $id);
+ 
+         if ($stmt->execute()) {
+             $this->conexion->closeConnection();
+             return true;
+         } else {
+             $this->conexion->closeConnection();
+             return false;
+         }
+     }
+ 
+     public function crearNosotros($titulo, $descripcion)
+     {
+         $conn = $this->conexion->getConnection();
+         $sql = "INSERT INTO about_us (titulo, descripcion) VALUES (:titulo, :descripcion)";
+         $stmt = $conn->prepare($sql);
+ 
+         $stmt->bindParam(':titulo', $titulo);
+         $stmt->bindParam(':descripcion', $descripcion);
+         
+ 
+         if ($stmt->execute()) {
+             $this->conexion->closeConnection();
+             return true;
+         } else {
+             $this->conexion->closeConnection();
+             return false;
+         }
+     }
 }
 ?>
