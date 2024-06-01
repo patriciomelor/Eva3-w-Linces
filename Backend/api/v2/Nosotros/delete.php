@@ -1,8 +1,8 @@
 <?php
-// backend/api/v1/historia/delete.php
+// backend/api/v2/Nosotros/delete.php
 
-require_once '../../../includes/auth.php';
-require_once '../../../includes/controller.php';
+require_once '../includes/auth.php';
+require_once '../includes/controller.php';
 
 if ($_metodo === 'DELETE') {
     parse_str(file_get_contents("php://input"), $data);
