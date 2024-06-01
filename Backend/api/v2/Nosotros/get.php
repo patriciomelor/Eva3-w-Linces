@@ -5,7 +5,10 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 require_once '../includes/auth.php';
 require_once '../includes/controller.php';
-
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE");
+header("Access-Control-Allow-Headers: Content-Type, Authorization");
+header("Content-Type: application/json; charset=UTF-8");
 if ($_metodo === 'GET') {
     $controlador = new Controlador();
     $Nosotros = $controlador->getNosotros();

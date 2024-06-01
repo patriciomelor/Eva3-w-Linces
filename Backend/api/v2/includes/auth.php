@@ -1,8 +1,7 @@
 <?php
-// backend/includes/auth.php
+// backend/api/v2/includes/auth.php
 
-require_once '../includes/auth.php';
-require_once '../config/config.php';
+require_once __DIR__ . '/../config/config.php';
 
 $_metodo = $_SERVER['REQUEST_METHOD']; // GET, POST, PATCH, PUT, DELETE
 $_ubicacion = $_SERVER['HTTP_HOST']; // localhost
@@ -12,8 +11,8 @@ $_version = isset($_partes[2]) ? $_partes[2] : '';
 $_mantenedor = isset($_partes[3]) ? $_partes[3] : '';
 $_parametros = isset($_partes[4]) ? $_partes[4] : '';
 
-if (strlen($_parametros) > 0) {
-    $_parametros = explode('?', $_parametros)[1];
+if ($_parametros) {
+    $_parametros = explode('?', $_parametros)[1] ?? '';
     $_parametros = explode('&', $_parametros);
 } else {
     $_parametros = [];
@@ -22,12 +21,13 @@ if (strlen($_parametros) > 0) {
 // Header
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE");
+header("Access-Control-Allow-Headers: Content-Type, Authorization");
 header("Content-Type: application/json; charset=UTF-8");
 
 // Authorization
 $_header = null;
 try {
-    $_header = isset(getallheaders()['Authorization']) ? getallheaders()['Authorization'] : null;
+    $_header = getallheaders()['Authorization'] ?? null;
     if ($_header === null) {
         throw new Exception("No tiene autorización");
     }
@@ -38,6 +38,8 @@ try {
 }
 
 // Tokens
+require_once __DIR__ . '/../config/config.php';
+
 $valid_tokens = [
     'GET' => [TOKEN_GET, TOKEN_GET_EVALUACION],
     'POST' => [TOKEN_POST],
