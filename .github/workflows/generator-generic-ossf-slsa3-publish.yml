@@ -36,13 +36,13 @@ jobs:
       with:
         repository: ${{ github.repository }}
 
-    - name: SLSA Generator
-      uses: slsa-framework/slsa-github-generator/.github/actions/generate-builder@v1.4.0
+    - name: Generate Builder
+      uses: ./.github/actions/generate-builder
       with:
-        allow-private-repository: true
+        repository: ${{ github.repository }}
 
     - name: Secure Checkout
-      uses: slsa-framework/slsa-github-generator/.github/actions/secure-builder-checkout@main
+      uses: /.github/actions/secure-builder-checkout@main
 
     - name: Run tests
       run: composer run-script test
