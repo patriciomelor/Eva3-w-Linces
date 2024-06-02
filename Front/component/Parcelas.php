@@ -8,7 +8,7 @@
         </div>
 
     <!-- Tarjetas de parcelas -->
-    <div class="row justify-content-center card-group">  
+    <div class="row justify-content-center card-group" id="parcela">  
         <!-- Parcelas Frutillar-->
         <div class="col-md-3 m-3 mb-3"  >
             <div class="card h-100">
