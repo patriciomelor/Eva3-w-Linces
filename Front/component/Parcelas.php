@@ -1,23 +1,23 @@
 <div class="flex-container " style="padding-bottom:50px">
     <div class="row justify-content-center">
         <!-- Imagen y texto inicial -->
-        <div class="containerTxtImg mb-4">
+        <div class="containerTxtImg">
             <img class="imageTxtImg" src=src/media/imgTitulos/it2.webp alt="Image">       
             <!-- <img class="imageTxtImg" src=src/media/nosotros/nosotros.webp   width="100%" id="img_nosotros">        -->
             <h1 class="textTxtImg">PARCELAS</h1>
         </div>
 
     <!-- Tarjetas de parcelas -->
-    <div class="row justify-content-center card-group" id="rowParcelas">  
+    <div class="row justify-content-center card-group" id="parcela">  
         <!-- Parcelas Frutillar-->
         <div class="col-md-3 m-3 mb-3"  >
             <div class="card h-100">
                 <div class="card-header">
                     <img class="card-img text-center mt-3 mb-3" src="src/media/Parcelas/Parcelafrutillar.webp" >
-                    <h2 class="card-title mt-2">t1</h2>
+                    <h2 class="card-title mt-2">Parcela Frutillar</h2>
                 </div>
                 <div class="card-body">
-                    <p>p1</p>
+                    <p>Se destaca por su privilegiada ubicación, equilibrio perfecto entre la tranquilidad del campo y la conveniencia de estar a pasos de la ciudad.</p>
                 </div>    
                 <div class="card-Foot d-grid gap-2 col-6 mx-auto mb-4">
                     <a class="btn btn-secondary" href="#contacto" role="button">Contáctanos</a>
@@ -53,6 +53,7 @@
                     <a class="btn btn-secondary" href="#contacto" role="button">Contáctanos</a>
                 </div>            
             </div>
-        </div>         
+        </div>
+ 
     </div>        
 </div>
