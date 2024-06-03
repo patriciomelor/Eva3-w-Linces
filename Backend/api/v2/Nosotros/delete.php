@@ -5,6 +5,24 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 require_once '../includes/auth.php';
 require_once '../includes/controller.php';
+use OpenApi\Annotations as OA;
+
+/**
+ * @OA\Delete(
+ *     path="/api/v2/nosotros/{id}",
+ *     summary="Elimina información sobre nosotros",
+ *     @OA\Parameter(
+ *         name="id",
+ *         in="path",
+ *         required=true,
+ *         @OA\Schema(type="integer")
+ *     ),
+ *     @OA\Response(
+ *         response=200,
+ *         description="Información sobre nosotros eliminada exitosamente"
+ *     )
+ * )
+ */
 
 if ($_metodo === 'DELETE') {
     parse_str(file_get_contents("php://input"), $data);

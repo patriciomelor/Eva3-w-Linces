@@ -1,8 +1,6 @@
 <?php
-// backend/includes/controller.php
-
-require_once '../includes/auth.php';
-require_once '../config/config.php';
+require_once __DIR__ . '/../config/config.php';
+require_once __DIR__ . '/../includes/auth.php';
 
 use OpenApi\Annotations as OA;
 
