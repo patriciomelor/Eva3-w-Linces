@@ -45,32 +45,11 @@
 
     <!-- Js -->
     <?php include 'component/Js.php'; ?>
-<<<<<<< HEAD
 
-    <!-- Pegarle al Endpoint parcelas - Caro -->
     <script>
-        fetch ('http://localhost/Eva3-w-Linces/backend/api/v2/parcela/get.php', {
-            method: 'GET',
-            headers: {
-                'Authorization': 'Bearer get', //(Cambiar clave)
-                'Content-Type': 'application/json'
-            }
-        })
+        
+        // Pegarle al Endpoint nosotros - Dani 
 
-        .then(respuesta =>{
-            if (respuesta.status != 200){
-                throw new Error('No tenemos acceso al endpoint')
-            }
-            return respuesta.json();
-        })
-
-        .then(datos => { 
-            console.log(datos);
-        })
-
-    </script>
-=======
-    <script>
         fetch('http://localhost/Eva3-w-Linces/backend/api/v2/nosotros/get.php', {
             method: 'GET',
             headers: {
@@ -91,9 +70,75 @@
         .catch(error => {
             console.error('Esto es un error:', error);
         });
+
+
+        // Pegarle al Endpoint parcelas - Caro
+        fetch ('http://localhost/Eva3-w-Linces/backend/api/v2/parcela/get.php', {
+            method: 'GET',
+            headers: {
+                'Authorization': 'Bearer get',
+                'Content-Type': 'application/json'
+            }
+        })
+
+        .then(respuesta =>{
+            if (respuesta.status != 200){
+                throw new Error('No tiene acceso al Endpoint')
+            }
+            return respuesta.json();
+        })
+
+        .then(datos => { 
+            console.log(datos);
+            // const totalColumnas = datos.data.length !== 0 ? 12 / datos.data.length : 0;
+            const totalColumnas = 12 / datos.length;
+            console.log('propiedad md-' + totalColumnas);
+
+            const rowParcelas = document.getElementById('rowParcelas');
+            rowParcelas.innerHTML = '';   
+            datos.forEach(element => {
+                console.log(element);
+ 
+                //if (element.activo == true){
+                    //Creación de las columnas y tarjetas
+                      const columna = document.createElement('div');
+                      columna.classList.add('col-md-'+totalColumnas);
+                    
+                      const tarjeta = document.createElement('div');
+                      tarjeta.classList.add('card');
+                      tarjeta.classList.add('h-100');
+
+                      const tarjetaHeader = document.createElement('div');
+                      tarjetaHeader.classList.add('card-header');
+
+                      const tarjetaTitle = document.createElement('h2');
+                      tarjetaTitle.classList.add('card-title')
+
+                      const tarjetaImg = document.createElement('div');
+                      tarjetaImg.classList.add('card-img')
+
+                      const tarjetaBody = document.createElement('div');
+                      tarjetaBody.classList.add('card-body');
+
+                      //Asignación de contenido a las tarjetas
+                      tarjetaTitle.innerHTML = element.nombre;
+                      tarjetaImg.innerHTML = element.tipo;
+                      tarjetaHeader.appendChild(tarjetaImg);  
+                      tarjetaHeader.appendChild(tarjetaTitle);  
+     
+                      tarjeta.appendChild(tarjetaHeader);
+                      columna.appendChild(tarjeta);
+                      rowParcelas.appendChild(columna);
+
+                      tarjetaBody.innerHTML = '<p>'+element.descripcion + '</p>';
+                      tarjeta.appendChild(tarjetaBody);
+                      columna.appendChild(tarjeta);
+                      rowParcelas.appendChild(columna);
+                //}
+            })
+        })
         </script>
 
->>>>>>> origin/Pato
             
 </body>
 </html>
