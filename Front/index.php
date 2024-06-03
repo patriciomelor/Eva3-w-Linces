@@ -82,15 +82,9 @@ echo 'la función devuele: ' . getEndpointByToken('http://localhost/Eva3-w-Lince
     <!-- Js -->
     <?php include 'component/Js.php'; ?>
 
-    <!-- Pegarle al Endpoint parcelas - Caro -->
     <script>
-        fetch ('http://localhost/Eva3-w-Linces/backend/api/v2/parcela/get.php', {
-            method: 'GET',
-            headers: {
-                'Authorization': 'Bearer get', //(Cambiar clave)
-                'Content-Type': 'application/json'
-            }
-        })
+        
+        // Pegarle al Endpoint nosotros - Dani 
 
         .then(respuesta =>{
             if (respuesta.status != 200){

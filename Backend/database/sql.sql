@@ -4,6 +4,7 @@
 -- delete from parcela where id=10;
 
 -- ALTER TABLE parcela ADD link varchar(300);
+<<<<<<< HEAD
 UPDATE parcela
 SET link = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6KD5uMj6v3x6a2jjppYRC8ttc7lKgUs-11g&s'
 WHERE id = '1';
@@ -15,3 +16,8 @@ WHERE id = '3';
 UPDATE parcela
 SET link = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3XabcJUYySRrc_31n4JhntZcJaSv9Nfsf2Q&s'
 WHERE id = '7';
+=======
+INSERT INTO parcela(link)
+SELECT 'https://img.freepik.com/foto-gratis/gran-paisaje-verde-cubierto-cesped-rodeado-arboles_181624-14827.jpg'
+WHERE "id" ='1';
+>>>>>>> adc78f3 (Endpoint Parcela)
