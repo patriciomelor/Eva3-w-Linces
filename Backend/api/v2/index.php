@@ -1,70 +1,55 @@
 <?php
-// api/v2/index.php
+// Ruta correcta al autoloader de Composer
+require __DIR__ . '/../../../vendor/autoload.php';
 
-$endpoints = [
-    'categoria_servicio' => [
-        'GET' => 'http://localhost/Eva3-w-Linces/backend/api/v2/categoria_servicio/get.php',
-        'POST' => 'http://localhost/Eva3-w-Linces/backend/api/v2/categoria_servicio/post.php',
-        'DELETE' => 'http://localhost/Eva3-w-Linces/backend/api/v2/categoria_servicio/delete.php'
-    ],
-    'info_contacto' => [
-        'GET' => 'http://localhost/Eva3-w-Linces/backend/api/v2/info_contacto/get.php',
-        'POST' => 'http://localhost/Eva3-w-Linces/backend/api/v2/info_contacto/post.php',
-        'DELETE' => 'http://localhost/Eva3-w-Linces/backend/api/v2/info_contacto/delete.php'
-    ],
-    'historia' => [
-        'GET' => 'http://localhost/Eva3-w-Linces/backend/api/v2/historia/get.php',
-        'POST' => 'http://localhost/Eva3-w-Linces/backend/api/v2/historia/post.php',
-        'DELETE' => 'http://localhost/Eva3-w-Linces/backend/api/v2/historia/delete.php'
-    ],
-    'pregunta_frecuente' => [
-        'GET' => 'http://localhost/Eva3-w-Linces/backend/api/v2/pregunta_frecuente/get.php',
-        'POST' => 'http://localhost/Eva3-w-Linces/backend/api/v2/pregunta_frecuente/post.php',
-        'PUT' => 'http://localhost/Eva3-w-Linces/backend/api/v2/pregunta_frecuente/put.php',
-        'PATCH' => 'http://localhost/Eva3-w-Linces/backend/api/v2/pregunta_frecuente/patch.php',
-        'DELETE' => 'http://localhost/Eva3-w-Linces/backend/api/v2/pregunta_frecuente/delete.php'
-    ],
-    'parcela' => [
-        'GET' => 'http://localhost/Eva3-w-Linces/backend/api/v2/parcela/get.php',
-        'POST' => 'http://localhost/Eva3-w-Linces/backend/api/v2/parcela/post.php',
-        'DELETE' => 'http://localhost/Eva3-w-Linces/backend/api/v2/parcela/delete.php'
-    ],
-    'test_connection' => [
-        'GET' => 'http://localhost/Eva3-w-Linces/backend/test_connection.php'
-    ]
-];
+use OpenApi\Annotations as OA;
+use OpenApi\Generator;
+
+/**
+ * @OA\Info(
+ *     title="API Documentation",
+ *     version="1.0.0"
+ * )
+ */
+
+// Deshabilitar la visualización de errores para evitar que se impriman en el YAML
+ini_set('display_errors', 0);
+ini_set('display_startup_errors', 0);
+error_reporting(E_ALL);
+
+if (isset($_GET['swagger']) && $_GET['swagger'] == 'json') {
+    // Generar documentación Swagger en formato JSON
+    try {
+        $openapi = Generator::scan([
+            __DIR__ . '/includes',
+            __DIR__ . '/categoria_servicio',
+            __DIR__ . '/historia',
+            __DIR__ . '/info_contacto',
+            __DIR__ . '/parcela',
+            __DIR__ . '/pregunta_frecuente',
+            __DIR__ . '/Nosotros'
+        ]);
+        header('Content-Type: application/json');
+        echo $openapi->toJson();
+        exit;
+    } catch (Exception $e) {
+        // Registrar el error en el log
+        error_log("Error al generar la documentación Swagger: " . $e->getMessage());
+        echo json_encode(["error" => "Error al generar la documentación Swagger"]);
+        exit;
+    }
+} else {
+    // Servir Swagger UI
+    $swaggerHtmlPath = __DIR__ . '/../../../Front/src/swagger-ui/dist/index.html';
+    if (!file_exists($swaggerHtmlPath)) {
+        http_response_code(500);
+        echo json_encode(['error' => 'Could not find Swagger UI HTML file']);
+        exit;
+    }
+
+    $swaggerHtml = file_get_contents($swaggerHtmlPath);
+    header('Content-Type: text/html');
+    echo $swaggerHtml;
+    exit;
+}
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API v2 Endpoints</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-</head>
-<body>
-    <div class="container">
-        <h1 class="mt-5">API v2 Endpoints</h1>
-        <table class="table table-striped mt-3">
-            <thead>
-                <tr>
-                    <th>Endpoint</th>
-                    <th>Método</th>
-                    <th>URL</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php foreach ($endpoints as $endpoint => $methods): ?>
-                    <?php foreach ($methods as $method => $url): ?>
-                        <tr>
-                            <td><?= htmlspecialchars($endpoint) ?></td>
-                            <td><?= htmlspecialchars($method) ?></td>
-                            <td><a href="<?= htmlspecialchars($url) ?>"><?= htmlspecialchars($url) ?></a></td>
-                        </tr>
-                    <?php endforeach; ?>
-                <?php endforeach; ?>
-            </tbody>
-        </table>
-    </div>
-</body>
-</html>

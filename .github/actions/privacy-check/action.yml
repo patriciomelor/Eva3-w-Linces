@@ -1,0 +1,9 @@
+name: 'Privacy Check'
+description: 'A custom action to perform a privacy check'
+inputs:
+  repository:
+    description: 'The repository name'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'

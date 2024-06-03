@@ -1,0 +1,11 @@
+name: 'Generate Builder'
+description: 'A custom action to generate builder'
+inputs:
+  repository:
+    description: 'The repository name'
+    required: true
+runs:
+  using: 'composite'
+  steps:
+    - run: ./generate-builder.sh
+      shell: bash

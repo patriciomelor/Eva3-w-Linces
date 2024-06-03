@@ -1,0 +1,496 @@
+.
+├── Backend
+│   ├── DOC
+│   ├── api
+│   │   ├── v1
+│   │   │   ├── categoria_servicio
+│   │   │   ├── config
+│   │   │   ├── historia
+│   │   │   ├── includes
+│   │   │   ├── info_contacto
+│   │   │   ├── mantenedor
+│   │   │   ├── parcelas
+│   │   │   └── pregunta_frecuente
+│   │   └── v2
+│   │       ├── Nosotros
+│   │       ├── categoria_servicio
+│   │       ├── config
+│   │       ├── historia
+│   │       ├── includes
+│   │       ├── info_contacto
+│   │       ├── mantenedor
+│   │       ├── parcela
+│   │       └── pregunta_frecuente
+│   └── database
+├── Front
+│   ├── component
+│   └── src
+│       ├── css
+│       ├── js
+│       ├── media
+│       │   ├── ImgTitulos
+│       │   ├── Parcelas
+│       │   ├── banner
+│       │   ├── carrousel
+│       │   ├── casa_en_parcela
+│       │   ├── logo
+│       │   ├── nosotros
+│       │   └── soloTerrenos
+│       └── swagger-ui
+│           ├── config
+│           │   └── jest
+│           ├── dev-helpers
+│           ├── dist
+│           ├── docker
+│           │   ├── configurator
+│           │   └── docker-entrypoint.d
+│           ├── docs
+│           │   ├── customization
+│           │   ├── development
+│           │   ├── images
+│           │   ├── samples
+│           │   │   └── webpack-getting-started
+│           │   │       └── src
+│           │   └── usage
+│           ├── flavors
+│           │   └── swagger-ui-react
+│           │       ├── dist
+│           │       └── release
+│           ├── patches
+│           ├── release
+│           ├── src
+│           │   ├── core
+│           │   │   ├── components
+│           │   │   │   ├── auth
+│           │   │   │   ├── layouts
+│           │   │   │   ├── parameters
+│           │   │   │   └── providers
+│           │   │   ├── containers
+│           │   │   ├── plugins
+│           │   │   │   ├── auth
+│           │   │   │   │   ├── configs-extensions
+│           │   │   │   │   └── spec-extensions
+│           │   │   │   ├── configs
+│           │   │   │   ├── deep-linking
+│           │   │   │   ├── err
+│           │   │   │   │   └── error-transformers
+│           │   │   │   │       └── transformers
+│           │   │   │   ├── filter
+│           │   │   │   ├── json-schema-2020-12
+│           │   │   │   │   ├── components
+│           │   │   │   │   │   ├── Accordion
+│           │   │   │   │   │   ├── ExpandDeepButton
+│           │   │   │   │   │   ├── JSONSchema
+│           │   │   │   │   │   ├── icons
+│           │   │   │   │   │   └── keywords
+│           │   │   │   │   │       ├── $vocabulary
+│           │   │   │   │   │       ├── Constraint
+│           │   │   │   │   │       ├── DependentRequired
+│           │   │   │   │   │       ├── Description
+│           │   │   │   │   │       ├── Enum
+│           │   │   │   │   │       ├── PatternProperties
+│           │   │   │   │   │       ├── Properties
+│           │   │   │   │   │       └── Title
+│           │   │   │   │   └── samples-extensions
+│           │   │   │   │       └── fn
+│           │   │   │   │           ├── api
+│           │   │   │   │           ├── class
+│           │   │   │   │           ├── core
+│           │   │   │   │           ├── encoders
+│           │   │   │   │           ├── generators
+│           │   │   │   │           │   └── media-types
+│           │   │   │   │           └── types
+│           │   │   │   ├── layout
+│           │   │   │   │   └── spec-extensions
+│           │   │   │   ├── logs
+│           │   │   │   ├── oas3
+│           │   │   │   │   ├── auth-extensions
+│           │   │   │   │   ├── components
+│           │   │   │   │   ├── spec-extensions
+│           │   │   │   │   └── wrap-components
+│           │   │   │   ├── oas31
+│           │   │   │   │   ├── components
+│           │   │   │   │   │   ├── model
+│           │   │   │   │   │   └── models
+│           │   │   │   │   ├── json-schema-2020-12-extensions
+│           │   │   │   │   │   ├── components
+│           │   │   │   │   │   │   └── keywords
+│           │   │   │   │   │   │       └── Discriminator
+│           │   │   │   │   │   └── wrap-components
+│           │   │   │   │   │       └── keywords
+│           │   │   │   │   ├── spec-extensions
+│           │   │   │   │   └── wrap-components
+│           │   │   │   ├── on-complete
+│           │   │   │   ├── request-snippets
+│           │   │   │   ├── safe-render
+│           │   │   │   │   └── components
+│           │   │   │   ├── samples
+│           │   │   │   │   └── fn
+│           │   │   │   ├── spec
+│           │   │   │   ├── swagger-js
+│           │   │   │   ├── util
+│           │   │   │   └── view
+│           │   │   ├── presets
+│           │   │   └── utils
+│           │   ├── helpers
+│           │   ├── img
+│           │   ├── plugins
+│           │   │   └── topbar
+│           │   ├── standalone
+│           │   └── style
+│           ├── swagger-ui-dist-package
+│           ├── test
+│           │   ├── build-artifacts
+│           │   ├── components
+│           │   ├── e2e-cypress
+│           │   │   ├── e2e
+│           │   │   │   ├── a11y
+│           │   │   │   ├── bugs
+│           │   │   │   ├── features
+│           │   │   │   │   ├── oauth2-flows
+│           │   │   │   │   └── plugins
+│           │   │   │   │       └── topbar
+│           │   │   │   └── security
+│           │   │   ├── fixtures
+│           │   │   ├── static
+│           │   │   │   ├── configs
+│           │   │   │   ├── documents
+│           │   │   │   │   ├── bugs
+│           │   │   │   │   │   ├── 5043
+│           │   │   │   │   │   ├── 5072
+│           │   │   │   │   │   └── 5452
+│           │   │   │   │   ├── features
+│           │   │   │   │   │   ├── request-body
+│           │   │   │   │   │   │   └── multipart
+│           │   │   │   │   │   └── urls
+│           │   │   │   │   └── security
+│           │   │   │   │       └── sequential-import-chaining
+│           │   │   │   └── pages
+│           │   │   │       ├── 5085
+│           │   │   │       ├── 5138
+│           │   │   │       └── multiple-urls
+│           │   │   └── support
+│           │   │       └── helpers
+│           │   │           └── oauth2-server
+│           │   ├── e2e-selenium
+│           │   │   ├── pages
+│           │   │   ├── scenarios
+│           │   │   │   ├── bugs
+│           │   │   │   ├── features
+│           │   │   │   ├── oas3
+│           │   │   │   └── operations
+│           │   │   └── static
+│           │   │       └── test-specs
+│           │   │           ├── bugs
+│           │   │           │   └── 4485
+│           │   │           ├── features
+│           │   │           └── refs
+│           │   ├── mocha
+│           │   │   ├── components
+│           │   │   └── xss
+│           │   │       └── anchor-target-rel
+│           │   └── unit
+│           │       ├── bugs
+│           │       ├── components
+│           │       ├── core
+│           │       │   ├── helpers
+│           │       │   ├── plugins
+│           │       │   │   ├── auth
+│           │       │   │   │   ├── configs-extensions
+│           │       │   │   │   └── spec-extensions
+│           │       │   │   ├── configs
+│           │       │   │   ├── err
+│           │       │   │   │   └── transformers
+│           │       │   │   ├── filter
+│           │       │   │   ├── json-schema-2020-12
+│           │       │   │   │   └── samples-extensions
+│           │       │   │   ├── oas3
+│           │       │   │   ├── oas31
+│           │       │   │   │   └── components
+│           │       │   │   ├── safe-render
+│           │       │   │   ├── samples
+│           │       │   │   │   └── fn
+│           │       │   │   ├── spec
+│           │       │   │   │   └── assets
+│           │       │   │   └── swagger-js
+│           │       │   └── system
+│           │       ├── docker
+│           │       ├── swagger-ui-dist-package
+│           │       └── xss
+│           │           └── anchor-target-rel
+│           └── webpack
+├── node_modules
+│   ├── @actions
+│   │   ├── core
+│   │   │   └── lib
+│   │   └── http-client
+│   │       └── lib
+│   ├── @fastify
+│   │   └── busboy
+│   │       ├── deps
+│   │       │   ├── dicer
+│   │       │   │   └── lib
+│   │       │   └── streamsearch
+│   │       └── lib
+│   │           ├── types
+│   │           └── utils
+│   ├── tunnel
+│   │   └── lib
+│   ├── undici
+│   │   ├── docs
+│   │   │   ├── api
+│   │   │   ├── assets
+│   │   │   └── best-practices
+│   │   ├── lib
+│   │   │   ├── api
+│   │   │   ├── cache
+│   │   │   ├── compat
+│   │   │   ├── cookies
+│   │   │   ├── core
+│   │   │   ├── fetch
+│   │   │   ├── fileapi
+│   │   │   ├── handler
+│   │   │   ├── interceptor
+│   │   │   ├── llhttp
+│   │   │   ├── mock
+│   │   │   ├── node
+│   │   │   └── websocket
+│   │   └── types
+│   └── uuid
+│       └── dist
+│           ├── bin
+│           ├── esm-browser
+│           ├── esm-node
+│           └── umd
+├── tests
+└── vendor
+    ├── bin
+    ├── composer
+    ├── doctrine
+    │   └── instantiator
+    │       ├── docs
+    │       │   └── en
+    │       └── src
+    │           └── Doctrine
+    │               └── Instantiator
+    │                   └── Exception
+    ├── monolog
+    │   └── monolog
+    │       └── src
+    │           └── Monolog
+    │               ├── Attribute
+    │               ├── Formatter
+    │               ├── Handler
+    │               │   ├── Curl
+    │               │   ├── FingersCrossed
+    │               │   ├── Slack
+    │               │   └── SyslogUdp
+    │               ├── Processor
+    │               └── Test
+    ├── myclabs
+    │   └── deep-copy
+    │       └── src
+    │           └── DeepCopy
+    │               ├── Exception
+    │               ├── Filter
+    │               │   └── Doctrine
+    │               ├── Matcher
+    │               │   └── Doctrine
+    │               ├── Reflection
+    │               ├── TypeFilter
+    │               │   ├── Date
+    │               │   └── Spl
+    │               └── TypeMatcher
+    ├── nikic
+    │   └── php-parser
+    │       ├── bin
+    │       └── lib
+    │           └── PhpParser
+    │               ├── Builder
+    │               ├── Comment
+    │               ├── ErrorHandler
+    │               ├── Internal
+    │               ├── Lexer
+    │               │   └── TokenEmulator
+    │               ├── Node
+    │               │   ├── Expr
+    │               │   │   ├── AssignOp
+    │               │   │   ├── BinaryOp
+    │               │   │   └── Cast
+    │               │   ├── Name
+    │               │   ├── Scalar
+    │               │   │   └── MagicConst
+    │               │   └── Stmt
+    │               │       └── TraitUseAdaptation
+    │               ├── NodeVisitor
+    │               ├── Parser
+    │               └── PrettyPrinter
+    ├── phar-io
+    │   ├── manifest
+    │   │   ├── src
+    │   │   │   ├── exceptions
+    │   │   │   ├── values
+    │   │   │   └── xml
+    │   │   └── tools
+    │   │       └── php-cs-fixer.d
+    │   └── version
+    │       └── src
+    │           ├── constraints
+    │           └── exceptions
+    ├── phpunit
+    │   ├── php-code-coverage
+    │   │   └── src
+    │   │       ├── Driver
+    │   │       ├── Exception
+    │   │       ├── Node
+    │   │       ├── Report
+    │   │       │   ├── Html
+    │   │       │   │   └── Renderer
+    │   │       │   │       └── Template
+    │   │       │   │           ├── css
+    │   │       │   │           ├── icons
+    │   │       │   │           └── js
+    │   │       │   └── Xml
+    │   │       ├── StaticAnalysis
+    │   │       └── Util
+    │   ├── php-file-iterator
+    │   │   └── src
+    │   ├── php-invoker
+    │   │   └── src
+    │   │       └── exceptions
+    │   ├── php-text-template
+    │   │   └── src
+    │   │       └── exceptions
+    │   ├── php-timer
+    │   │   └── src
+    │   │       └── exceptions
+    │   └── phpunit
+    │       ├── schema
+    │       └── src
+    │           ├── Framework
+    │           │   ├── Assert
+    │           │   ├── Constraint
+    │           │   │   ├── Boolean
+    │           │   │   ├── Cardinality
+    │           │   │   ├── Equality
+    │           │   │   ├── Exception
+    │           │   │   ├── Filesystem
+    │           │   │   ├── Math
+    │           │   │   ├── Object
+    │           │   │   ├── Operator
+    │           │   │   ├── String
+    │           │   │   ├── Traversable
+    │           │   │   └── Type
+    │           │   ├── Error
+    │           │   ├── Exception
+    │           │   └── MockObject
+    │           │       ├── Api
+    │           │       ├── Builder
+    │           │       ├── Exception
+    │           │       ├── Generator
+    │           │       ├── Rule
+    │           │       └── Stub
+    │           ├── Runner
+    │           │   ├── Extension
+    │           │   ├── Filter
+    │           │   └── Hook
+    │           ├── TextUI
+    │           │   ├── CliArguments
+    │           │   ├── Exception
+    │           │   └── XmlConfiguration
+    │           │       ├── CodeCoverage
+    │           │       │   ├── Filter
+    │           │       │   └── Report
+    │           │       ├── Filesystem
+    │           │       ├── Group
+    │           │       ├── Logging
+    │           │       │   └── TestDox
+    │           │       ├── Migration
+    │           │       │   └── Migrations
+    │           │       ├── PHP
+    │           │       ├── PHPUnit
+    │           │       └── TestSuite
+    │           └── Util
+    │               ├── Annotation
+    │               ├── Log
+    │               ├── PHP
+    │               │   └── Template
+    │               ├── TestDox
+    │               └── Xml
+    ├── psr
+    │   └── log
+    │       └── src
+    ├── sebastian
+    │   ├── cli-parser
+    │   │   └── src
+    │   │       └── exceptions
+    │   ├── code-unit
+    │   │   └── src
+    │   │       └── exceptions
+    │   ├── code-unit-reverse-lookup
+    │   │   └── src
+    │   ├── comparator
+    │   │   └── src
+    │   │       └── exceptions
+    │   ├── complexity
+    │   │   └── src
+    │   │       ├── Complexity
+    │   │       ├── Exception
+    │   │       └── Visitor
+    │   ├── diff
+    │   │   └── src
+    │   │       ├── Exception
+    │   │       └── Output
+    │   ├── environment
+    │   │   └── src
+    │   ├── exporter
+    │   │   └── src
+    │   ├── global-state
+    │   │   └── src
+    │   │       └── exceptions
+    │   ├── lines-of-code
+    │   │   └── src
+    │   │       └── Exception
+    │   ├── object-enumerator
+    │   │   └── src
+    │   ├── object-reflector
+    │   │   └── src
+    │   ├── recursion-context
+    │   │   └── src
+    │   ├── resource-operations
+    │   │   ├── build
+    │   │   └── src
+    │   ├── type
+    │   │   └── src
+    │   │       ├── exception
+    │   │       └── type
+    │   └── version
+    │       └── src
+    ├── symfony
+    │   ├── deprecation-contracts
+    │   ├── finder
+    │   │   ├── Comparator
+    │   │   ├── Exception
+    │   │   └── Iterator
+    │   ├── polyfill-ctype
+    │   └── yaml
+    │       ├── Command
+    │       ├── Exception
+    │       ├── Resources
+    │       │   └── bin
+    │       └── Tag
+    ├── theseer
+    │   └── tokenizer
+    │       └── src
+    └── zircote
+        └── swagger-php
+            ├── bin
+            └── src
+                ├── Analysers
+                ├── Annotations
+                ├── Attributes
+                ├── Loggers
+                └── Processors
+                    └── Concerns
+
+494 directories
