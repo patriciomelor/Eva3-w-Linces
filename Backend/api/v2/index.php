@@ -48,8 +48,8 @@ if (isset($_GET['swagger']) && $_GET['swagger'] == 'json') {
     }
 
     $swaggerHtml = file_get_contents($swaggerHtmlPath);
+    $swaggerHtml = str_replace("https://petstore.swagger.io/v2/swagger.json", "/Eva3-w-Linces/backend/api/v2/index.php?swagger=json", $swaggerHtml);
     header('Content-Type: text/html');
     echo $swaggerHtml;
     exit;
 }
-?>
