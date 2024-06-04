@@ -9,7 +9,7 @@
     <!-- Tarjetas de parcelas -->
     <div class="row justify-content-center card-group">  
         <!-- 1 Parcela en Quilmo-->
-        <div class="col-md-3 m-3 mb-3"  >
+        <div class="col-md-4 mb-3"  >
             <div class="card h-100">
                 <div class="card-header">
                     <img class="card-img text-center mt-3 mb-3" src="src/media/casa_en_parcela/parc-casa-1.webp" >
@@ -25,11 +25,11 @@
             </div>
         </div>
         <!-- 2 Parcela en Olmue-->           
-        <div class="col-md-3 m-3 mb-3"  >
+        <div class="col-md-4 mb-3"  >
             <div class="card h-100">
                 <div class="card-header">
                     <img class="card-img text-center mt-3 mb-3" src="src/media/casa_en_parcela/parc-casa-2.webp" >
-                    <h2 class="card-title mt-2">Parcela en Olmue</h2>
+                    <h2 class="card-title mt-2">Parcela en Olmué</h2>
                 </div>
                 <div class="card-body">
                     <p>Parcela de 65.000m2 que permite la subdivisión mínima a 2.000 m2, con casa sólida, árboles frutales, jardines, cierre perimetral, terrazas, acciones de regadío, sistema de distribución de riego. Alcantarillado, agua potable y electricidad. Terreno de 159mts. de frente x 390mts. de fondo.</p>
@@ -42,7 +42,7 @@
             </div>
         </div>
         <!-- 3 Parcela en Cascadas-->           
-        <div class="col-md-3 m-3 mb-3"  >
+        <div class="col-md-4 mb-3"  >
             <div class="card h-100">
                 <div class="card-header">
                     <img class="card-img text-center mt-3 mb-3" src="src/media/casa_en_parcela/parc-casa-3.webp" >
@@ -58,7 +58,7 @@
             </div>
         </div>
         <!-- 4 Parcela en Chiloé-->           
-        <div class="col-md-3 m-3 mb-3"  >
+        <div class="col-md-4 mb-3"  >
             <div class="card h-100">
                 <div class="card-header">
                     <img class="card-img text-center mt-3 mb-3" src="src/media/casa_en_parcela/parc-casa-5.webp" >
@@ -73,7 +73,7 @@
             </div>
         </div>
         <!-- 5 Parcela Buin-->           
-        <div class="col-md-3 m-3 mb-3"  >
+        <div class="col-md-4 mb-3"  >
             <div class="card h-100">
                 <div class="card-header">
                     <img class="card-img text-center mt-3 mb-3" src="src/media/casa_en_parcela/parc-casa-4.webp" >
@@ -89,7 +89,7 @@
             </div>
         </div>
         <!-- 6 Parcela Fresia-->           
-        <div class="col-md-3 m-3 mb-3"  >
+        <div class="col-md-4 mb-3"  >
             <div class="card h-100">
                 <div class="card-header">
                     <img class="card-img text-center mt-3 mb-3" src="src/media/casa_en_parcela/parc-casa-6.webp" >
