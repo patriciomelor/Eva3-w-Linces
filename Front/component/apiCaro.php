@@ -2,20 +2,20 @@
 
 
         // Pegarle al Endpoint parcelas - Caro
-        fetch('http://localhost/Eva3-w-Linces/backend/api/v2/parcela/get.php', {
-            method: 'GET',
-            headers: {
-                'Authorization': 'Bearer get',
-                'Content-Type': 'application/json'
-            }
-        })
+        // fetch('http://localhost/Eva3-w-Linces/backend/api/v2/parcela/get.php', {
+        //     method: 'GET',
+        //     headers: {
+        //         'Authorization': 'Bearer get',
+        //         'Content-Type': 'application/json'
+        //     }
+        // })
 
-            .then(respuesta => {
-                if (respuesta.status != 200) {
-                    throw new Error('No tiene acceso al Endpoint')
-                }
-                return respuesta.json();
-            })
+        //     .then(respuesta => {
+        //         if (respuesta.status != 200) {
+        //             throw new Error('No tiene acceso al Endpoint')
+        //         }
+        //         return respuesta.json();
+        //     })
 
             .then(datos => {
                 console.log(datos);
