@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 name: Support
 about: Ask a question or request help with your implementation.
@@ -46,6 +47,8 @@ SwaggerUI({
 ### How can we help?
 <!-- Your question or problem goes here! -->
 =======
+=======
+>>>>>>> c49454a (Commit Pato)
 ---
 name: Support
 about: Ask a question or request help with your implementation.
@@ -92,4 +95,7 @@ SwaggerUI({
 
 ### How can we help?
 <!-- Your question or problem goes here! -->
+<<<<<<< HEAD
+>>>>>>> c49454a (Commit Pato)
+=======
 >>>>>>> c49454a (Commit Pato)

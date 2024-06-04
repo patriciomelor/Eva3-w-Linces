@@ -3,7 +3,7 @@ info:
   title: API Documentación para Terrasol
   version: 2.0.0
 servers:
-  - url: http://localhost/Eva3-w-Linces/backend/api/v2
+  - url: http://localhost/Eva2-w-Linces/backend/api/v2
 
 paths:
   /categoria_servicio/get.php:
@@ -22,10 +22,6 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/CategoriaServicio'
-        '404':
-          description: No se encontraron categorías.
-        '500':
-          description: Error interno del servidor.
 
   /categoria_servicio/post.php:
     post:
@@ -35,7 +31,6 @@ paths:
       security:
         - bearerAuth: []
       requestBody:
-        required: true
         content:
           application/json:
             schema:
@@ -43,10 +38,6 @@ paths:
       responses:
         '201':
           description: Categoría de servicio creada.
-        '400':
-          description: Solicitud incorrecta.
-        '500':
-          description: Error interno del servidor.
 
   /categoria_servicio/delete.php:
     delete:
@@ -56,7 +47,6 @@ paths:
       security:
         - bearerAuth: []
       requestBody:
-        required: true
         content:
           application/json:
             schema:
@@ -67,10 +57,6 @@ paths:
       responses:
         '200':
           description: Categoría de servicio eliminada.
-        '404':
-          description: Categoría no encontrada.
-        '500':
-          description: Error interno del servidor.
 
   /info_contacto/get.php:
     get:
@@ -86,10 +72,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/InfoContacto'
-        '404':
-          description: Información de contacto no encontrada.
-        '500':
-          description: Error interno del servidor.
 
   /info_contacto/post.php:
     post:
@@ -99,7 +81,6 @@ paths:
       security:
         - bearerAuth: []
       requestBody:
-        required: true
         content:
           application/json:
             schema:
@@ -107,20 +88,15 @@ paths:
       responses:
         '201':
           description: Información de contacto creada.
-        '400':
-          description: Solicitud incorrecta.
-        '500':
-          description: Error interno del servidor.
 
   /info_contacto/delete.php:
     delete:
       tags:
         - "info_contacto"
-      summary: Elimina una información de contacto.
+      summary: Elimina una categoría de servicio.
       security:
         - bearerAuth: []
       requestBody:
-        required: true
         content:
           application/json:
             schema:
@@ -130,16 +106,12 @@ paths:
                   type: integer
       responses:
         '200':
-          description: Información de contacto eliminada.
-        '404':
-          description: Información de contacto no encontrada.
-        '500':
-          description: Error interno del servidor.
+          description: Información de contacto actualizada.
 
   /historia/get.php:
     get:
       tags:
-        - "historia"
+        - "Historia"
       summary: Obtiene todas las historias con imágenes.
       security:
         - bearerAuth: []
@@ -152,60 +124,45 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Historia'
-        '404':
-          description: No se encontraron historias.
-        '500':
-          description: Error interno del servidor.
-
   /historia/post.php:
-    post:
-      tags:
-        - "historia"
-      summary: Crea una nueva historia.
-      security:
-        - bearerAuth: []
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Historia'
-      responses:
-        '201':
-          description: Historia creada.
-        '400':
-          description: Solicitud incorrecta.
-        '500':
-          description: Error interno del servidor.
+      post:
+        tags:
+          - "Historia"
+        summary: Crea nueva información de contacto.
+        security:
+          - bearerAuth: []
+        requestBody:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Historia'
+        responses:
+          '201':
+            description: Información de contacto creada.
 
   /historia/delete.php:
-    delete:
-      tags:
-        - "historia"
-      summary: Elimina una historia.
-      security:
-        - bearerAuth: []
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                id:
-                  type: integer
-      responses:
-        '200':
-          description: Historia eliminada.
-        '404':
-          description: Historia no encontrada.
-        '500':
-          description: Error interno del servidor.
+      delete:
+        tags:
+          - "Historia"
+        summary: Elimina una categoría de servicio.
+        security:
+          - bearerAuth: []
+        requestBody:
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+        responses:
+          '200':
+            description: Información de contacto actualizada.
+
+
 
   /pregunta_frecuente/get.php:
     get:
-      tags:
-        - "pregunta_frecuente"
       summary: Obtiene todas las preguntas frecuentes.
       security:
         - bearerAuth: []
@@ -218,20 +175,13 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/PreguntaFrecuente'
-        '404':
-          description: No se encontraron preguntas frecuentes.
-        '500':
-          description: Error interno del servidor.
 
   /pregunta_frecuente/post.php:
     post:
-      tags:
-        - "pregunta_frecuente"
       summary: Crea una nueva pregunta frecuente.
       security:
         - bearerAuth: []
       requestBody:
-        required: true
         content:
           application/json:
             schema:
@@ -239,20 +189,13 @@ paths:
       responses:
         '201':
           description: Pregunta frecuente creada.
-        '400':
-          description: Solicitud incorrecta.
-        '500':
-          description: Error interno del servidor.
 
   /pregunta_frecuente/put.php:
     put:
-      tags:
-        - "pregunta_frecuente"
       summary: Actualiza una pregunta frecuente existente.
       security:
         - bearerAuth: []
       requestBody:
-        required: true
         content:
           application/json:
             schema:
@@ -260,20 +203,13 @@ paths:
       responses:
         '200':
           description: Pregunta frecuente actualizada.
-        '404':
-          description: Pregunta frecuente no encontrada.
-        '500':
-          description: Error interno del servidor.
 
   /pregunta_frecuente/patch.php:
     patch:
-      tags:
-        - "pregunta_frecuente"
       summary: Actualiza parcialmente una pregunta frecuente.
       security:
         - bearerAuth: []
       requestBody:
-        required: true
         content:
           application/json:
             schema:
@@ -281,20 +217,13 @@ paths:
       responses:
         '200':
           description: Pregunta frecuente actualizada parcialmente.
-        '404':
-          description: Pregunta frecuente no encontrada.
-        '500':
-          description: Error interno del servidor.
 
   /pregunta_frecuente/delete.php:
     delete:
-      tags:
-        - "pregunta_frecuente"
       summary: Elimina una pregunta frecuente.
       security:
         - bearerAuth: []
       requestBody:
-        required: true
         content:
           application/json:
             schema:
@@ -305,15 +234,9 @@ paths:
       responses:
         '200':
           description: Pregunta frecuente eliminada.
-        '404':
-          description: Pregunta frecuente no encontrada.
-        '500':
-          description: Error interno del servidor.
 
   /parcela/get.php:
     get:
-      tags:
-        - "parcela"
       summary: Obtiene todas las parcelas.
       security:
         - bearerAuth: []
@@ -326,20 +249,13 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Parcela'
-        '404':
-          description: No se encontraron parcelas.
-        '500':
-          description: Error interno del servidor.
 
   /parcela/post.php:
     post:
-      tags:
-        - "parcela"
       summary: Crea una nueva parcela.
       security:
         - bearerAuth: []
       requestBody:
-        required: true
         content:
           application/json:
             schema:
@@ -347,20 +263,13 @@ paths:
       responses:
         '201':
           description: Parcela creada.
-        '400':
-          description: Solicitud incorrecta.
-        '500':
-          description: Error interno del servidor.
 
   /parcela/put.php:
     put:
-      tags:
-        - "parcela"
       summary: Actualiza una parcela existente.
       security:
         - bearerAuth: []
       requestBody:
-        required: true
         content:
           application/json:
             schema:
@@ -368,20 +277,13 @@ paths:
       responses:
         '200':
           description: Parcela actualizada.
-        '404':
-          description: Parcela no encontrada.
-        '500':
-          description: Error interno del servidor.
 
   /parcela/patch.php:
     patch:
-      tags:
-        - "parcela"
       summary: Actualiza parcialmente una parcela.
       security:
         - bearerAuth: []
       requestBody:
-        required: true
         content:
           application/json:
             schema:
@@ -389,20 +291,13 @@ paths:
       responses:
         '200':
           description: Parcela actualizada parcialmente.
-        '404':
-          description: Parcela no encontrada.
-        '500':
-          description: Error interno del servidor.
 
   /parcela/delete.php:
     delete:
-      tags:
-        - "parcela"
       summary: Elimina una parcela.
       security:
         - bearerAuth: []
       requestBody:
-        required: true
         content:
           application/json:
             schema:
@@ -413,10 +308,6 @@ paths:
       responses:
         '200':
           description: Parcela eliminada.
-        '404':
-          description: Parcela no encontrada.
-        '500':
-          description: Error interno del servidor.
 
 components:
   securitySchemes:

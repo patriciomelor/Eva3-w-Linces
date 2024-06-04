@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 name: Bug report
 about: Report an issue you're experiencing
@@ -73,6 +74,8 @@ Steps to reproduce the behavior:
 ### Additional context or thoughts
 <!-- Add any other context about the problem here. -->
 =======
+=======
+>>>>>>> c49454a (Commit Pato)
 ---
 name: Bug report
 about: Report an issue you're experiencing
@@ -146,4 +149,7 @@ Steps to reproduce the behavior:
 
 ### Additional context or thoughts
 <!-- Add any other context about the problem here. -->
+<<<<<<< HEAD
+>>>>>>> c49454a (Commit Pato)
+=======
 >>>>>>> c49454a (Commit Pato)

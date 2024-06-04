@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 name: Feature request
 about: Suggest a new feature or enhancement for this project
@@ -42,6 +43,8 @@ Swagger/OpenAPI definition:
 ### Additional context
 <!-- Add any other context or screenshots about the feature request here. -->
 =======
+=======
+>>>>>>> c49454a (Commit Pato)
 ---
 name: Feature request
 about: Suggest a new feature or enhancement for this project
@@ -84,4 +87,7 @@ Swagger/OpenAPI definition:
 
 ### Additional context
 <!-- Add any other context or screenshots about the feature request here. -->
+<<<<<<< HEAD
+>>>>>>> c49454a (Commit Pato)
+=======
 >>>>>>> c49454a (Commit Pato)
