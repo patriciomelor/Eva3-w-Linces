@@ -7,28 +7,38 @@ namespace Composer\Autoload;
 class ComposerStaticInit9cded36247c79712230bb4586cb78675
 {
     public static $files = array (
+<<<<<<< HEAD
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
+=======
+        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+>>>>>>> origin/Caro
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+<<<<<<< HEAD
         'S' => 
         array (
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Component\\Yaml\\' => 23,
             'Symfony\\Component\\Finder\\' => 25,
         ),
+=======
+>>>>>>> origin/Caro
         'P' => 
         array (
             'Psr\\Log\\' => 8,
             'PhpParser\\' => 10,
         ),
+<<<<<<< HEAD
         'O' => 
         array (
             'OpenApi\\' => 8,
         ),
+=======
+>>>>>>> origin/Caro
         'M' => 
         array (
             'Monolog\\' => 8,
@@ -45,6 +55,7 @@ class ComposerStaticInit9cded36247c79712230bb4586cb78675
     );
 
     public static $prefixDirsPsr4 = array (
+<<<<<<< HEAD
         'Symfony\\Polyfill\\Ctype\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
@@ -57,6 +68,8 @@ class ComposerStaticInit9cded36247c79712230bb4586cb78675
         array (
             0 => __DIR__ . '/..' . '/symfony/finder',
         ),
+=======
+>>>>>>> origin/Caro
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/src',
@@ -65,10 +78,13 @@ class ComposerStaticInit9cded36247c79712230bb4586cb78675
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
+<<<<<<< HEAD
         'OpenApi\\' => 
         array (
             0 => __DIR__ . '/..' . '/zircote/swagger-php/src',
         ),
+=======
+>>>>>>> origin/Caro
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
