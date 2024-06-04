@@ -42,6 +42,7 @@
                     const tarjetaHeader = document.createElement('div');
                     tarjetaHeader.classList.add('card-header');
                     tarjetaHeader.classList.add('justify-content-center');
+                    tarjetaHeader.classList.add('containerTxtImg');
 
                     const tarjetaImg = document.createElement('div');
                     //   tarjetaImg.classList.add('card-img')
@@ -55,6 +56,11 @@
                     const imagen = document.createElement('img');
                     imagen.src = element.link;
                     imagen.style.width = '390px';
+                    imagen.classList = 'imageTxtImg';
+
+                    const logo = document.createElement('img');
+                    imagen.src = element.link;
+                    imagen.classList = 'logoImg';
 
                     const tarjetaBody = document.createElement('div');
                     tarjetaBody.classList.add('card-body');

@@ -14,3 +14,5 @@
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/78848b53ff.js" crossorigin="anonymous"></script>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<link href="https://fonts.cdnfonts.com/css/feeling-passionate" rel="stylesheet">
+                

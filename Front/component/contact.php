@@ -4,7 +4,8 @@
         <div class="containerTxtImg">
             <img class="imageTxtImg" src=src/media/imgTitulos/it2.webp alt="Image">       
             <!-- <img class="imageTxtImg" src=src/media/nosotros/nosotros.webp   width="100%" id="img_nosotros">        -->
-            <h1 class="textTxtImg">CONTACTO</h1>
+            <h1 class="textTxtImg">Contacto</h1>
+            <img class="logoImg" src="src/media/logo/logologo.png" alt="logo">
         </div>
     </div>
 </div>
