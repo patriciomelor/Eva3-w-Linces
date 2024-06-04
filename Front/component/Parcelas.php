@@ -1,7 +1,7 @@
 <div class="flex-container " style="padding-bottom:50px">
     <div class="row justify-content-center">
         <!-- Imagen y texto inicial -->
-        <div class="containerTxtImg">
+        <div class="containerTxtImg mb-4">
             <img class="imageTxtImg" src=src/media/imgTitulos/it2.webp alt="Image">       
             <!-- <img class="imageTxtImg" src=src/media/nosotros/nosotros.webp   width="100%" id="img_nosotros">        -->
             <h1 class="textTxtImg">PARCELAS</h1>
