@@ -286,7 +286,6 @@
             'aliases' => array(),
             'dev_requirement' => true,
         ),
-<<<<<<< HEAD
         'symfony/deprecation-contracts' => array(
             'pretty_version' => 'v3.5.0',
             'version' => '3.5.0.0',
@@ -323,8 +322,6 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-=======
->>>>>>> 648ff96 (Cambios en yml)
         'theseer/tokenizer' => array(
             'pretty_version' => '1.2.3',
             'version' => '1.2.3.0',
@@ -334,7 +331,6 @@
             'aliases' => array(),
             'dev_requirement' => true,
         ),
-<<<<<<< HEAD
         'zircote/swagger-php' => array(
             'pretty_version' => '4.9.2',
             'version' => '4.9.2.0',
@@ -344,7 +340,5 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-=======
->>>>>>> 648ff96 (Cambios en yml)
     ),
 );
