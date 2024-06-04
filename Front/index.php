@@ -83,7 +83,7 @@ echo 'la función devuele: ' . getEndpointByToken('http://localhost/Eva3-w-Lince
     <?php include 'component/Js.php'; ?>
 
 
-    const tarjetaFooter = document.createElement('div');
+    //const tarjetaFooter = document.createElement('div');
     tarjetaFooter.classList.add('card-Foot d-grid gap-2 col-6 mx-auto mb-4')
     <script>
 
@@ -96,6 +96,17 @@ echo 'la función devuele: ' . getEndpointByToken('http://localhost/Eva3-w-Lince
                 'Content-Type': 'application/json'
             }
         })
+
+          // Pegarle al Endpoint preguntas frecuentes - Dani 
+
+          fetch('http://localhost/Eva3-w-Linces/backend/api/v2/pregunta_frecuente/get.php', {
+            method: 'GET',
+            headers: {
+                'Authorization': 'Bearer get',
+                'Content-Type': 'application/json'
+            }
+        })
+        
             .then(response => {
                 if (!response.ok) {
                     // Lanza un error si la respuesta no es OK (cualquier código diferente a 2xx)
