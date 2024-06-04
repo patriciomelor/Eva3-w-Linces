@@ -9,7 +9,7 @@
     <!-- Tarjetas de parcelas -->
     <div class="row justify-content-center card-group">  
         <!-- Terreno Pellín-->
-        <div class="col-md-3 m-3 mb-3"  >
+        <div class="col-md-4 mb-3"  >
             <div class="card h-100">
                 <div class="card-header">
                     <img class="card-img text-center mt-3 mb-3" src="src/media/soloTerrenos/BoldosDeDuao.webp" >
@@ -24,7 +24,7 @@
             </div>
         </div>
         <!-- Terreno Coronel-->           
-        <div class="col-md-3 m-3 mb-3"  >
+        <div class="col-md-4 mb-3"  >
             <div class="card h-100">
                 <div class="card-header">
                     <img class="card-img text-center mt-3 mb-3" src="src/media/soloTerrenos/AltoCancura.webp" >
@@ -39,7 +39,7 @@
             </div>
         </div>
         <!-- Terreno Boldos de Duao-->           
-        <div class="col-md-3 m-3 mb-3"  >
+        <div class="col-md-4 mb-3"  >
             <div class="card h-100">
                 <div class="card-header">
                     <img class="card-img text-center mt-3 mb-3" src="src/media/soloTerrenos/HaciendaPellin.webp" >
@@ -54,7 +54,7 @@
             </div>
         </div>
         <!--Terreno Curacautín-->           
-        <div class="col-md-3 m-3 mb-3"  >
+        <div class="col-md-4 mb-3"  >
             <div class="card h-100">
                 <div class="card-header">
                     <img class="card-img text-center mt-3 mb-3" src="src/media/soloTerrenos/ValleCuracautin.webp" >
@@ -69,7 +69,7 @@
             </div>
         </div>
         <!--Terreno Neltume-->           
-        <div class="col-md-3 m-3 mb-3"  >
+        <div class="col-md-4 mb-3"  >
             <div class="card h-100">
                 <div class="card-header">
                     <img class="card-img text-center mt-3 mb-3" src="src/media/soloTerrenos/VistaCoronel.webp" >
@@ -84,7 +84,7 @@
             </div>
         </div>
         <!--Terreno Alto Cancura-->           
-        <div class="col-md-3 m-3 mb-3"  >
+        <div class="col-md-4 mb-3"  >
             <div class="card h-100">
                 <div class="card-header">
                     <img class="card-img text-center mt-3 mb-3" src="src/media/soloTerrenos/ViveNeltume.webp" >
