@@ -11,7 +11,7 @@
 <div class="container">    
         <div class="row justify-content-center" style="margin-top: 40px">            
             <div class="col-md-6">
-                <form id="contactForm" class="form-control">
+                <form id="contactForm" action="procesar.php"class="form-control">
                     <div class="mb-3">
                         <label for="Nombre" class="form-label">Nombre</label>
                         <input type="text" class="form-control" id="Nombre" placeholder="Juan ">
@@ -45,6 +45,8 @@
                         <input type="checkbox" class="form-check-input" id="simulateResponse">
                         <label class="form-check-label" for="simulateResponse">Simular respuesta deseada</label>
                     </div>
+                    <div class="g-recaptcha" data-sitekey="6LciQfApAAAAAI3_8fawSl_ZZTBp4WK3PN3CTorO"></div>
+      <br/>
                     <button type="button" class="btn btn-outline-success"><i class="bi bi-send"></i> Enviar</button>
                     <button type="reset" class="btn btn-secondary">Limpiar</button>
                 </form>
