@@ -1,8 +1,8 @@
 <?php
-require_once __DIR__ . '/../config/config.php';
-require_once __DIR__ . '/../includes/auth.php';
+// backend/includes/controller.php
 
-use OpenApi\Annotations as OA;
+require_once '../includes/auth.php';
+require_once '../config/config.php';
 
 class Conexion
 {
@@ -25,12 +25,6 @@ class Conexion
     }
 }
 
-/**
- * @OA\Info(
- *     title="API Documentation",
- *     version="1.0.0"
- * )
- */
 class Controlador
 {
     private $conexion;
@@ -40,16 +34,6 @@ class Controlador
         $this->conexion = new Conexion();
     }
 
-    /**
-     * @OA\Get(
-     *     path="/api/v2/categorias",
-     *     summary="Obtiene todas las categorías de servicio",
-     *     @OA\Response(
-     *         response=200,
-     *         description="Operación exitosa"
-     *     )
-     * )
-     */
     public function getCategoriasServicio()
     {
         $conn = $this->conexion->getConnection();
@@ -61,23 +45,6 @@ class Controlador
         return $categorias;
     }
 
-    /**
-     * @OA\Post(
-     *     path="/api/v2/categorias",
-     *     summary="Crea una nueva categoría de servicio",
-     *     @OA\RequestBody(
-     *         required=true,
-     *         @OA\JsonContent(
-     *             @OA\Property(property="nombre", type="string"),
-     *             @OA\Property(property="descripcion", type="string")
-     *         )
-     *     ),
-     *     @OA\Response(
-     *         response=200,
-     *         description="Categoría creada exitosamente"
-     *     )
-     * )
-     */
     public function crearCategoriaServicio($nombre, $descripcion)
     {
         try {
@@ -93,29 +60,6 @@ class Controlador
         }
     }
 
-    /**
-     * @OA\Put(
-     *     path="/api/v2/categorias/{id}",
-     *     summary="Actualiza una categoría de servicio existente",
-     *     @OA\Parameter(
-     *         name="id",
-     *         in="path",
-     *         required=true,
-     *         @OA\Schema(type="integer")
-     *     ),
-     *     @OA\RequestBody(
-     *         required=true,
-     *         @OA\JsonContent(
-     *             @OA\Property(property="nombre", type="string"),
-     *             @OA\Property(property="descripcion", type="string")
-     *         )
-     *     ),
-     *     @OA\Response(
-     *         response=200,
-     *         description="Categoría actualizada exitosamente"
-     *     )
-     * )
-     */
     public function actualizarCategoriaServicio($id, $nombre, $descripcion)
     {
         try {
@@ -131,22 +75,6 @@ class Controlador
         }
     }
 
-    /**
-     * @OA\Delete(
-     *     path="/api/v2/categorias/{id}",
-     *     summary="Elimina una categoría de servicio",
-     *     @OA\Parameter(
-     *         name="id",
-     *         in="path",
-     *         required=true,
-     *         @OA\Schema(type="integer")
-     *     ),
-     *     @OA\Response(
-     *         response=200,
-     *         description="Categoría eliminada exitosamente"
-     *     )
-     * )
-     */
     public function eliminarCategoriaServicio($id)
     {
         try {
@@ -162,16 +90,6 @@ class Controlador
         }
     }
 
-    /**
-     * @OA\Get(
-     *     path="/api/v2/contactos",
-     *     summary="Obtiene toda la información de contacto",
-     *     @OA\Response(
-     *         response=200,
-     *         description="Operación exitosa"
-     *     )
-     * )
-     */
     public function getInfoContacto()
     {
         $conn = $this->conexion->getConnection();
@@ -183,24 +101,6 @@ class Controlador
         return $contactos;
     }
 
-    /**
-     * @OA\Post(
-     *     path="/api/v2/contactos",
-     *     summary="Crea una nueva información de contacto",
-     *     @OA\RequestBody(
-     *         required=true,
-     *         @OA\JsonContent(
-     *             @OA\Property(property="nombre", type="string"),
-     *             @OA\Property(property="telefono", type="string"),
-     *             @OA\Property(property="correo", type="string")
-     *         )
-     *     ),
-     *     @OA\Response(
-     *         response=200,
-     *         description="Información de contacto creada exitosamente"
-     *     )
-     * )
-     */
     public function crearInfoContacto($nombre, $telefono, $correo)
     {
         try {
@@ -216,30 +116,6 @@ class Controlador
         }
     }
 
-    /**
-     * @OA\Put(
-     *     path="/api/v2/contactos/{id}",
-     *     summary="Actualiza una información de contacto existente",
-     *     @OA\Parameter(
-     *         name="id",
-     *         in="path",
-     *         required=true,
-     *         @OA\Schema(type="integer")
-     *     ),
-     *     @OA\RequestBody(
-     *         required=true,
-     *         @OA\JsonContent(
-     *             @OA\Property(property="nombre", type="string"),
-     *             @OA\Property(property="telefono", type="string"),
-     *             @OA\Property(property="correo", type="string")
-     *         )
-     *     ),
-     *     @OA\Response(
-     *         response=200,
-     *         description="Información de contacto actualizada exitosamente"
-     *     )
-     * )
-     */
     public function actualizarInfoContacto($id, $nombre, $telefono, $correo)
     {
         try {
@@ -255,16 +131,6 @@ class Controlador
         }
     }
 
-    /**
-     * @OA\Get(
-     *     path="/api/v2/historia",
-     *     summary="Obtiene toda la historia",
-     *     @OA\Response(
-     *         response=200,
-     *         description="Operación exitosa"
-     *     )
-     * )
-     */
     public function getHistoria()
     {
         $conn = $this->conexion->getConnection();
@@ -276,16 +142,6 @@ class Controlador
         return $historias;
     }
 
-    /**
-     * @OA\Get(
-     *     path="/api/v2/preguntas-frecuentes",
-     *     summary="Obtiene todas las preguntas frecuentes",
-     *     @OA\Response(
-     *         response=200,
-     *         description="Operación exitosa"
-     *     )
-     * )
-     */
     public function getPreguntasFrecuentes()
     {
         $conn = $this->conexion->getConnection();
@@ -297,23 +153,6 @@ class Controlador
         return $preguntas;
     }
 
-    /**
-     * @OA\Post(
-     *     path="/api/v2/preguntas-frecuentes",
-     *     summary="Crea una nueva pregunta frecuente",
-     *     @OA\RequestBody(
-     *         required=true,
-     *         @OA\JsonContent(
-     *             @OA\Property(property="pregunta", type="string"),
-     *             @OA\Property(property="respuesta", type="string")
-     *         )
-     *     ),
-     *     @OA\Response(
-     *         response=200,
-     *         description="Pregunta frecuente creada exitosamente"
-     *     )
-     * )
-     */
     public function crearPreguntaFrecuente($pregunta, $respuesta)
     {
         try {
@@ -329,29 +168,6 @@ class Controlador
         }
     }
 
-    /**
-     * @OA\Put(
-     *     path="/api/v2/preguntas-frecuentes/{id}",
-     *     summary="Actualiza una pregunta frecuente existente",
-     *     @OA\Parameter(
-     *         name="id",
-     *         in="path",
-     *         required=true,
-     *         @OA\Schema(type="integer")
-     *     ),
-     *     @OA\RequestBody(
-     *         required=true,
-     *         @OA\JsonContent(
-     *             @OA\Property(property="pregunta", type="string"),
-     *             @OA\Property(property="respuesta", type="string")
-     *         )
-     *     ),
-     *     @OA\Response(
-     *         response=200,
-     *         description="Pregunta frecuente actualizada exitosamente"
-     *     )
-     * )
-     */
     public function actualizarPreguntaFrecuente($id, $pregunta, $respuesta)
     {
         try {
@@ -367,29 +183,6 @@ class Controlador
         }
     }
 
-    /**
-     * @OA\Patch(
-     *     path="/api/v2/preguntas-frecuentes/{id}",
-     *     summary="Actualiza parcialmente una pregunta frecuente existente",
-     *     @OA\Parameter(
-     *         name="id",
-     *         in="path",
-     *         required=true,
-     *         @OA\Schema(type="integer")
-     *     ),
-     *     @OA\RequestBody(
-     *         required=true,
-     *         @OA\JsonContent(
-     *             @OA\Property(property="pregunta", type="string"),
-     *             @OA\Property(property="respuesta", type="string")
-     *         )
-     *     ),
-     *     @OA\Response(
-     *         response=200,
-     *         description="Pregunta frecuente actualizada exitosamente"
-     *     )
-     * )
-     */
     public function actualizarParcialPreguntaFrecuente($id, $pregunta = null, $respuesta = null)
     {
         try {
@@ -416,22 +209,6 @@ class Controlador
         }
     }
 
-    /**
-     * @OA\Delete(
-     *     path="/api/v2/preguntas-frecuentes/{id}",
-     *     summary="Elimina una pregunta frecuente",
-     *     @OA\Parameter(
-     *         name="id",
-     *         in="path",
-     *         required=true,
-     *         @OA\Schema(type="integer")
-     *     ),
-     *     @OA\Response(
-     *         response=200,
-     *         description="Pregunta frecuente eliminada exitosamente"
-     *     )
-     * )
-     */
     public function eliminarPreguntaFrecuente($id)
     {
         try {
@@ -447,16 +224,6 @@ class Controlador
         }
     }
 
-    /**
-     * @OA\Get(
-     *     path="/api/v2/parcelas",
-     *     summary="Obtiene todas las parcelas",
-     *     @OA\Response(
-     *         response=200,
-     *         description="Operación exitosa"
-     *     )
-     * )
-     */
     public function getAllParcelas()
     {
         $conn = $this->conexion->getConnection();
@@ -468,24 +235,6 @@ class Controlador
         return $parcelas;
     }
 
-    /**
-     * @OA\Post(
-     *     path="/api/v2/parcelas",
-     *     summary="Crea una nueva parcela",
-     *     @OA\RequestBody(
-     *         required=true,
-     *         @OA\JsonContent(
-     *             @OA\Property(property="tipo", type="string"),
-     *             @OA\Property(property="lote", type="string"),
-     *             @OA\Property(property="servicio_id", type="integer")
-     *         )
-     *     ),
-     *     @OA\Response(
-     *         response=200,
-     *         description="Parcela creada exitosamente"
-     *     )
-     * )
-     */
     public function crearParcela($tipo, $lote, $servicio_id)
     {
         try {
@@ -501,30 +250,6 @@ class Controlador
         }
     }
 
-    /**
-     * @OA\Put(
-     *     path="/api/v2/parcelas/{id}",
-     *     summary="Actualiza una parcela existente",
-     *     @OA\Parameter(
-     *         name="id",
-     *         in="path",
-     *         required=true,
-     *         @OA\Schema(type="integer")
-     *     ),
-     *     @OA\RequestBody(
-     *         required=true,
-     *         @OA\JsonContent(
-     *             @OA\Property(property="tipo", type="string"),
-     *             @OA\Property(property="lote", type="string"),
-     *             @OA\Property(property="servicio_id", type="integer")
-     *         )
-     *     ),
-     *     @OA\Response(
-     *         response=200,
-     *         description="Parcela actualizada exitosamente"
-     *     )
-     * )
-     */
     public function actualizarParcela($id, $tipo, $lote, $servicio_id)
     {
         try {
@@ -540,30 +265,6 @@ class Controlador
         }
     }
 
-    /**
-     * @OA\Patch(
-     *     path="/api/v2/parcelas/{id}",
-     *     summary="Actualiza parcialmente una parcela existente",
-     *     @OA\Parameter(
-     *         name="id",
-     *         in="path",
-     *         required=true,
-     *         @OA\Schema(type="integer")
-     *     ),
-     *     @OA\RequestBody(
-     *         required=true,
-     *         @OA\JsonContent(
-     *             @OA\Property(property="tipo", type="string"),
-     *             @OA\Property(property="lote", type="string"),
-     *             @OA\Property(property="servicio_id", type="integer")
-     *         )
-     *     ),
-     *     @OA\Response(
-     *         response=200,
-     *         description="Parcela actualizada exitosamente"
-     *     )
-     * )
-     */
     public function actualizarParcialParcela($id, $datos)
     {
         try {
@@ -586,22 +287,6 @@ class Controlador
         }
     }
 
-    /**
-     * @OA\Delete(
-     *     path="/api/v2/parcelas/{id}",
-     *     summary="Elimina una parcela",
-     *     @OA\Parameter(
-     *         name="id",
-     *         in="path",
-     *         required=true,
-     *         @OA\Schema(type="integer")
-     *     ),
-     *     @OA\Response(
-     *         response=200,
-     *         description="Parcela eliminada exitosamente"
-     *     )
-     * )
-     */
     public function eliminarParcela($id)
     {
         try {
@@ -616,93 +301,51 @@ class Controlador
             return false;
         }
     }
-
-    /**
-     * @OA\Get(
-     *     path="/api/v2/nosotros",
-     *     summary="Obtiene toda la información sobre nosotros",
-     *     @OA\Response(
-     *         response=200,
-     *         description="Operación exitosa"
-     *     )
-     * )
-     */
-    public function getNosotros()
-    {
-        $conn = $this->conexion->getConnection();
-        $sql = "SELECT * FROM about_us";
-        $stmt = $conn->prepare($sql);
-        $stmt->execute();
-        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        $this->conexion->closeConnection();
-        return $result;
-    }
-
-    /**
-     * @OA\Delete(
-     *     path="/api/v2/nosotros/{id}",
-     *     summary="Elimina información sobre nosotros",
-     *     @OA\Parameter(
-     *         name="id",
-     *         in="path",
-     *         required=true,
-     *         @OA\Schema(type="integer")
-     *     ),
-     *     @OA\Response(
-     *         response=200,
-     *         description="Información sobre nosotros eliminada exitosamente"
-     *     )
-     * )
-     */
-    public function eliminarNosotros($id)
-    {
-        $conn = $this->conexion->getConnection();
-        $sql = "DELETE FROM about_us WHERE id = :id";
-        $stmt = $conn->prepare($sql);
-        $stmt->bindParam(':id', $id);
-
-        if ($stmt->execute()) {
-            $this->conexion->closeConnection();
-            return true;
-        } else {
-            $this->conexion->closeConnection();
-            return false;
-        }
-    }
-
-    /**
-     * @OA\Post(
-     *     path="/api/v2/nosotros",
-     *     summary="Crea nueva información sobre nosotros",
-     *     @OA\RequestBody(
-     *         required=true,
-     *         @OA\JsonContent(
-     *             @OA\Property(property="titulo", type="string"),
-     *             @OA\Property(property="descripcion", type="string")
-     *         )
-     *     ),
-     *     @OA\Response(
-     *         response=200,
-     *         description="Información sobre nosotros creada exitosamente"
-     *     )
-     * )
-     */
-    public function crearNosotros($titulo, $descripcion)
-    {
-        $conn = $this->conexion->getConnection();
-        $sql = "INSERT INTO about_us (titulo, descripcion) VALUES (:titulo, :descripcion)";
-        $stmt = $conn->prepare($sql);
-
-        $stmt->bindParam(':titulo', $titulo);
-        $stmt->bindParam(':descripcion', $descripcion);
-
-        if ($stmt->execute()) {
-            $this->conexion->closeConnection();
-            return true;
-        } else {
-            $this->conexion->closeConnection();
-            return false;
-        }
-    }
+     //Nosotros
+     public function getNosotros()
+     {
+         $conn = $this->conexion->getConnection();
+         $sql = "SELECT * FROM about_us"; // Asegúrate de que esta consulta es correcta
+         $stmt = $conn->prepare($sql);
+         $stmt->execute();
+         $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+         $this->conexion->closeConnection();
+         return $result;
+     }
+     
+     public function eliminarNosotros($id)
+     {
+         $conn = $this->conexion->getConnection();
+         $sql = "DELETE FROM about_us WHERE id = :id";
+         $stmt = $conn->prepare($sql);
+         $stmt->bindParam(':id', $id);
+ 
+         if ($stmt->execute()) {
+             $this->conexion->closeConnection();
+             return true;
+         } else {
+             $this->conexion->closeConnection();
+             return false;
+         }
+     }
+ 
+     public function crearNosotros($titulo, $descripcion)
+     {
+         $conn = $this->conexion->getConnection();
+         $sql = "INSERT INTO about_us (titulo, descripcion) VALUES (:titulo, :descripcion)";
+         $stmt = $conn->prepare($sql);
+ 
+         $stmt->bindParam(':titulo', $titulo);
+         $stmt->bindParam(':descripcion', $descripcion);
+         
+ 
+         if ($stmt->execute()) {
+             $this->conexion->closeConnection();
+             return true;
+         } else {
+             $this->conexion->closeConnection();
+             return false;
+         }
+     }
 }
 ?>

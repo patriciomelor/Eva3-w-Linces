@@ -4,8 +4,12 @@
     "require": {
       "php": "^8.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "monolog/monolog": "^2.0",
         "zircote/swagger-php": "^4.9"
+=======
+      "monolog/monolog": "^2.0"
+>>>>>>> origin/Caro
 =======
       "monolog/monolog": "^2.0"
 >>>>>>> origin/Caro
@@ -24,6 +28,10 @@
     "license": "proprietary"
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  
+>>>>>>> origin/Caro
 =======
   
 >>>>>>> origin/Caro

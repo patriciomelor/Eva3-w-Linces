@@ -1931,6 +1931,7 @@
         },
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             "name": "symfony/deprecation-contracts",
             "version": "v3.5.0",
             "version_normalized": "3.5.0.0",
@@ -2226,6 +2227,8 @@
         {
 =======
 >>>>>>> origin/Caro
+=======
+>>>>>>> origin/Caro
             "name": "theseer/tokenizer",
             "version": "1.2.3",
             "version_normalized": "1.2.3.0",
@@ -2277,6 +2280,7 @@
                 }
             ],
             "install-path": "../theseer/tokenizer"
+<<<<<<< HEAD
 <<<<<<< HEAD
         },
         {
@@ -2362,6 +2366,8 @@
                 "source": "https://github.com/zircote/swagger-php/tree/4.9.2"
             },
             "install-path": "../zircote/swagger-php"
+=======
+>>>>>>> origin/Caro
 =======
 >>>>>>> origin/Caro
         }

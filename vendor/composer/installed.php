@@ -4,7 +4,11 @@
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
 <<<<<<< HEAD
+<<<<<<< HEAD
         'reference' => '52badf084a74a4ac4aa84f69619852bf9efcc889',
+=======
+        'reference' => '4d70a031f7d8e8cfd61786285b512a6effc9bffe',
+>>>>>>> origin/Caro
 =======
         'reference' => '4d70a031f7d8e8cfd61786285b512a6effc9bffe',
 >>>>>>> origin/Caro
@@ -27,7 +31,11 @@
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'reference' => '52badf084a74a4ac4aa84f69619852bf9efcc889',
+=======
+            'reference' => '4d70a031f7d8e8cfd61786285b512a6effc9bffe',
+>>>>>>> origin/Caro
 =======
             'reference' => '4d70a031f7d8e8cfd61786285b512a6effc9bffe',
 >>>>>>> origin/Caro
@@ -295,6 +303,7 @@
             'dev_requirement' => true,
         ),
 <<<<<<< HEAD
+<<<<<<< HEAD
         'symfony/deprecation-contracts' => array(
             'pretty_version' => 'v3.5.0',
             'version' => '3.5.0.0',
@@ -333,6 +342,8 @@
         ),
 =======
 >>>>>>> origin/Caro
+=======
+>>>>>>> origin/Caro
         'theseer/tokenizer' => array(
             'pretty_version' => '1.2.3',
             'version' => '1.2.3.0',
@@ -343,6 +354,7 @@
             'dev_requirement' => true,
         ),
 <<<<<<< HEAD
+<<<<<<< HEAD
         'zircote/swagger-php' => array(
             'pretty_version' => '4.9.2',
             'version' => '4.9.2.0',
@@ -352,6 +364,8 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+=======
+>>>>>>> origin/Caro
 =======
 >>>>>>> origin/Caro
     ),

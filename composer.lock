@@ -5,7 +5,11 @@
         "This file is @generated automatically"
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     "content-hash": "ec9afe3a6298bf14dd183eb8f195708d",
+=======
+    "content-hash": "1bc3a83d2426326a6fceab8b1431eaa2",
+>>>>>>> origin/Caro
 =======
     "content-hash": "1bc3a83d2426326a6fceab8b1431eaa2",
 >>>>>>> origin/Caro
@@ -161,6 +165,7 @@
                 "source": "https://github.com/php-fig/log/tree/3.0.0"
             },
             "time": "2021-07-14T16:46:02+00:00"
+<<<<<<< HEAD
 <<<<<<< HEAD
         },
         {
@@ -524,6 +529,8 @@
                 "source": "https://github.com/zircote/swagger-php/tree/4.9.2"
             },
             "time": "2024-05-02T21:36:00+00:00"
+=======
+>>>>>>> origin/Caro
 =======
 >>>>>>> origin/Caro
         }

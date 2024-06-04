@@ -3,27 +3,8 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-
 require_once '../includes/auth.php';
 require_once '../includes/controller.php';
-
-/**
- * @OA\Post(
- *     path="/api/v2/nosotros",
- *     summary="Crea nueva información sobre nosotros",
- *     @OA\RequestBody(
- *         required=true,
- *         @OA\JsonContent(
- *             @OA\Property(property="titulo", type="string"),
- *             @OA\Property(property="descripcion", type="string")
- *         )
- *     ),
- *     @OA\Response(
- *         response=200,
- *         description="Información sobre nosotros creada exitosamente"
- *     )
- * )
- */
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = json_decode(file_get_contents("php://input"), true);
