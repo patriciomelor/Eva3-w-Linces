@@ -36,6 +36,8 @@ jobs:
       with:
         repository: ${{ github.repository }}
 
+<<<<<<< HEAD
+<<<<<<< HEAD
     - name: Generate Builder
       uses: ./.github/actions/generate-builder
       with:
@@ -43,6 +45,23 @@ jobs:
 
     - name: Secure Checkout
       uses: /.github/actions/secure-builder-checkout@main
+=======
+    - name: SLSA Generator
+      uses: slsa-framework/slsa-github-generator/.github/actions/generate-builder@v1.4.0
+=======
+    - name: Generate Builder
+      uses: ./.github/actions/generate-builder
+>>>>>>> 033c2a8 (Cambios YML)
+      with:
+        repository: ${{ github.repository }}
+
+    - name: Secure Checkout
+<<<<<<< HEAD
+      uses: slsa-framework/slsa-github-generator/.github/actions/secure-builder-checkout@main
+>>>>>>> ac8e2f0 (Añadir acción de privacidad y configuración en el workflow)
+=======
+      uses: /.github/actions/secure-builder-checkout@main
+>>>>>>> 033c2a8 (Cambios YML)
 
     - name: Run tests
       run: composer run-script test

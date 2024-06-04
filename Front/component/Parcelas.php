@@ -8,11 +8,7 @@
         </div>
 
     <!-- Tarjetas de parcelas -->
-<<<<<<< HEAD
-    <div class="row justify-content-center card-group" id="parcela">  
-=======
     <div class="row justify-content-center card-group" id="rowParcelas">  
->>>>>>> origin/Caro
         <!-- Parcelas Frutillar-->
         <div class="col-md-3 m-3 mb-3"  >
             <div class="card h-100">
