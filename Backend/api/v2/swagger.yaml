@@ -1,0 +1,438 @@
+openapi: 3.0.0
+info:
+  title: API Documentación para Terrasol
+  version: 2.0.0
+servers:
+  - url: http://localhost/Eva2-w-Linces/backend/api/v2
+
+paths:
+  /categoria_servicio/get.php:
+    get:
+      tags:
+        - "categoria_servicio"
+      summary: Obtiene todas las categorías de servicio.
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Lista de categorías de servicio.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CategoriaServicio'
+
+  /categoria_servicio/post.php:
+    post:
+      tags:
+        - "categoria_servicio"
+      summary: Crea una nueva categoría de servicio.
+      security:
+        - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CategoriaServicio'
+      responses:
+        '201':
+          description: Categoría de servicio creada.
+
+  /categoria_servicio/delete.php:
+    delete:
+      tags:
+        - "categoria_servicio"
+      summary: Elimina una categoría de servicio.
+      security:
+        - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: integer
+      responses:
+        '200':
+          description: Categoría de servicio eliminada.
+
+  /info_contacto/get.php:
+    get:
+      tags:
+        - "info_contacto"
+      summary: Obtiene la información de contacto.
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Información de contacto.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InfoContacto'
+
+  /info_contacto/post.php:
+    post:
+      tags:
+        - "info_contacto"
+      summary: Crea nueva información de contacto.
+      security:
+        - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/InfoContacto'
+      responses:
+        '201':
+          description: Información de contacto creada.
+
+  /info_contacto/delete.php:
+    delete:
+      tags:
+        - "info_contacto"
+      summary: Elimina una categoría de servicio.
+      security:
+        - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: integer
+      responses:
+        '200':
+          description: Información de contacto actualizada.
+
+  /historia/get.php:
+    get:
+      tags:
+        - "Historia"
+      summary: Obtiene todas las historias con imágenes.
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Lista de historias.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Historia'
+  /historia/post.php:
+      post:
+        tags:
+          - "Historia"
+        summary: Crea nueva información de contacto.
+        security:
+          - bearerAuth: []
+        requestBody:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Historia'
+        responses:
+          '201':
+            description: Información de contacto creada.
+
+  /historia/delete.php:
+      delete:
+        tags:
+          - "Historia"
+        summary: Elimina una categoría de servicio.
+        security:
+          - bearerAuth: []
+        requestBody:
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+        responses:
+          '200':
+            description: Información de contacto actualizada.
+
+
+
+  /pregunta_frecuente/get.php:
+    get:
+      summary: Obtiene todas las preguntas frecuentes.
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Lista de preguntas frecuentes.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/PreguntaFrecuente'
+
+  /pregunta_frecuente/post.php:
+    post:
+      summary: Crea una nueva pregunta frecuente.
+      security:
+        - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PreguntaFrecuente'
+      responses:
+        '201':
+          description: Pregunta frecuente creada.
+
+  /pregunta_frecuente/put.php:
+    put:
+      summary: Actualiza una pregunta frecuente existente.
+      security:
+        - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PreguntaFrecuenteActualizada'
+      responses:
+        '200':
+          description: Pregunta frecuente actualizada.
+
+  /pregunta_frecuente/patch.php:
+    patch:
+      summary: Actualiza parcialmente una pregunta frecuente.
+      security:
+        - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PreguntaFrecuenteParcial'
+      responses:
+        '200':
+          description: Pregunta frecuente actualizada parcialmente.
+
+  /pregunta_frecuente/delete.php:
+    delete:
+      summary: Elimina una pregunta frecuente.
+      security:
+        - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: integer
+      responses:
+        '200':
+          description: Pregunta frecuente eliminada.
+
+  /parcela/get.php:
+    get:
+      summary: Obtiene todas las parcelas.
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Lista de parcelas.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Parcela'
+
+  /parcela/post.php:
+    post:
+      summary: Crea una nueva parcela.
+      security:
+        - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Parcela'
+      responses:
+        '201':
+          description: Parcela creada.
+
+  /parcela/put.php:
+    put:
+      summary: Actualiza una parcela existente.
+      security:
+        - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ParcelaActualizada'
+      responses:
+        '200':
+          description: Parcela actualizada.
+
+  /parcela/patch.php:
+    patch:
+      summary: Actualiza parcialmente una parcela.
+      security:
+        - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ParcelaParcial'
+      responses:
+        '200':
+          description: Parcela actualizada parcialmente.
+
+  /parcela/delete.php:
+    delete:
+      summary: Elimina una parcela.
+      security:
+        - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                id:
+                  type: integer
+      responses:
+        '200':
+          description: Parcela eliminada.
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  schemas:
+    CategoriaServicio:
+      type: object
+      properties:
+        nombre:
+          type: string
+          description: Nombre del servicio.
+        descripcion:
+          type: string
+          description: Descripción del servicio.
+
+    CategoriaServicioActualizada:
+      type: object
+      properties:
+        id:
+          type: integer
+        nombre:
+          type: string
+        descripcion:
+          type: string
+
+    CategoriaServicioParcial:
+      type: object
+      properties:
+        id:
+          type: integer
+        descripcion:
+          type: string
+
+    InfoContacto:
+      type: object
+      properties:
+        nombre:
+          type: string
+        telefono:
+          type: string
+        correo:
+          type: string
+
+    InfoContactoActualizada:
+      type: object
+      properties:
+        id:
+          type: integer
+        nombre:
+          type: string
+        telefono:
+          type: string
+        correo:
+          type: string
+
+    Historia:
+      type: object
+      properties:
+        id:
+          type: integer
+        titulo:
+          type: string
+        contenido:
+          type: string
+        imagen:
+          type: string
+
+    PreguntaFrecuente:
+      type: object
+      properties:
+        pregunta:
+          type: string
+        respuesta:
+          type: string
+
+    PreguntaFrecuenteActualizada:
+      type: object
+      properties:
+        id:
+          type: integer
+        pregunta:
+          type: string
+        respuesta:
+          type: string
+
+    PreguntaFrecuenteParcial:
+      type: object
+      properties:
+        id:
+          type: integer
+        respuesta:
+          type: string
+
+    Parcela:
+      type: object
+      properties:
+        tipo:
+          type: string
+        lote:
+          type: string
+        servicio_id:
+          type: integer
+
+    ParcelaActualizada:
+      type: object
+      properties:
+        id:
+          type: integer
+        tipo:
+          type: string
+        lote:
+          type: string
+        servicio_id:
+          type: integer
+
+    ParcelaParcial:
+      type: object
+      properties:
+        id:
+          type: integer
+        tipo:
+          type: string
+        lote:
+          type: string
