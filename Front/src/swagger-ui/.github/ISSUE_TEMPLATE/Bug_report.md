@@ -75,7 +75,7 @@ Steps to reproduce the behavior:
 <!-- Add any other context about the problem here. -->
 =======
 =======
->>>>>>> c49454a (Commit Pato)
+>>>>>>> origin/Caro
 ---
 name: Bug report
 about: Report an issue you're experiencing
@@ -150,6 +150,6 @@ Steps to reproduce the behavior:
 ### Additional context or thoughts
 <!-- Add any other context about the problem here. -->
 <<<<<<< HEAD
->>>>>>> c49454a (Commit Pato)
+>>>>>>> origin/Caro
 =======
->>>>>>> c49454a (Commit Pato)
+>>>>>>> origin/Caro

@@ -4,7 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "content-hash": "ec9afe3a6298bf14dd183eb8f195708d",
+=======
     "content-hash": "1bc3a83d2426326a6fceab8b1431eaa2",
+>>>>>>> origin/Caro
+=======
+    "content-hash": "1bc3a83d2426326a6fceab8b1431eaa2",
+>>>>>>> origin/Caro
     "packages": [
         {
             "name": "monolog/monolog",
@@ -522,9 +530,9 @@
             },
             "time": "2024-05-02T21:36:00+00:00"
 =======
->>>>>>> 648ff96 (Cambios en yml)
+>>>>>>> origin/Caro
 =======
->>>>>>> 648ff96 (Cambios en yml)
+>>>>>>> origin/Caro
         }
     ],
     "packages-dev": [

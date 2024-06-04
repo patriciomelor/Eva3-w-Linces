@@ -2226,9 +2226,9 @@
         },
         {
 =======
->>>>>>> 648ff96 (Cambios en yml)
+>>>>>>> origin/Caro
 =======
->>>>>>> 648ff96 (Cambios en yml)
+>>>>>>> origin/Caro
             "name": "theseer/tokenizer",
             "version": "1.2.3",
             "version_normalized": "1.2.3.0",
@@ -2367,9 +2367,9 @@
             },
             "install-path": "../zircote/swagger-php"
 =======
->>>>>>> 648ff96 (Cambios en yml)
+>>>>>>> origin/Caro
 =======
->>>>>>> 648ff96 (Cambios en yml)
+>>>>>>> origin/Caro
         }
     ],
     "dev": true,
