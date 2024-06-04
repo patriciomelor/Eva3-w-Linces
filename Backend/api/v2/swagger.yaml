@@ -3,7 +3,11 @@ info:
   title: API Documentación para Terrasol
   version: 2.0.0
 servers:
+<<<<<<< HEAD
   - url: http://localhost/Eva3-w-Linces/backend/api/v2
+=======
+  - url: http://localhost/Eva2-w-Linces/backend/api/v2
+>>>>>>> c49454a (Commit Pato)
 
 paths:
   /categoria_servicio/get.php:
@@ -22,10 +26,13 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/CategoriaServicio'
+<<<<<<< HEAD
         '404':
           description: No se encontraron categorías.
         '500':
           description: Error interno del servidor.
+=======
+>>>>>>> c49454a (Commit Pato)
 
   /categoria_servicio/post.php:
     post:
@@ -35,7 +42,10 @@ paths:
       security:
         - bearerAuth: []
       requestBody:
+<<<<<<< HEAD
         required: true
+=======
+>>>>>>> c49454a (Commit Pato)
         content:
           application/json:
             schema:
@@ -43,10 +53,13 @@ paths:
       responses:
         '201':
           description: Categoría de servicio creada.
+<<<<<<< HEAD
         '400':
           description: Solicitud incorrecta.
         '500':
           description: Error interno del servidor.
+=======
+>>>>>>> c49454a (Commit Pato)
 
   /categoria_servicio/delete.php:
     delete:
@@ -56,7 +69,10 @@ paths:
       security:
         - bearerAuth: []
       requestBody:
+<<<<<<< HEAD
         required: true
+=======
+>>>>>>> c49454a (Commit Pato)
         content:
           application/json:
             schema:
@@ -67,10 +83,13 @@ paths:
       responses:
         '200':
           description: Categoría de servicio eliminada.
+<<<<<<< HEAD
         '404':
           description: Categoría no encontrada.
         '500':
           description: Error interno del servidor.
+=======
+>>>>>>> c49454a (Commit Pato)
 
   /info_contacto/get.php:
     get:
@@ -86,10 +105,13 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/InfoContacto'
+<<<<<<< HEAD
         '404':
           description: Información de contacto no encontrada.
         '500':
           description: Error interno del servidor.
+=======
+>>>>>>> c49454a (Commit Pato)
 
   /info_contacto/post.php:
     post:
@@ -99,7 +121,10 @@ paths:
       security:
         - bearerAuth: []
       requestBody:
+<<<<<<< HEAD
         required: true
+=======
+>>>>>>> c49454a (Commit Pato)
         content:
           application/json:
             schema:
@@ -107,20 +132,30 @@ paths:
       responses:
         '201':
           description: Información de contacto creada.
+<<<<<<< HEAD
         '400':
           description: Solicitud incorrecta.
         '500':
           description: Error interno del servidor.
+=======
+>>>>>>> c49454a (Commit Pato)
 
   /info_contacto/delete.php:
     delete:
       tags:
         - "info_contacto"
+<<<<<<< HEAD
       summary: Elimina una información de contacto.
       security:
         - bearerAuth: []
       requestBody:
         required: true
+=======
+      summary: Elimina una categoría de servicio.
+      security:
+        - bearerAuth: []
+      requestBody:
+>>>>>>> c49454a (Commit Pato)
         content:
           application/json:
             schema:
@@ -130,16 +165,24 @@ paths:
                   type: integer
       responses:
         '200':
+<<<<<<< HEAD
           description: Información de contacto eliminada.
         '404':
           description: Información de contacto no encontrada.
         '500':
           description: Error interno del servidor.
+=======
+          description: Información de contacto actualizada.
+>>>>>>> c49454a (Commit Pato)
 
   /historia/get.php:
     get:
       tags:
+<<<<<<< HEAD
         - "historia"
+=======
+        - "Historia"
+>>>>>>> c49454a (Commit Pato)
       summary: Obtiene todas las historias con imágenes.
       security:
         - bearerAuth: []
@@ -152,6 +195,7 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Historia'
+<<<<<<< HEAD
         '404':
           description: No se encontraron historias.
         '500':
@@ -206,6 +250,47 @@ paths:
     get:
       tags:
         - "pregunta_frecuente"
+=======
+  /historia/post.php:
+      post:
+        tags:
+          - "Historia"
+        summary: Crea nueva información de contacto.
+        security:
+          - bearerAuth: []
+        requestBody:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Historia'
+        responses:
+          '201':
+            description: Información de contacto creada.
+
+  /historia/delete.php:
+      delete:
+        tags:
+          - "Historia"
+        summary: Elimina una categoría de servicio.
+        security:
+          - bearerAuth: []
+        requestBody:
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+        responses:
+          '200':
+            description: Información de contacto actualizada.
+
+
+
+  /pregunta_frecuente/get.php:
+    get:
+>>>>>>> c49454a (Commit Pato)
       summary: Obtiene todas las preguntas frecuentes.
       security:
         - bearerAuth: []
@@ -218,6 +303,7 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/PreguntaFrecuente'
+<<<<<<< HEAD
         '404':
           description: No se encontraron preguntas frecuentes.
         '500':
@@ -227,11 +313,19 @@ paths:
     post:
       tags:
         - "pregunta_frecuente"
+=======
+
+  /pregunta_frecuente/post.php:
+    post:
+>>>>>>> c49454a (Commit Pato)
       summary: Crea una nueva pregunta frecuente.
       security:
         - bearerAuth: []
       requestBody:
+<<<<<<< HEAD
         required: true
+=======
+>>>>>>> c49454a (Commit Pato)
         content:
           application/json:
             schema:
@@ -239,6 +333,7 @@ paths:
       responses:
         '201':
           description: Pregunta frecuente creada.
+<<<<<<< HEAD
         '400':
           description: Solicitud incorrecta.
         '500':
@@ -248,11 +343,19 @@ paths:
     put:
       tags:
         - "pregunta_frecuente"
+=======
+
+  /pregunta_frecuente/put.php:
+    put:
+>>>>>>> c49454a (Commit Pato)
       summary: Actualiza una pregunta frecuente existente.
       security:
         - bearerAuth: []
       requestBody:
+<<<<<<< HEAD
         required: true
+=======
+>>>>>>> c49454a (Commit Pato)
         content:
           application/json:
             schema:
@@ -260,6 +363,7 @@ paths:
       responses:
         '200':
           description: Pregunta frecuente actualizada.
+<<<<<<< HEAD
         '404':
           description: Pregunta frecuente no encontrada.
         '500':
@@ -269,11 +373,19 @@ paths:
     patch:
       tags:
         - "pregunta_frecuente"
+=======
+
+  /pregunta_frecuente/patch.php:
+    patch:
+>>>>>>> c49454a (Commit Pato)
       summary: Actualiza parcialmente una pregunta frecuente.
       security:
         - bearerAuth: []
       requestBody:
+<<<<<<< HEAD
         required: true
+=======
+>>>>>>> c49454a (Commit Pato)
         content:
           application/json:
             schema:
@@ -281,6 +393,7 @@ paths:
       responses:
         '200':
           description: Pregunta frecuente actualizada parcialmente.
+<<<<<<< HEAD
         '404':
           description: Pregunta frecuente no encontrada.
         '500':
@@ -290,11 +403,19 @@ paths:
     delete:
       tags:
         - "pregunta_frecuente"
+=======
+
+  /pregunta_frecuente/delete.php:
+    delete:
+>>>>>>> c49454a (Commit Pato)
       summary: Elimina una pregunta frecuente.
       security:
         - bearerAuth: []
       requestBody:
+<<<<<<< HEAD
         required: true
+=======
+>>>>>>> c49454a (Commit Pato)
         content:
           application/json:
             schema:
@@ -305,6 +426,7 @@ paths:
       responses:
         '200':
           description: Pregunta frecuente eliminada.
+<<<<<<< HEAD
         '404':
           description: Pregunta frecuente no encontrada.
         '500':
@@ -314,6 +436,11 @@ paths:
     get:
       tags:
         - "parcela"
+=======
+
+  /parcela/get.php:
+    get:
+>>>>>>> c49454a (Commit Pato)
       summary: Obtiene todas las parcelas.
       security:
         - bearerAuth: []
@@ -326,6 +453,7 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Parcela'
+<<<<<<< HEAD
         '404':
           description: No se encontraron parcelas.
         '500':
@@ -335,11 +463,19 @@ paths:
     post:
       tags:
         - "parcela"
+=======
+
+  /parcela/post.php:
+    post:
+>>>>>>> c49454a (Commit Pato)
       summary: Crea una nueva parcela.
       security:
         - bearerAuth: []
       requestBody:
+<<<<<<< HEAD
         required: true
+=======
+>>>>>>> c49454a (Commit Pato)
         content:
           application/json:
             schema:
@@ -347,6 +483,7 @@ paths:
       responses:
         '201':
           description: Parcela creada.
+<<<<<<< HEAD
         '400':
           description: Solicitud incorrecta.
         '500':
@@ -356,11 +493,19 @@ paths:
     put:
       tags:
         - "parcela"
+=======
+
+  /parcela/put.php:
+    put:
+>>>>>>> c49454a (Commit Pato)
       summary: Actualiza una parcela existente.
       security:
         - bearerAuth: []
       requestBody:
+<<<<<<< HEAD
         required: true
+=======
+>>>>>>> c49454a (Commit Pato)
         content:
           application/json:
             schema:
@@ -368,6 +513,7 @@ paths:
       responses:
         '200':
           description: Parcela actualizada.
+<<<<<<< HEAD
         '404':
           description: Parcela no encontrada.
         '500':
@@ -377,11 +523,19 @@ paths:
     patch:
       tags:
         - "parcela"
+=======
+
+  /parcela/patch.php:
+    patch:
+>>>>>>> c49454a (Commit Pato)
       summary: Actualiza parcialmente una parcela.
       security:
         - bearerAuth: []
       requestBody:
+<<<<<<< HEAD
         required: true
+=======
+>>>>>>> c49454a (Commit Pato)
         content:
           application/json:
             schema:
@@ -389,6 +543,7 @@ paths:
       responses:
         '200':
           description: Parcela actualizada parcialmente.
+<<<<<<< HEAD
         '404':
           description: Parcela no encontrada.
         '500':
@@ -398,11 +553,19 @@ paths:
     delete:
       tags:
         - "parcela"
+=======
+
+  /parcela/delete.php:
+    delete:
+>>>>>>> c49454a (Commit Pato)
       summary: Elimina una parcela.
       security:
         - bearerAuth: []
       requestBody:
+<<<<<<< HEAD
         required: true
+=======
+>>>>>>> c49454a (Commit Pato)
         content:
           application/json:
             schema:
@@ -413,10 +576,13 @@ paths:
       responses:
         '200':
           description: Parcela eliminada.
+<<<<<<< HEAD
         '404':
           description: Parcela no encontrada.
         '500':
           description: Error interno del servidor.
+=======
+>>>>>>> c49454a (Commit Pato)
 
 components:
   securitySchemes:
