@@ -1,0 +1,1005 @@
+.
+├── LEERME!.rtf
+├── arquitectura_front.txt
+├── component
+│   ├── FAQs.php
+│   ├── Js.php
+│   ├── Parcelas.php
+│   ├── casa_en_parcela.php
+│   ├── contact.php
+│   ├── footer.php
+│   ├── header.php
+│   ├── hero.php
+│   ├── nav.php
+│   ├── nosotros.php
+│   └── soloTerrenos.php
+├── index.php
+├── procesar.php
+└── src
+    ├── css
+    │   └── style.css
+    ├── js
+    │   └── script.js
+    ├── media
+    │   ├── ImgTitulos
+    │   │   ├── it1.webp
+    │   │   ├── it2.webp
+    │   │   ├── it3.webp
+    │   │   ├── it4.webp
+    │   │   ├── it5.webp
+    │   │   └── it6.webp
+    │   ├── Parcelas
+    │   │   ├── Parcelafrutillar.webp
+    │   │   ├── Parcelaosorno.webp
+    │   │   ├── Parcelapurranque.webp
+    │   │   └── Parcelasanjavier.webp
+    │   ├── Parcelasanjavier.jpg
+    │   ├── banner
+    │   │   ├── b1.jpg
+    │   │   ├── b2.JPG
+    │   │   └── b3.JPG
+    │   ├── carrousel
+    │   │   ├── Rostro1.webp
+    │   │   ├── Rostro2.webp
+    │   │   └── Rostro3.webp
+    │   ├── casa_en_parcela
+    │   │   ├── parc-casa-1.webp
+    │   │   ├── parc-casa-2.webp
+    │   │   ├── parc-casa-3.webp
+    │   │   ├── parc-casa-4.webp
+    │   │   ├── parc-casa-5.webp
+    │   │   └── parc-casa-6.webp
+    │   ├── logo
+    │   │   ├── logo-b.png
+    │   │   └── logo.png
+    │   ├── nosotros
+    │   │   ├── imagenMisión.webp
+    │   │   ├── imagenQSomos.webp
+    │   │   ├── imagenVisión.webp
+    │   │   └── nosotros.webp
+    │   └── soloTerrenos
+    │       ├── AltoCancura.webp
+    │       ├── BoldosDeDuao.webp
+    │       ├── HaciendaPellin.webp
+    │       ├── ValleCuracautin.webp
+    │       ├── VistaCoronel.webp
+    │       └── ViveNeltume.webp
+    ├── src.txt
+    └── swagger-ui
+        ├── Dockerfile
+        ├── LICENSE
+        ├── NOTICE
+        ├── README.md
+        ├── SECURITY.md
+        ├── babel.config.js
+        ├── composer.json
+        ├── config
+        │   └── jest
+        │       ├── jest.artifact.config.js
+        │       └── jest.unit.config.js
+        ├── cypress.config.js
+        ├── dev-helpers
+        │   ├── dev-helper-initializer.js
+        │   ├── index.html
+        │   ├── oauth2-redirect.html
+        │   └── style.css
+        ├── dist
+        │   ├── favicon-16x16.png
+        │   ├── favicon-32x32.png
+        │   ├── index.css
+        │   ├── index.html
+        │   ├── oauth2-redirect.html
+        │   ├── swagger-initializer.js
+        │   ├── swagger-ui-bundle.js
+        │   ├── swagger-ui-bundle.js.map
+        │   ├── swagger-ui-es-bundle-core.js
+        │   ├── swagger-ui-es-bundle-core.js.map
+        │   ├── swagger-ui-es-bundle.js
+        │   ├── swagger-ui-es-bundle.js.map
+        │   ├── swagger-ui-standalone-preset.js
+        │   ├── swagger-ui-standalone-preset.js.map
+        │   ├── swagger-ui.css
+        │   ├── swagger-ui.css.map
+        │   ├── swagger-ui.js
+        │   └── swagger-ui.js.map
+        ├── docker
+        │   ├── configurator
+        │   │   ├── helpers.js
+        │   │   ├── index.js
+        │   │   ├── oauth.js
+        │   │   ├── translator.js
+        │   │   └── variables.js
+        │   ├── cors.conf
+        │   ├── default.conf.template
+        │   └── docker-entrypoint.d
+        │       └── 40-swagger-ui.sh
+        ├── docs
+        │   ├── README.md
+        │   ├── book.json
+        │   ├── customization
+        │   │   ├── custom-layout.md
+        │   │   ├── overview.md
+        │   │   ├── plug-points.md
+        │   │   └── plugin-api.md
+        │   ├── development
+        │   │   ├── scripts.md
+        │   │   └── setting-up.md
+        │   ├── images
+        │   │   ├── swagger-ui2.png
+        │   │   └── swagger-ui3.png
+        │   ├── samples
+        │   │   └── webpack-getting-started
+        │   │       ├── README.md
+        │   │       ├── _sample_package.json
+        │   │       ├── index.html
+        │   │       ├── src
+        │   │       │   ├── index.js
+        │   │       │   └── swagger-config.yaml
+        │   │       └── webpack.config.js
+        │   └── usage
+        │       ├── configuration.md
+        │       ├── cors.md
+        │       ├── deep-linking.md
+        │       ├── installation.md
+        │       ├── limitations.md
+        │       ├── oauth2.md
+        │       └── version-detection.md
+        ├── flavors
+        │   └── swagger-ui-react
+        │       ├── README.md
+        │       ├── index.jsx
+        │       └── release
+        │           ├── create-manifest.js
+        │           ├── run.sh
+        │           └── template.json
+        ├── index.html
+        ├── package-lock.json
+        ├── package.json
+        ├── patches
+        │   └── tachyons-sass+4.9.5.patch
+        ├── release
+        │   ├── check-for-breaking-changes.sh
+        │   └── get-changelog.sh
+        ├── renovate.json
+        ├── snapcraft.yaml
+        ├── src
+        │   ├── core
+        │   │   ├── brace-snippets-yaml.js
+        │   │   ├── components
+        │   │   │   ├── app.jsx
+        │   │   │   ├── array-model.jsx
+        │   │   │   ├── auth
+        │   │   │   │   ├── api-key-auth.jsx
+        │   │   │   │   ├── auth-item.jsx
+        │   │   │   │   ├── authorization-popup.jsx
+        │   │   │   │   ├── authorize-btn.jsx
+        │   │   │   │   ├── authorize-operation-btn.jsx
+        │   │   │   │   ├── auths.jsx
+        │   │   │   │   ├── basic-auth.jsx
+        │   │   │   │   ├── error.jsx
+        │   │   │   │   └── oauth2.jsx
+        │   │   │   ├── clear.jsx
+        │   │   │   ├── contact.jsx
+        │   │   │   ├── content-type.jsx
+        │   │   │   ├── copy-to-clipboard-btn.jsx
+        │   │   │   ├── curl.jsx
+        │   │   │   ├── debug.jsx
+        │   │   │   ├── deep-link.jsx
+        │   │   │   ├── enum-model.jsx
+        │   │   │   ├── errors.jsx
+        │   │   │   ├── example.jsx
+        │   │   │   ├── examples-select-value-retainer.jsx
+        │   │   │   ├── examples-select.jsx
+        │   │   │   ├── execute.jsx
+        │   │   │   ├── footer.jsx
+        │   │   │   ├── headers.jsx
+        │   │   │   ├── highlight-code.jsx
+        │   │   │   ├── info.jsx
+        │   │   │   ├── initialized-input.jsx
+        │   │   │   ├── jump-to-path.jsx
+        │   │   │   ├── layout-utils.jsx
+        │   │   │   ├── layouts
+        │   │   │   │   ├── base.jsx
+        │   │   │   │   └── xpane.jsx
+        │   │   │   ├── license.jsx
+        │   │   │   ├── live-response.jsx
+        │   │   │   ├── model-collapse.jsx
+        │   │   │   ├── model-example.jsx
+        │   │   │   ├── model-wrapper.jsx
+        │   │   │   ├── model.jsx
+        │   │   │   ├── models.jsx
+        │   │   │   ├── object-model.jsx
+        │   │   │   ├── online-validator-badge.jsx
+        │   │   │   ├── operation-extension-row.jsx
+        │   │   │   ├── operation-extensions.jsx
+        │   │   │   ├── operation-summary-method.jsx
+        │   │   │   ├── operation-summary-path.jsx
+        │   │   │   ├── operation-summary.jsx
+        │   │   │   ├── operation-tag.jsx
+        │   │   │   ├── operation.jsx
+        │   │   │   ├── operations.jsx
+        │   │   │   ├── overview.jsx
+        │   │   │   ├── param-body.jsx
+        │   │   │   ├── parameter-extension.jsx
+        │   │   │   ├── parameter-include-empty.jsx
+        │   │   │   ├── parameter-row.jsx
+        │   │   │   ├── parameters
+        │   │   │   │   ├── index.js
+        │   │   │   │   └── parameters.jsx
+        │   │   │   ├── primitive-model.jsx
+        │   │   │   ├── property.jsx
+        │   │   │   ├── providers
+        │   │   │   │   ├── README.md
+        │   │   │   │   └── markdown.jsx
+        │   │   │   ├── response-body.jsx
+        │   │   │   ├── response-extension.jsx
+        │   │   │   ├── response.jsx
+        │   │   │   ├── responses.jsx
+        │   │   │   ├── schemes.jsx
+        │   │   │   ├── svg-assets.jsx
+        │   │   │   ├── system-wrapper.jsx
+        │   │   │   ├── try-it-out-button.jsx
+        │   │   │   ├── version-pragma-filter.jsx
+        │   │   │   └── version-stamp.jsx
+        │   │   ├── containers
+        │   │   │   ├── OperationContainer.jsx
+        │   │   │   ├── authorize-btn.jsx
+        │   │   │   ├── filter.jsx
+        │   │   │   ├── info.jsx
+        │   │   │   └── schemes.jsx
+        │   │   ├── index.js
+        │   │   ├── json-schema-components.jsx
+        │   │   ├── oauth2-authorize.js
+        │   │   ├── plugins
+        │   │   │   ├── all.js
+        │   │   │   ├── auth
+        │   │   │   │   ├── actions.js
+        │   │   │   │   ├── configs-extensions
+        │   │   │   │   │   └── wrap-actions.js
+        │   │   │   │   ├── index.js
+        │   │   │   │   ├── reducers.js
+        │   │   │   │   ├── selectors.js
+        │   │   │   │   ├── spec-extensions
+        │   │   │   │   │   └── wrap-actions.js
+        │   │   │   │   └── wrap-actions.js
+        │   │   │   ├── configs
+        │   │   │   │   ├── actions.js
+        │   │   │   │   ├── helpers.js
+        │   │   │   │   ├── index.js
+        │   │   │   │   ├── reducers.js
+        │   │   │   │   ├── selectors.js
+        │   │   │   │   └── spec-actions.js
+        │   │   │   ├── deep-linking
+        │   │   │   │   ├── README.md
+        │   │   │   │   ├── helpers.js
+        │   │   │   │   ├── index.js
+        │   │   │   │   ├── layout.js
+        │   │   │   │   ├── operation-tag-wrapper.jsx
+        │   │   │   │   └── operation-wrapper.jsx
+        │   │   │   ├── download-url.js
+        │   │   │   ├── err
+        │   │   │   │   ├── actions.js
+        │   │   │   │   ├── error-transformers
+        │   │   │   │   │   ├── README.md
+        │   │   │   │   │   ├── hook.js
+        │   │   │   │   │   └── transformers
+        │   │   │   │   │       ├── not-of-type.js
+        │   │   │   │   │       └── parameter-oneof.js
+        │   │   │   │   ├── index.js
+        │   │   │   │   ├── reducers.js
+        │   │   │   │   └── selectors.js
+        │   │   │   ├── filter
+        │   │   │   │   ├── index.js
+        │   │   │   │   └── opsFilter.js
+        │   │   │   ├── json-schema-2020-12
+        │   │   │   │   ├── components
+        │   │   │   │   │   ├── Accordion
+        │   │   │   │   │   │   ├── Accordion.jsx
+        │   │   │   │   │   │   └── _accordion.scss
+        │   │   │   │   │   ├── ExpandDeepButton
+        │   │   │   │   │   │   ├── ExpandDeepButton.jsx
+        │   │   │   │   │   │   └── _expand-deep-button.scss
+        │   │   │   │   │   ├── JSONSchema
+        │   │   │   │   │   │   ├── JSONSchema.jsx
+        │   │   │   │   │   │   └── _json-schema.scss
+        │   │   │   │   │   ├── _all.scss
+        │   │   │   │   │   ├── icons
+        │   │   │   │   │   │   └── ChevronRight.jsx
+        │   │   │   │   │   └── keywords
+        │   │   │   │   │       ├── $anchor.jsx
+        │   │   │   │   │       ├── $comment.jsx
+        │   │   │   │   │       ├── $defs.jsx
+        │   │   │   │   │       ├── $dynamicAnchor.jsx
+        │   │   │   │   │       ├── $dynamicRef.jsx
+        │   │   │   │   │       ├── $id.jsx
+        │   │   │   │   │       ├── $ref.jsx
+        │   │   │   │   │       ├── $schema.jsx
+        │   │   │   │   │       ├── $vocabulary
+        │   │   │   │   │       │   ├── $vocabulary.jsx
+        │   │   │   │   │       │   └── _$vocabulary.scss
+        │   │   │   │   │       ├── AdditionalProperties.jsx
+        │   │   │   │   │       ├── AllOf.jsx
+        │   │   │   │   │       ├── AnyOf.jsx
+        │   │   │   │   │       ├── Const.jsx
+        │   │   │   │   │       ├── Constraint
+        │   │   │   │   │       │   ├── Constraint.jsx
+        │   │   │   │   │       │   └── _constraint.scss
+        │   │   │   │   │       ├── Contains.jsx
+        │   │   │   │   │       ├── ContentSchema.jsx
+        │   │   │   │   │       ├── Default.jsx
+        │   │   │   │   │       ├── DependentRequired
+        │   │   │   │   │       │   ├── DependentRequired.jsx
+        │   │   │   │   │       │   └── _dependent-required.scss
+        │   │   │   │   │       ├── DependentSchemas.jsx
+        │   │   │   │   │       ├── Deprecated.jsx
+        │   │   │   │   │       ├── Description
+        │   │   │   │   │       │   ├── Description.jsx
+        │   │   │   │   │       │   └── _description.scss
+        │   │   │   │   │       ├── Else.jsx
+        │   │   │   │   │       ├── Enum
+        │   │   │   │   │       │   ├── Enum.jsx
+        │   │   │   │   │       │   └── _enum.scss
+        │   │   │   │   │       ├── If.jsx
+        │   │   │   │   │       ├── Items.jsx
+        │   │   │   │   │       ├── Not.jsx
+        │   │   │   │   │       ├── OneOf.jsx
+        │   │   │   │   │       ├── PatternProperties
+        │   │   │   │   │       │   ├── PatternProperties.jsx
+        │   │   │   │   │       │   └── _pattern-properties.scss
+        │   │   │   │   │       ├── PrefixItems.jsx
+        │   │   │   │   │       ├── Properties
+        │   │   │   │   │       │   ├── Properties.jsx
+        │   │   │   │   │       │   └── _properties.scss
+        │   │   │   │   │       ├── PropertyNames.jsx
+        │   │   │   │   │       ├── ReadOnly.jsx
+        │   │   │   │   │       ├── Then.jsx
+        │   │   │   │   │       ├── Title
+        │   │   │   │   │       │   ├── Title.jsx
+        │   │   │   │   │       │   └── _title.scss
+        │   │   │   │   │       ├── Type.jsx
+        │   │   │   │   │       ├── UnevaluatedItems.jsx
+        │   │   │   │   │       ├── UnevaluatedProperties.jsx
+        │   │   │   │   │       ├── WriteOnly.jsx
+        │   │   │   │   │       └── _all.scss
+        │   │   │   │   ├── context.js
+        │   │   │   │   ├── fn.js
+        │   │   │   │   ├── hoc.jsx
+        │   │   │   │   ├── hooks.js
+        │   │   │   │   ├── index.js
+        │   │   │   │   ├── prop-types.js
+        │   │   │   │   └── samples-extensions
+        │   │   │   │       └── fn
+        │   │   │   │           ├── api
+        │   │   │   │           │   ├── encoderAPI.js
+        │   │   │   │           │   ├── formatAPI.js
+        │   │   │   │           │   └── mediaTypeAPI.js
+        │   │   │   │           ├── class
+        │   │   │   │           │   ├── EncoderRegistry.js
+        │   │   │   │           │   ├── MediaTypeRegistry.js
+        │   │   │   │           │   └── Registry.js
+        │   │   │   │           ├── core
+        │   │   │   │           │   ├── constants.js
+        │   │   │   │           │   ├── example.js
+        │   │   │   │           │   ├── merge.js
+        │   │   │   │           │   ├── predicates.js
+        │   │   │   │           │   ├── random.js
+        │   │   │   │           │   ├── type.js
+        │   │   │   │           │   └── utils.js
+        │   │   │   │           ├── encoders
+        │   │   │   │           │   ├── 7bit.js
+        │   │   │   │           │   ├── 8bit.js
+        │   │   │   │           │   ├── base16.js
+        │   │   │   │           │   ├── base32.js
+        │   │   │   │           │   ├── base64.js
+        │   │   │   │           │   ├── binary.js
+        │   │   │   │           │   └── quoted-printable.js
+        │   │   │   │           ├── generators
+        │   │   │   │           │   ├── date-time.js
+        │   │   │   │           │   ├── date.js
+        │   │   │   │           │   ├── double.js
+        │   │   │   │           │   ├── duration.js
+        │   │   │   │           │   ├── email.js
+        │   │   │   │           │   ├── float.js
+        │   │   │   │           │   ├── hostname.js
+        │   │   │   │           │   ├── idn-email.js
+        │   │   │   │           │   ├── idn-hostname.js
+        │   │   │   │           │   ├── int32.js
+        │   │   │   │           │   ├── int64.js
+        │   │   │   │           │   ├── ipv4.js
+        │   │   │   │           │   ├── ipv6.js
+        │   │   │   │           │   ├── iri-reference.js
+        │   │   │   │           │   ├── iri.js
+        │   │   │   │           │   ├── json-pointer.js
+        │   │   │   │           │   ├── media-types
+        │   │   │   │           │   │   ├── application.js
+        │   │   │   │           │   │   ├── audio.js
+        │   │   │   │           │   │   ├── image.js
+        │   │   │   │           │   │   ├── text.js
+        │   │   │   │           │   │   └── video.js
+        │   │   │   │           │   ├── password.js
+        │   │   │   │           │   ├── regex.js
+        │   │   │   │           │   ├── relative-json-pointer.js
+        │   │   │   │           │   ├── time.js
+        │   │   │   │           │   ├── uri-reference.js
+        │   │   │   │           │   ├── uri-template.js
+        │   │   │   │           │   ├── uri.js
+        │   │   │   │           │   └── uuid.js
+        │   │   │   │           ├── index.js
+        │   │   │   │           ├── main.js
+        │   │   │   │           └── types
+        │   │   │   │               ├── array.js
+        │   │   │   │               ├── boolean.js
+        │   │   │   │               ├── index.js
+        │   │   │   │               ├── integer.js
+        │   │   │   │               ├── null.js
+        │   │   │   │               ├── number.js
+        │   │   │   │               ├── object.js
+        │   │   │   │               └── string.js
+        │   │   │   ├── layout
+        │   │   │   │   ├── actions.js
+        │   │   │   │   ├── index.js
+        │   │   │   │   ├── reducers.js
+        │   │   │   │   ├── selectors.js
+        │   │   │   │   └── spec-extensions
+        │   │   │   │       └── wrap-selector.js
+        │   │   │   ├── logs
+        │   │   │   │   └── index.js
+        │   │   │   ├── oas3
+        │   │   │   │   ├── actions.js
+        │   │   │   │   ├── auth-extensions
+        │   │   │   │   │   └── wrap-selectors.js
+        │   │   │   │   ├── components
+        │   │   │   │   │   ├── callbacks.jsx
+        │   │   │   │   │   ├── http-auth.jsx
+        │   │   │   │   │   ├── index.js
+        │   │   │   │   │   ├── operation-link.jsx
+        │   │   │   │   │   ├── operation-servers.jsx
+        │   │   │   │   │   ├── request-body-editor.jsx
+        │   │   │   │   │   ├── request-body.jsx
+        │   │   │   │   │   ├── servers-container.jsx
+        │   │   │   │   │   └── servers.jsx
+        │   │   │   │   ├── helpers.jsx
+        │   │   │   │   ├── index.js
+        │   │   │   │   ├── reducers.js
+        │   │   │   │   ├── selectors.js
+        │   │   │   │   ├── spec-extensions
+        │   │   │   │   │   ├── selectors.js
+        │   │   │   │   │   └── wrap-selectors.js
+        │   │   │   │   └── wrap-components
+        │   │   │   │       ├── auth-item.jsx
+        │   │   │   │       ├── index.js
+        │   │   │   │       ├── json-schema-string.jsx
+        │   │   │   │       ├── markdown.jsx
+        │   │   │   │       ├── model.jsx
+        │   │   │   │       ├── online-validator-badge.js
+        │   │   │   │       └── version-stamp.jsx
+        │   │   │   ├── oas31
+        │   │   │   │   ├── after-load.js
+        │   │   │   │   ├── components
+        │   │   │   │   │   ├── _all.scss
+        │   │   │   │   │   ├── contact.jsx
+        │   │   │   │   │   ├── info.jsx
+        │   │   │   │   │   ├── json-schema-dialect.jsx
+        │   │   │   │   │   ├── license.jsx
+        │   │   │   │   │   ├── model
+        │   │   │   │   │   │   ├── _model.scss
+        │   │   │   │   │   │   └── model.jsx
+        │   │   │   │   │   ├── models
+        │   │   │   │   │   │   ├── _models.scss
+        │   │   │   │   │   │   └── models.jsx
+        │   │   │   │   │   ├── version-pragma-filter.jsx
+        │   │   │   │   │   └── webhooks.jsx
+        │   │   │   │   ├── fn.js
+        │   │   │   │   ├── index.js
+        │   │   │   │   ├── json-schema-2020-12-extensions
+        │   │   │   │   │   ├── components
+        │   │   │   │   │   │   └── keywords
+        │   │   │   │   │   │       ├── Description.jsx
+        │   │   │   │   │   │       ├── Discriminator
+        │   │   │   │   │   │       │   ├── Discriminator.jsx
+        │   │   │   │   │   │       │   └── DiscriminatorMapping.jsx
+        │   │   │   │   │   │       ├── Example.jsx
+        │   │   │   │   │   │       ├── ExternalDocs.jsx
+        │   │   │   │   │   │       ├── Properties.jsx
+        │   │   │   │   │   │       └── Xml.jsx
+        │   │   │   │   │   ├── fn.js
+        │   │   │   │   │   └── wrap-components
+        │   │   │   │   │       └── keywords
+        │   │   │   │   │           ├── Default.jsx
+        │   │   │   │   │           ├── Description.jsx
+        │   │   │   │   │           └── Properties.jsx
+        │   │   │   │   ├── selectors.js
+        │   │   │   │   ├── spec-extensions
+        │   │   │   │   │   ├── selectors.js
+        │   │   │   │   │   └── wrap-selectors.js
+        │   │   │   │   └── wrap-components
+        │   │   │   │       ├── contact.jsx
+        │   │   │   │       ├── info.jsx
+        │   │   │   │       ├── license.jsx
+        │   │   │   │       ├── model.jsx
+        │   │   │   │       ├── models.jsx
+        │   │   │   │       ├── version-pragma-filter.jsx
+        │   │   │   │       └── version-stamp.jsx
+        │   │   │   ├── on-complete
+        │   │   │   │   └── index.js
+        │   │   │   ├── request-snippets
+        │   │   │   │   ├── fn.js
+        │   │   │   │   ├── index.js
+        │   │   │   │   ├── request-snippets.jsx
+        │   │   │   │   └── selectors.js
+        │   │   │   ├── safe-render
+        │   │   │   │   ├── components
+        │   │   │   │   │   ├── error-boundary.jsx
+        │   │   │   │   │   └── fallback.jsx
+        │   │   │   │   ├── fn.jsx
+        │   │   │   │   └── index.js
+        │   │   │   ├── samples
+        │   │   │   │   ├── fn
+        │   │   │   │   │   ├── get-json-sample-schema.js
+        │   │   │   │   │   ├── get-sample-schema.js
+        │   │   │   │   │   ├── get-xml-sample-schema.js
+        │   │   │   │   │   ├── get-yaml-sample-schema.js
+        │   │   │   │   │   └── index.js
+        │   │   │   │   └── index.js
+        │   │   │   ├── spec
+        │   │   │   │   ├── actions.js
+        │   │   │   │   ├── index.js
+        │   │   │   │   ├── reducers.js
+        │   │   │   │   ├── selectors.js
+        │   │   │   │   └── wrap-actions.js
+        │   │   │   ├── swagger-js
+        │   │   │   │   ├── configs-wrap-actions.js
+        │   │   │   │   └── index.js
+        │   │   │   ├── util
+        │   │   │   │   └── index.js
+        │   │   │   └── view
+        │   │   │       ├── fn.js
+        │   │   │       ├── index.js
+        │   │   │       └── root-injects.jsx
+        │   │   ├── presets
+        │   │   │   ├── apis.js
+        │   │   │   └── base.js
+        │   │   ├── proptypes.js
+        │   │   ├── syntax-highlighting.js
+        │   │   ├── system.js
+        │   │   ├── utils
+        │   │   │   ├── jsonParse.js
+        │   │   │   └── url.js
+        │   │   ├── utils.js
+        │   │   └── window.js
+        │   ├── helpers
+        │   │   ├── create-html-ready-id.js
+        │   │   ├── get-parameter-schema.js
+        │   │   └── memoizeN.js
+        │   ├── img
+        │   │   ├── logo_small.png
+        │   │   └── rolling-load.svg
+        │   ├── index.js
+        │   ├── plugins
+        │   │   ├── add-plugin.md
+        │   │   ├── index.js
+        │   │   └── topbar
+        │   │       ├── index.js
+        │   │       ├── logo.jsx
+        │   │       ├── logo_small.svg
+        │   │       └── topbar.jsx
+        │   ├── standalone
+        │   │   ├── index.js
+        │   │   └── layout.jsx
+        │   └── style
+        │       ├── _authorize.scss
+        │       ├── _buttons.scss
+        │       ├── _errors.scss
+        │       ├── _form.scss
+        │       ├── _information.scss
+        │       ├── _layout.scss
+        │       ├── _markdown.scss
+        │       ├── _mixins.scss
+        │       ├── _modal.scss
+        │       ├── _models.scss
+        │       ├── _servers.scss
+        │       ├── _split-pane-mode.scss
+        │       ├── _table.scss
+        │       ├── _topbar.scss
+        │       ├── _type.scss
+        │       ├── _variables.scss
+        │       └── main.scss
+        ├── swagger-config.yaml
+        ├── swagger-ui-dist-package
+        │   ├── README.md
+        │   ├── absolute-path.js
+        │   ├── deploy.sh
+        │   ├── index.js
+        │   └── package.json
+        ├── test
+        │   ├── build-artifacts
+        │   │   ├── es-bundle-core.js
+        │   │   ├── es-bundle.js
+        │   │   └── umd.js
+        │   ├── components
+        │   │   ├── highlight-code.jsx
+        │   │   └── response-body.jsx
+        │   ├── e2e-cypress
+        │   │   ├── e2e
+        │   │   │   ├── a11y
+        │   │   │   │   └── response-tabs.cy.js
+        │   │   │   ├── bugs
+        │   │   │   │   ├── 4442.cy.js
+        │   │   │   │   ├── 4641.cy.js
+        │   │   │   │   ├── 4838.cy.js
+        │   │   │   │   ├── 4865.cy.js
+        │   │   │   │   ├── 4867.cy.js
+        │   │   │   │   ├── 4943.cy.js
+        │   │   │   │   ├── 5043.cy.js
+        │   │   │   │   ├── 5060.cy.js
+        │   │   │   │   ├── 5070.cy.js
+        │   │   │   │   ├── 5072.cy.js
+        │   │   │   │   ├── 5129.cy.js
+        │   │   │   │   ├── 5138.cy.js
+        │   │   │   │   ├── 5164.cy.js
+        │   │   │   │   ├── 5188.cy.js
+        │   │   │   │   ├── 5452.cy.js
+        │   │   │   │   ├── 5453.cy.js
+        │   │   │   │   ├── 5455.cy.js
+        │   │   │   │   ├── 5458.cy.js
+        │   │   │   │   ├── 5660.cy.js
+        │   │   │   │   ├── 6016.cy.js
+        │   │   │   │   ├── 6158.cy.js
+        │   │   │   │   ├── 6183.cy.js
+        │   │   │   │   ├── 6276.cy.js
+        │   │   │   │   ├── 6351.cy.js
+        │   │   │   │   ├── 6369.cy.js
+        │   │   │   │   ├── 6442.cy.js
+        │   │   │   │   ├── 6475.cy.js
+        │   │   │   │   ├── 6540.cy.js
+        │   │   │   │   ├── 6627.cy.js
+        │   │   │   │   ├── 7996.cy.js
+        │   │   │   │   ├── 8217.cy.js
+        │   │   │   │   ├── editor-1868.cy.js
+        │   │   │   │   └── swos-63.cy.js
+        │   │   │   ├── features
+        │   │   │   │   ├── auth-bearer-flow.cy.js
+        │   │   │   │   ├── auth-code-flow-pkce-without-secret.cy.js
+        │   │   │   │   ├── deep-linking.cy.js
+        │   │   │   │   ├── dynamic-default-oauth.cy.js
+        │   │   │   │   ├── external-docs.cy.js
+        │   │   │   │   ├── info.cy.js
+        │   │   │   │   ├── license.cy.js
+        │   │   │   │   ├── model-collapse.cy.js
+        │   │   │   │   ├── multiple-examples-core.cy.js
+        │   │   │   │   ├── oas3-badge.cy.js
+        │   │   │   │   ├── oas3-multiple-media-type.cy.js
+        │   │   │   │   ├── oas3-multiple-servers.cy.js
+        │   │   │   │   ├── oas3-request-body-allow-empty-values.cy.js
+        │   │   │   │   ├── oas3-request-body-default-views.cy.js
+        │   │   │   │   ├── oas3-request-body-required.cy.js
+        │   │   │   │   ├── oas3-user-edit-request-body-flows.cy.js
+        │   │   │   │   ├── oas3-xml.cy.js
+        │   │   │   │   ├── oauth2-flows
+        │   │   │   │   │   ├── application.cy.js
+        │   │   │   │   │   └── password.cy.js
+        │   │   │   │   ├── parameter-array-missing-items.cy.js
+        │   │   │   │   ├── parameter-order.cy.js
+        │   │   │   │   ├── plugins
+        │   │   │   │   │   └── topbar
+        │   │   │   │   │       └── linking-to-configured-urls.cy.js
+        │   │   │   │   ├── request-body-upload-file.cy.js
+        │   │   │   │   ├── response-extension.cy.js
+        │   │   │   │   ├── schema-form-enum-boolean.cy.js
+        │   │   │   │   ├── schema-form.cy.js
+        │   │   │   │   ├── spec-parse-to-json.cy.js
+        │   │   │   │   ├── syntax-highlighting-json.cy.js
+        │   │   │   │   ├── try-it-out-enabled.cy.js
+        │   │   │   │   ├── try-it-out-schema-required-override-allowed.cy.js
+        │   │   │   │   ├── urls.cy.js
+        │   │   │   │   └── webhooks.cy.js
+        │   │   │   └── security
+        │   │   │       ├── anonymous.cy.js
+        │   │   │       ├── oauth2.cy.js
+        │   │   │       └── sequential-import-chaining.cy.js
+        │   │   ├── fixtures
+        │   │   │   └── example.json
+        │   │   ├── static
+        │   │   │   ├── configs
+        │   │   │   │   ├── urls-primary-name.yaml
+        │   │   │   │   ├── urls-server-variables.yaml
+        │   │   │   │   └── urls.yaml
+        │   │   │   ├── documents
+        │   │   │   │   ├── bugs
+        │   │   │   │   │   ├── 4442.yaml
+        │   │   │   │   │   ├── 4641.yaml
+        │   │   │   │   │   ├── 4838.yaml
+        │   │   │   │   │   ├── 4867.yaml
+        │   │   │   │   │   ├── 4943.yaml
+        │   │   │   │   │   ├── 5043
+        │   │   │   │   │   │   ├── status.yaml
+        │   │   │   │   │   │   └── swagger.yaml
+        │   │   │   │   │   ├── 5060.yaml
+        │   │   │   │   │   ├── 5072
+        │   │   │   │   │   │   ├── additional.yaml
+        │   │   │   │   │   │   └── empty.yaml
+        │   │   │   │   │   ├── 5129.yaml
+        │   │   │   │   │   ├── 5164.yaml
+        │   │   │   │   │   ├── 5181.yaml
+        │   │   │   │   │   ├── 5188.yaml
+        │   │   │   │   │   ├── 5452
+        │   │   │   │   │   │   ├── openapi.yaml
+        │   │   │   │   │   │   └── swagger.yaml
+        │   │   │   │   │   ├── 5453.yaml
+        │   │   │   │   │   ├── 5455.yaml
+        │   │   │   │   │   ├── 5458.yaml
+        │   │   │   │   │   ├── 5660-model.yaml
+        │   │   │   │   │   ├── 5660-property.yaml
+        │   │   │   │   │   ├── 6016-oas2.yaml
+        │   │   │   │   │   ├── 6016-oas3.yaml
+        │   │   │   │   │   ├── 6158.yaml
+        │   │   │   │   │   ├── 6183.yaml
+        │   │   │   │   │   ├── 6351.yaml
+        │   │   │   │   │   ├── 6369-oas2-display.yaml
+        │   │   │   │   │   ├── 6369-oas2-no-display.yaml
+        │   │   │   │   │   ├── 6369-oas3-display.yaml
+        │   │   │   │   │   ├── 6369-oas3-no-display.yaml
+        │   │   │   │   │   ├── 6442.yaml
+        │   │   │   │   │   ├── 6475.yaml
+        │   │   │   │   │   ├── 6540.yaml
+        │   │   │   │   │   ├── 6627.yaml
+        │   │   │   │   │   ├── 7996-tags-externalDocs.yaml
+        │   │   │   │   │   ├── 8217.yaml
+        │   │   │   │   │   └── editor-1868.yaml
+        │   │   │   │   ├── features
+        │   │   │   │   │   ├── auth-bearer-flow.yaml
+        │   │   │   │   │   ├── auth-code-flow-pkce-without-secret.yaml
+        │   │   │   │   │   ├── deep-linking.openapi.yaml
+        │   │   │   │   │   ├── deep-linking.swagger.yaml
+        │   │   │   │   │   ├── external-docs.openapi.yaml
+        │   │   │   │   │   ├── external-docs.swagger.yaml
+        │   │   │   │   │   ├── info-openAPI2.yaml
+        │   │   │   │   │   ├── info-openAPI30.yaml
+        │   │   │   │   │   ├── info-openAPI31.yaml
+        │   │   │   │   │   ├── license-openAPI2.yaml
+        │   │   │   │   │   ├── license-openAPI30.yaml
+        │   │   │   │   │   ├── license-openAPI31-error-both-identifier-and-url.yaml
+        │   │   │   │   │   ├── license-openAPI31-identifier.yaml
+        │   │   │   │   │   ├── license-openAPI31-url.yaml
+        │   │   │   │   │   ├── models.openapi.yaml
+        │   │   │   │   │   ├── models.swagger.yaml
+        │   │   │   │   │   ├── multiple-examples-core.openapi.yaml
+        │   │   │   │   │   ├── oas3-multiple-media-type.yaml
+        │   │   │   │   │   ├── oas3-multiple-servers-switch.yaml
+        │   │   │   │   │   ├── oas3-multiple-servers.yaml
+        │   │   │   │   │   ├── oas3-xml.json
+        │   │   │   │   │   ├── parameter-array-missing-items.yaml
+        │   │   │   │   │   ├── parameter-order.yaml
+        │   │   │   │   │   ├── petstore-only-pet.openapi.yaml
+        │   │   │   │   │   ├── request-body
+        │   │   │   │   │   │   └── multipart
+        │   │   │   │   │   │       ├── default-views.yaml
+        │   │   │   │   │   │       └── enum.yaml
+        │   │   │   │   │   ├── request-body-upload-file.yaml
+        │   │   │   │   │   ├── response-extension.openapi.yaml
+        │   │   │   │   │   ├── response-extension.swagger.yaml
+        │   │   │   │   │   ├── schema-form-core.yaml
+        │   │   │   │   │   ├── schema-form-enum-boolean.yaml
+        │   │   │   │   │   ├── schema-form-missing-values.yaml
+        │   │   │   │   │   ├── spec-parse-to-json.yaml
+        │   │   │   │   │   ├── syntax-highlighting-json-oas2.yaml
+        │   │   │   │   │   ├── syntax-highlighting-json-oas3.yaml
+        │   │   │   │   │   ├── try-it-out-enabled.yaml
+        │   │   │   │   │   ├── try-it-out-schema-required-override-allowed.yaml
+        │   │   │   │   │   ├── urls
+        │   │   │   │   │   │   ├── 1.yaml
+        │   │   │   │   │   │   ├── 2.yaml
+        │   │   │   │   │   │   ├── server-variables-1.yaml
+        │   │   │   │   │   │   └── server-variables-2.yaml
+        │   │   │   │   │   ├── webhooks-openAPI30.yaml
+        │   │   │   │   │   └── webhooks-openAPI31.yaml
+        │   │   │   │   ├── petstore-expanded.openapi.yaml
+        │   │   │   │   ├── petstore.swagger.yaml
+        │   │   │   │   └── security
+        │   │   │   │       ├── anonymous.yaml
+        │   │   │   │       ├── sequential-import-chaining
+        │   │   │   │       │   ├── injection.css
+        │   │   │   │       │   ├── openapi.yaml
+        │   │   │   │       │   └── swagger.yaml
+        │   │   │   │       └── xss-oauth2.yaml
+        │   │   │   ├── index.html
+        │   │   │   └── pages
+        │   │   │       ├── 5085
+        │   │   │       │   └── index.html
+        │   │   │       ├── 5138
+        │   │   │       │   ├── api-with-examples.yaml
+        │   │   │       │   ├── index.html
+        │   │   │       │   └── uspto.yaml
+        │   │   │       └── multiple-urls
+        │   │   │           └── index.html
+        │   │   └── support
+        │   │       ├── commands.js
+        │   │       ├── e2e.js
+        │   │       └── helpers
+        │   │           ├── multiple-examples.js
+        │   │           └── oauth2-server
+        │   │               ├── index.js
+        │   │               ├── model.js
+        │   │               └── swagger.yaml
+        │   ├── e2e-selenium
+        │   │   ├── README.md
+        │   │   ├── db.json
+        │   │   ├── nightwatch.json
+        │   │   ├── pages
+        │   │   │   └── main.js
+        │   │   ├── scenarios
+        │   │   │   ├── bugs
+        │   │   │   │   ├── 4196.js
+        │   │   │   │   ├── 4374.js
+        │   │   │   │   ├── 4409.js
+        │   │   │   │   ├── 4445.js
+        │   │   │   │   ├── 4485.js
+        │   │   │   │   ├── 4536.js
+        │   │   │   │   ├── 4587.js
+        │   │   │   │   ├── 4756.js
+        │   │   │   │   └── frozen-array-input.js
+        │   │   │   ├── features
+        │   │   │   │   ├── allow-empty-value.openapi.js
+        │   │   │   │   ├── allow-empty-value.swagger.js
+        │   │   │   │   ├── example.js
+        │   │   │   │   ├── parameter-enum-rendering.js
+        │   │   │   │   └── parameter-example-rendering.js
+        │   │   │   ├── informationContainer.js
+        │   │   │   ├── models.js
+        │   │   │   ├── oas3
+        │   │   │   │   ├── callbacks.js
+        │   │   │   │   └── pet.js
+        │   │   │   ├── on-complete.js
+        │   │   │   ├── operations
+        │   │   │   │   ├── pet.js
+        │   │   │   │   ├── store.js
+        │   │   │   │   └── user.js
+        │   │   │   ├── refs.js
+        │   │   │   ├── schemeContainer.js
+        │   │   │   └── topbar.js
+        │   │   └── static
+        │   │       ├── index.html
+        │   │       └── test-specs
+        │   │           ├── bugs
+        │   │           │   ├── 4196.yaml
+        │   │           │   ├── 4374.yaml
+        │   │           │   ├── 4409.yaml
+        │   │           │   ├── 4445.yaml
+        │   │           │   ├── 4485
+        │   │           │   │   ├── book.yaml
+        │   │           │   │   └── main.yaml
+        │   │           │   ├── 4536.yaml
+        │   │           │   ├── 4587.yaml
+        │   │           │   ├── 4756.yaml
+        │   │           │   └── frozen-array-input.yaml
+        │   │           ├── callbacks.openapi.yaml
+        │   │           ├── features
+        │   │           │   ├── allow-empty-value.openapi.yaml
+        │   │           │   ├── allow-empty-value.swagger.yaml
+        │   │           │   ├── example.openapi.yaml
+        │   │           │   ├── example.swagger.yaml
+        │   │           │   ├── parameter-enum-rendering.openapi.yaml
+        │   │           │   └── parameter-enum-rendering.swagger.yaml
+        │   │           ├── petstore.json
+        │   │           ├── petstore.openapi.yaml
+        │   │           └── refs
+        │   │               ├── api1.yaml
+        │   │               └── api2.yaml
+        │   ├── mocha
+        │   │   ├── components
+        │   │   │   ├── live-response.jsx
+        │   │   │   └── online-validator-badge.jsx
+        │   │   ├── setup.js
+        │   │   └── xss
+        │   │       └── anchor-target-rel
+        │   │           └── online-validator-badge.jsx
+        │   └── unit
+        │       ├── bugs
+        │       │   ├── 3199-sanitization-escaping.jsx
+        │       │   ├── 3279-empty-markdown-source.jsx
+        │       │   └── 4557-default-parameter-values.jsx
+        │       ├── components
+        │       │   ├── filter.jsx
+        │       │   ├── info-wrapper.jsx
+        │       │   ├── json-schema-form.jsx
+        │       │   ├── live-response.jsx
+        │       │   ├── markdown.jsx
+        │       │   ├── model-example.jsx
+        │       │   ├── models.jsx
+        │       │   ├── object-model.jsx
+        │       │   ├── online-validator-badge.jsx
+        │       │   ├── operation-tag.jsx
+        │       │   ├── operation.jsx
+        │       │   ├── operations.jsx
+        │       │   ├── parameter-row.jsx
+        │       │   ├── primitive-model.jsx
+        │       │   ├── response-body.jsx
+        │       │   ├── response.jsx
+        │       │   ├── schemes-wrapper.jsx
+        │       │   ├── schemes.jsx
+        │       │   └── version-pragma-filter.jsx
+        │       ├── core
+        │       │   ├── curlify.js
+        │       │   ├── helpers
+        │       │   │   ├── get-model-name.js
+        │       │   │   └── get-parameter-schema.js
+        │       │   ├── oauth2-authorize.js
+        │       │   ├── plugins
+        │       │   │   ├── auth
+        │       │   │   │   ├── actions.js
+        │       │   │   │   ├── configs-extensions
+        │       │   │   │   │   └── wrap-actions.js
+        │       │   │   │   ├── preauthorize.js
+        │       │   │   │   ├── selectors.js
+        │       │   │   │   ├── spec-extensions
+        │       │   │   │   │   └── wrap-actions.js
+        │       │   │   │   └── wrap-actions.js
+        │       │   │   ├── configs
+        │       │   │   │   └── actions.js
+        │       │   │   ├── err
+        │       │   │   │   └── transformers
+        │       │   │   │       ├── not-of-type.js
+        │       │   │   │       └── parameter-oneof.js
+        │       │   │   ├── filter
+        │       │   │   │   └── opsFilter.js
+        │       │   │   ├── json-schema-2020-12
+        │       │   │   │   └── samples-extensions
+        │       │   │   │       ├── fn.js
+        │       │   │   │       └── get-sample-schema.js
+        │       │   │   ├── oas3
+        │       │   │   │   ├── helpers.js
+        │       │   │   │   ├── reducers.js
+        │       │   │   │   ├── servers-wrapper.jsx
+        │       │   │   │   ├── state-integration.js
+        │       │   │   │   ├── wrap-auth-selectors.js
+        │       │   │   │   └── wrap-spec-selectors.js
+        │       │   │   ├── oas31
+        │       │   │   │   └── components
+        │       │   │   │       └── version-pragma-filter.jsx
+        │       │   │   ├── safe-render
+        │       │   │   │   └── index.jsx
+        │       │   │   ├── samples
+        │       │   │   │   └── fn
+        │       │   │   │       ├── get-sample-schema.js
+        │       │   │   │       └── index.js
+        │       │   │   ├── spec
+        │       │   │   │   ├── actions.js
+        │       │   │   │   ├── assets
+        │       │   │   │   │   └── petstore.json
+        │       │   │   │   ├── reducer.js
+        │       │   │   │   └── selectors.js
+        │       │   │   └── swagger-js
+        │       │   │       └── withCredentials.js
+        │       │   ├── system
+        │       │   │   ├── system.jsx
+        │       │   │   ├── wrapComponent.jsx
+        │       │   │   └── wrapSelectors.js
+        │       │   └── utils.js
+        │       ├── docker
+        │       │   ├── oauth.js
+        │       │   └── translator.js
+        │       ├── jest-shim.js
+        │       ├── setup.js
+        │       ├── swagger-ui-dist-package
+        │       │   └── absolute-path.js
+        │       └── xss
+        │           ├── anchor-target-rel
+        │           │   ├── info.jsx
+        │           │   ├── link.jsx
+        │           │   ├── markdown.jsx
+        │           │   └── online-validator-badge.jsx
+        │           ├── info-sanitization.jsx
+        │           └── markdown-script-sanitization.jsx
+        └── webpack
+            ├── _config-builder.js
+            ├── _helpers.js
+            ├── bundle.babel.js
+            ├── core.babel.js
+            ├── dev-e2e.babel.js
+            ├── dev.babel.js
+            ├── es-bundle-core.babel.js
+            ├── es-bundle.babel.js
+            ├── standalone.babel.js
+            └── stylesheets.babel.js
+
+196 directories, 807 files
