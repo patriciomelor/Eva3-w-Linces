@@ -2,7 +2,6 @@
 function getEndpointByToken($_endpoint, $_token)
 {
     //echo 'endpoint: ' , $_endpoint , ' /token: ' , $_token;
-
     //Configuración de la solicitud con cURL
     $ch = curl_init($_endpoint);
     // Configurar Headers
