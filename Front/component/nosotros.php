@@ -4,7 +4,9 @@
         <div class="containerTxtImg">
             <img class="imageTxtImg" src=src/media/imgTitulos/it1.webp alt="Image">       
             <!-- <img class="imageTxtImg" src=src/media/nosotros/nosotros.webp   width="100%" id="img_nosotros">        -->
-            <h1 class="textTxtImg">NOSOTROS</h1>
+            <h1 class="textTxtImg">Nosotros</h1>
+            <img class="logoImg" src="src/media/logo/logologo.png" alt="logo">
+
         </div>
         <!-- Quiénes somos / Misión / Visión -->
         <div class="row justify-content-center" style="margin-bottom:40px;">

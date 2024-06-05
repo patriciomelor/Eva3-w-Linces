@@ -4,7 +4,9 @@
   <div class="flex-container">
     <div class="containerTxtImg">
       <img class="imageTxtImg" src="src/media/imgTitulos/it5.webp" alt="Image" style="margin-bottom: 40px">
-      <h1 class="textTxtImg">PREGUNTAS FRECUENTES</h1>
+      <h1 class="textTxtImg">Preguntas frecuentes</h1>
+      <img class="logoImg" src="src/media/logo/logologo.png" alt="logo">
+
     </div>
   </div>
   <div class="container">

@@ -4,7 +4,9 @@
         <div class="containerTxtImg">
             <img class="imageTxtImg" src=src/media/imgTitulos/it3.webp alt="Image">       
             <!-- <img class="imageTxtImg" src=src/media/nosotros/nosotros.webp   width="100%" id="img_nosotros">        -->
-            <h1 class="textTxtImg">CASAS EN PARCELA</h1>
+            <h1 class="textTxtImg">Casas en parcelas</h1>
+            <img class="logoImg" src="src/media/logo/logologo.png" alt="logo">
+
         </div>
     <!-- Tarjetas de parcelas -->
     <div class="row justify-content-center card-group">  

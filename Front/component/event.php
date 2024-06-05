@@ -6,9 +6,12 @@ function getEndpointByToken($_endpoint, $_token)
     //Configuración de la solicitud con cURL
     $ch = curl_init($_endpoint);
     // Configurar Headers
-    curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-        'Authorization: Bearer ' . $_token
-    )
+    curl_setopt(
+        $ch,
+        CURLOPT_HTTPHEADER,
+        array(
+            'Authorization: Bearer ' . $_token
+        )
     );
     //configurar la respuesta
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -24,7 +27,7 @@ function getEndpointByToken($_endpoint, $_token)
 }
 
 $endpointParcelas = getEndpointByToken('http://localhost/Eva3-w-Linces/backend/api/v2/parcela/get.php', 'get');
-//echo $endpointParcelas;
+// echo $endpointParcelas;
 $endpointParcelas = json_encode($endpointParcelas);
-//echo $endpointParcelas;
+// echo $endpointParcelas;
 ?>

@@ -1,0 +1,110 @@
+<script>
+        // // Pegarle al Endpoint parcelas - Caro
+        // fetch('http://localhost/Eva3-w-Linces/backend/api/v2/parcela/get.php', {
+        //     method: 'GET',
+        //     headers: {
+        //         'Authorization': 'Bearer get',
+        //         'Content-Type': 'application/json'
+        //     }
+        // })
+
+        //     .then(respuesta => {
+        //         if (respuesta.status != 200) {
+        //             throw new Error('No tiene acceso al Endpoint')
+        //         }
+        //         return respuesta.json();
+        //     })
+
+        let contenidoEndpointParcelas = JSON.parse(<?php echo $endpointParcelas ?>);
+        // console.log(contenidoEndpointParcelas);  
+        printParcelas(contenidoEndpointParcelas);
+
+        function printParcelas(_datos) {
+            console.log(_datos);
+            // const totalColumnas = datos.data.length !== 0 ? 12 / datos.data.length : 0;
+            const totalColumnas = 12 / _datos.length;
+            console.log('propiedad md-' + totalColumnas);
+
+            const rowParcelas = document.getElementById('rowParcelas');
+            rowParcelas.innerHTML = '';
+            _datos.forEach(element => {
+                console.log(element);
+
+                //if (element.activo == true){
+                //Creación de las columnas y tarjetas
+                const columna = document.createElement('div');
+                columna.classList.add('col-md-' + totalColumnas);
+                columna.classList.add('card-group');
+                columna.classList.add('justify-content-center');
+
+                const tarjeta = document.createElement('div');
+                tarjeta.classList.add('card');
+                tarjeta.classList.add('h-100');
+
+                const tarjetaHeader = document.createElement('div');
+                tarjetaHeader.classList.add('card-header');
+                tarjetaHeader.classList.add('justify-content-center');
+
+                const tarjetaImg = document.createElement('div');
+                //   tarjetaImg.classList.add('card-img')
+                //   tarjetaImg.classList.add('container-img')
+                tarjetaImg.classList.add('text-center')
+
+                const tarjetaTitle = document.createElement('h2');
+                tarjetaTitle.classList.add('card-title')
+                tarjetaTitle.classList.add('mt-4')
+
+                const imagen = document.createElement('img');
+                imagen.src = element.link;
+                imagen.style.width = '390px';
+
+                const tarjetaBody = document.createElement('div');
+                tarjetaBody.classList.add('card-body');
+
+                const tarjetaFooter = document.createElement('div');
+                tarjetaFooter.classList.add('card-Foot');
+                tarjetaFooter.classList.add('d-grid');
+                tarjetaFooter.classList.add('gap-2');
+                tarjetaFooter.classList.add('col-6');
+                tarjetaFooter.classList.add('mx-auto');
+                tarjetaFooter.classList.add('mb-4');
+
+                // Crear el botón
+                const botonContacto = document.createElement('button');
+                botonContacto.classList.add('btn');
+                botonContacto.classList.add('btn-secondary');
+                botonContacto.innerText = 'Contáctanos';
+                botonContacto.onclick = function () {
+                    // Hacer scroll hacia la sección de contacto
+                    document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' });
+                };
+
+
+                //Asignación de contenido a las tarjetas
+                tarjetaImg.appendChild(imagen);
+                tarjetaHeader.appendChild(tarjetaImg);
+
+                tarjeta.appendChild(tarjetaHeader);
+                columna.appendChild(tarjeta);
+                rowParcelas.appendChild(columna);
+
+                tarjetaTitle.innerHTML = element.nombre;
+                tarjeta.appendChild(tarjetaTitle);
+
+
+                tarjetaBody.innerHTML = '<p>' + element.descripcion + '</p>';
+                tarjeta.appendChild(tarjetaBody);
+
+                tarjetaFooter.appendChild(botonContacto);
+                tarjeta.appendChild(tarjetaFooter);
+
+                columna.appendChild(tarjeta);
+                rowParcelas.appendChild(columna);
+
+
+                //}
+            })
+        }
+        
+
+    </script>
