@@ -3,7 +3,7 @@ info:
   title: API Documentación para Terrasol
   version: 2.0.0
 servers:
-  - url: http://localhost/Eva2-w-Linces/backend/api/v2
+  - url: http://localhost/Eva3-w-Linces/backend/api/v2
 
 paths:
   /categoria_servicio/get.php:
@@ -163,6 +163,8 @@ paths:
 
   /pregunta_frecuente/get.php:
     get:
+      tags:
+        - "pregunta_frecuente"
       summary: Obtiene todas las preguntas frecuentes.
       security:
         - bearerAuth: []
@@ -178,6 +180,8 @@ paths:
 
   /pregunta_frecuente/post.php:
     post:
+      tags:
+        - "pregunta_frecuente"
       summary: Crea una nueva pregunta frecuente.
       security:
         - bearerAuth: []
@@ -192,6 +196,8 @@ paths:
 
   /pregunta_frecuente/put.php:
     put:
+      tags:
+        - "pregunta_frecuente"
       summary: Actualiza una pregunta frecuente existente.
       security:
         - bearerAuth: []
@@ -206,6 +212,8 @@ paths:
 
   /pregunta_frecuente/patch.php:
     patch:
+      tags:
+        - "pregunta_frecuente"
       summary: Actualiza parcialmente una pregunta frecuente.
       security:
         - bearerAuth: []
@@ -220,6 +228,8 @@ paths:
 
   /pregunta_frecuente/delete.php:
     delete:
+      tags:
+        - "pregunta_frecuente"
       summary: Elimina una pregunta frecuente.
       security:
         - bearerAuth: []
@@ -237,6 +247,8 @@ paths:
 
   /parcela/get.php:
     get:
+      tags:
+        - "parcela"
       summary: Obtiene todas las parcelas.
       security:
         - bearerAuth: []
@@ -252,6 +264,8 @@ paths:
 
   /parcela/post.php:
     post:
+      tags:
+        - "parcela"
       summary: Crea una nueva parcela.
       security:
         - bearerAuth: []
@@ -266,6 +280,8 @@ paths:
 
   /parcela/put.php:
     put:
+      tags:
+        - "parcela"
       summary: Actualiza una parcela existente.
       security:
         - bearerAuth: []
@@ -280,6 +296,8 @@ paths:
 
   /parcela/patch.php:
     patch:
+      tags:
+        - "parcela"
       summary: Actualiza parcialmente una parcela.
       security:
         - bearerAuth: []
@@ -294,6 +312,8 @@ paths:
 
   /parcela/delete.php:
     delete:
+      tags:
+        - "parcela"
       summary: Elimina una parcela.
       security:
         - bearerAuth: []
