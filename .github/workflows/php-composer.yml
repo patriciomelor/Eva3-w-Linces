@@ -20,7 +20,7 @@ jobs:
     - name: Set up PHP
       uses: shivammathur/setup-php@v2
       with:
-        php-version: '8.1' # Actualiza a PHP 8.1
+        php-version: '8.2' # Actualiza a PHP 8.2
         extensions: mbstring, pdo, sqlite, xdebug
 
     - name: Validate composer.json and composer.lock
