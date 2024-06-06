@@ -12,12 +12,13 @@ Este es un proyecto en php para front y para back, conexion a bd MySQL
 
 
 ## Documentation
-[Requerimientos](Pronto)
+
+- [Doc Buenas Practicas](https://github.com/patriciomelor/Eva3-w-Linces/blob/main/DOC/Buenas%20Pr%C3%A1cticas%20para%20el%20Desarrollo%20Frontend%20y%20Consumo%20de%20APIs%20Linces.pdf)
+- [Doc + Portada](https://github.com/patriciomelor/Eva3-w-Linces/blob/main/DOC/Portada%20y%20desarrollo%20Linces.pdf)
 
 
 ## Frontend
-- [Parte Front](Pronto)
-  
+- [Parte Front](https://github.com/patriciomelor/Eva3-w-Linces/tree/main/Front)
 ## BackEnd
-- [Parte Back](Pronto)
+- [Parte Back](https://github.com/patriciomelor/Eva3-w-Linces/tree/main/Backend)
 
