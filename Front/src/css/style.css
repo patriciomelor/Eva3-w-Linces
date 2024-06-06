@@ -9,6 +9,9 @@
     padding-bottom: 30px;
     padding-top: 50px;
 } */
+.accordion-button {
+    font-size: 2rem!important;
+}
 h1{
     color: black;
     font-size: 75px !important;

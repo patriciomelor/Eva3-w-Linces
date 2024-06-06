@@ -56,7 +56,7 @@
 
                 const imagen = document.createElement('img');
                 imagen.src = element.link;
-                imagen.style.width = '390px';
+                imagen.style.width = '100%';
 
                 const tarjetaBody = document.createElement('div');
                 tarjetaBody.classList.add('card-body');

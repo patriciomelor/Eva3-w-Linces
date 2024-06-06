@@ -2,12 +2,16 @@
 function getEndpointByToken($_endpoint, $_token)
 {
     //echo 'endpoint: ' , $_endpoint , ' /token: ' , $_token;
+
     //Configuración de la solicitud con cURL
     $ch = curl_init($_endpoint);
     // Configurar Headers
-    curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-        'Authorization: Bearer ' . $_token
-    )
+    curl_setopt(
+        $ch,
+        CURLOPT_HTTPHEADER,
+        array(
+            'Authorization: Bearer ' . $_token
+        )
     );
     //configurar la respuesta
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -22,26 +26,20 @@ function getEndpointByToken($_endpoint, $_token)
     return $respuesta;
 }
 
-
-$variable = "algun contenido";
-echo 'la función devuele: ' . getEndpointByToken('http://localhost/Eva3-w-Linces/backend/api/v2/parcela/get.php', 'get');
-
+$endpointParcelas = getEndpointByToken('http://localhost/Eva3-w-Linces/backend/api/v2/parcela/get.php', 'get');
+// echo $endpointParcelas;
+$endpointParcelas = json_encode($endpointParcelas);
+// echo $endpointParcelas;
 ?>
-
-
-
 
 <!DOCTYPE html><!--Pato-->
 <html lang="Es">
-
 
 <head>
     <?php include 'component/header.php'; ?>
 </head>
 
-
 <body>
-
 
     <head>
         <!--Barra de Navegacion-->
@@ -81,57 +79,24 @@ echo 'la función devuele: ' . getEndpointByToken('http://localhost/Eva3-w-Lince
     <!--fin footer-->
     <!-- Js -->
     <?php include 'component/Js.php'; ?>
+    <?php include 'component/apiNosotros.php'; ?>
+    <?php include 'component/apiParcelas.php'; ?>
+    <?php include 'component/apiPreguntasFrecuentes.php'; ?>
+    <!--fin Js -->
 
-
-    const tarjetaFooter = document.createElement('div');
-    tarjetaFooter.classList.add('card-Foot d-grid gap-2 col-6 mx-auto mb-4')
     <script>
+        // // Pegarle al Endpoint parcelas - Caro
+  
 
-        // Pegarle al Endpoint nosotros - Dani 
+        let contenidoEndpointParcelas = JSON.parse(<?php echo $endpointParcelas ?>);
+        // console.log(contenidoEndpointParcelas);  
+        printParcelas(contenidoEndpointParcelas);
 
-        fetch('http://localhost/Eva3-w-Linces/backend/api/v2/nosotros/get.php', {
-            method: 'GET',
-            headers: {
-                'Authorization': 'Bearer get',
-                'Content-Type': 'application/json'
-            }
-        })
-            .then(response => {
-                if (!response.ok) {
-                    // Lanza un error si la respuesta no es OK (cualquier código diferente a 2xx)
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                return response.json();
-            })
-            .then(data => {
-                console.log(data);
-            })
-            .catch(error => {
-                console.error('Esto es un error:', error);
-            });
-
-
-        // Pegarle al Endpoint parcelas - Caro
-        fetch('http://localhost/Eva3-w-Linces/backend/api/v2/parcela/get.php', {
-            method: 'GET',
-            headers: {
-                'Authorization': 'Bearer get',
-                'Content-Type': 'application/json'
-            }
-        })
-
-            .then(respuesta => {
-                if (respuesta.status != 200) {
-                    throw new Error('No tiene acceso al Endpoint')
-                }
-                return respuesta.json();
-            })
-
-            .then(datos => {
-                console.log(datos);
-                // const totalColumnas = datos.data.length !== 0 ? 12 / datos.data.length : 0;
-                const totalColumnas = 12 / datos.length;
-                console.log('propiedad md-' + totalColumnas);
+        function printParcelas(_datos) {
+            console.log(_datos);
+            // const totalColumnas = datos.data.length !== 0 ? 12 / datos.data.length : 0;
+            const totalColumnas = 12 / _datos.length;
+            console.log('propiedad md-' + totalColumnas);
 
             const rowParcelas = document.getElementById('rowParcelas');
             rowParcelas.innerHTML = '';
@@ -216,8 +181,6 @@ echo 'la función devuele: ' . getEndpointByToken('http://localhost/Eva3-w-Lince
         
 
     </script>
-
-
 </body>
 
 </html>
